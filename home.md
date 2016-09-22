@@ -13,10 +13,14 @@ Hello and welcome to The Howlin Guide to Silicon.
 
 ## Contents
 
- * [Cheatsheets](./cheatsheets)
- * [Apps](./apps)
- * [Tools](./tools)
- * [Frameworks](./frameworks)
- * [Languages](./languages)
- * [Unix](./unix)
- * [Arch](./arch)
+### Cheatsheets
+### Apps
+ * [Autoreload](./apps/autoreload.md)
+ * [Bower](./apps/bower.md)
+ * [Grunt](./apps/grunt.md)
+ * [Yeoman](./apps/yeoman.md)
+### Tools
+### Frameworks
+### Languages
+### Unix
+### Arch
