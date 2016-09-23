@@ -8,47 +8,34 @@
 # Grunt
 
 
-Install
+
+## Quick Start
+
 ```bash
+# Install
 npm install -g grunt-cli
-```
 
-Start package
-```bash
+# Start package
 npm init
-```
 
-Install grunt to package
-```bash
+# Install grunt to package
 npm install -S grunt
-```
 
-Create a gruntfile
-```bash
+# Create a gruntfile
 touch Gruntfile.js
-```
 
-Grunt-contrib-concat (for example)
-```bash
+# Grunt-contrib-concat (for example)
 npm install grunt-contrib-concat --save-dev
-```
 
-Configure your gruntfile with the code from the Grunt-contrib-concat github repo
-```bash
+# Configure your gruntfile with the code from the Grunt-contrib-concat github repo
 grunt concat
-```
 
-Grunt-contrib-watch
-```bash
+# Grunt-contrib-watch
 npm install grunt-contrib-watch --save-dev
-```
 
-Start grunt watch
-```bash
+# Start grunt watch
 grunt watch
-```
 
-Use the default by registering functions as default and to run
-```bash
+# Use the default by registering functions as default and to run
 grunt 
 ```
