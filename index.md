@@ -7,7 +7,6 @@
 
 # Index
 
- * [Angular](./frameworks/angular.md)
  * [Autoreload](./apps/autoreload.md)
  * [Bower](./apps/bower.md)
  * [Express](./frameworks/express.md)
