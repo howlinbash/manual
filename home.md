@@ -1,9 +1,9 @@
 
 
 
-# The Howlin Guide to Silicon
+# The Howlin Developer Guide
 
-Hello and welcome to The Howlin Guide to Silicon.
+Hello and welcome to The Howlin Developer Guide.
 
  * [Markdown Cheatsheet](./markdown.md)
  * [Latest Tricks](./latest.md)

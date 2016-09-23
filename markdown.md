@@ -1,7 +1,7 @@
 
 
 
-[The Howlin Guide to Silicon](./home.md)
+[The Howlin Developer Guide](./home.md)
 
 
 
