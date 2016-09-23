@@ -5,7 +5,7 @@
 
 
 
-## AutoReload
+# AutoReload
 
 Install
 ```markdown

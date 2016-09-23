@@ -5,10 +5,13 @@
 
 
 
-## Index
+# Index
 
+ * [Angular](./frameworks/angular.md)
  * [Autoreload](./apps/autoreload.md)
  * [Bower](./apps/bower.md)
+ * [Express](./frameworks/express.md)
  * [Grunt](./apps/grunt.md)
+ * [jQuery](./frameworks/jquery.md)
  * [Yeoman](./apps/yeoman.md)
 

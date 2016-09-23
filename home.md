@@ -21,6 +21,9 @@ Hello and welcome to The Howlin Developer Guide.
  * [Yeoman](./apps/yeoman.md)
 ### Tools
 ### Frameworks
+ * [Angular](./frameworks/angular.md)
+ * [Express](./frameworks/express.md)
+ * [jQuery](./frameworks/jquery.md)
 ### Languages
 ### Unix
 ### Arch

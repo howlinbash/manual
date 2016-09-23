@@ -5,7 +5,7 @@
 
 
 
-## Bower
+# Bower
 
 Install
 ```bash
