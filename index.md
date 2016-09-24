@@ -12,5 +12,6 @@
  * [Express](./frameworks/express.md)
  * [Grunt](./apps/grunt.md)
  * [jQuery](./frameworks/jquery.md)
+ * [Vagrant](./apps/vagrant.md)
  * [Yeoman](./apps/yeoman.md)
 

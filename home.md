@@ -18,6 +18,7 @@ Hello and welcome to The Howlin Developer Guide.
  * [Autoreload](./apps/autoreload.md)
  * [Bower](./apps/bower.md)
  * [Grunt](./apps/grunt.md)
+ * [Vagrant](./apps/vagrant.md)
  * [Yeoman](./apps/yeoman.md)
 ### Tools
 ### Frameworks
