@@ -1,0 +1,54 @@
+
+Methods are functions stored as object properties.
+Javascript has 6-8 types to it.
+number type
+string type
+undefined type
+
+== context ==
+
+context === this
+
+if you run this code in the browser console, this would refer to the window object.
+    console.log(this);
+so this statement would be true.
+    console.log(this === window);
+or 
+    code:
+        var a = 1;
+        console.log(this.a);
+    output:
+        1
+these statements
+    console.log(this.a);
+    console.log(window.a);
+    console.log(a);
+are identical. They are all running in the default root scope (where the context is 'this') 
+In the code below we change the scope but the conext remains the same.
+'this' still refers to the window object.
+    function foo() {
+        console.log(this);
+    };  
+    foo();
+a function runs within the scope of the object that it sits in.
+    foo();
+    window.foo();
+are the same.
+whenever i run foo() its gonna run within the context of the object that it sits on.
+tip:
+    console.log(this); is a good trick to debug.
+
+== New Context ==
+
+    var obj = {
+        foo: function() {
+            console.log(this);
+        }
+    };
+    obj.foo();
+
+now the context is the new object.
+
+call apply bind
+
+finish later @4m30s

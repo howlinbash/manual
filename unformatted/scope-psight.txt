@@ -1,0 +1,754 @@
+/******************************************************************************/
+/******************************************************************************/
+/****                                                                      ****/
+/****                 KYLE SIMPSON - ADVANCED JAVASCRIPT                   ****/
+/****                                                                      ****/
+/****                 02 - Scope                                           ****/
+/****                                                                      ****/
+/****                                                                      ****/
+/******************************************************************************/
+/******************************************************************************/
+
+
+==============
+|  Contents  |
+==============
+
+Compile Time & Run Time
+ - The Mission
+ - Compile Time
+ - Run Time
+ - LHS & RHS
+
+=============================
+|  Compile Time & Run Time  |
+=============================
+
+The Myth: Javascript is not a compiled language.
+
+It's true, we don't convert to a binary, we ship the source code
+But javascript is compiled every single time that it's run.
+
+The code will be passed through twice
+Once: compiled;
+Twice: executed;
+
+ 1 var foo = "bar";
+ 2
+ 3 function bar() {
+ 4   var foo = "baz";
+ 5 }
+ 6 
+ 7 function baz(foo) {
+ 8   foo = "bam";
+ 9   bam = "yay";
+10 }
+
+Line 1 is a variable declaration with an initialiser.
+An initialisation to a value, an immediate value, a string value.
+However, it is not a single statement - it's 2.
+Declaration and initailisation.
+Declearation: var foo;
+Initialisation: foo = bar;
+
+These 2 operations happen at totally seperate times:
+Compile time & Run time.
+
+An entirely different mechanism within the javascript engine deals with each.
+
+== The Mission ==
+
+Find the declarations of functions and variables,
+Put them into their appropriate scope slots.
+
+
+== Compile Time ==
+
+ 1 | 1 var foo
+ 2 | 3 function bar()
+ 3 | 4 { var foo }
+ 4 | 7 function baz()
+ 5 | 7 (foo)
+
+What are we looking for?
+ - variable declarations
+ - lexical identifiers.
+
+On line 1:
+var: Variable Declaration
+foo: Lexical Identifier
+
+If we anthropomorphise The compiler we would say:
+
+Step 1 (line 1):
+Current Scope: Global Scope
+I see a variable declaration for an identifier called foo.
+I want to register the foo identifier into my current scope.
+Hey Global Scope, I have a declaration for a variable called foo. Register it.
+
+Step 2 (line 3):
+Current Scope: Global Scope
+I see a function declaration with an identifier called bar
+Hey Global Scope, I have a declaration for a function called bar. Register it.
+
+Step 3: (line 4)
+Current Scope: Scope of Bar
+Hey Scope of Bar, I have a declaration for a variable called foo. Register it.
+
+Step 4:
+Current Scope: Global Scope
+Hey Global Scope, I have a declaration for a function called baz. Register it.
+
+Step 5:
+Here we meet an implicit declaration, a named parameter called foo. 
+We treat it like a local variable.
+Hey Scope of Baz, I have a declaration for a variable called foo. Register it.
+
+And that's the last declaration.
+
+-- Compilation phase complete --
+
+
+== Run Time ==
+
+var doesn't exist anymore.
+
+ 1 | 1 foo = "bar";
+ 2 | 4 foo = "baz";
+ 3 | 8 { foo = "bam"; }
+ 4 | 9 { bam = "yay"; }
+
+
+== LHS & RHS ==
+
+Compiler Terminology:
+Left-hand side & Right-hand Side
+
+of what?
+of an assignment.
+
+Line 1
+foo     LHS Reference    Target
+ =      The Assignment
+"bar";  RHS Reference    Source
+
+NB: There's not always an equals sign and it's not always about left and right.
+
+LHS & RHS Behave differently in terms of scope.
+Keep them seperate in your mind.
+
+Step 1:
+When I have an LHS that is a reference to a variable, I have to ask where that variable exists.
+Executer: 
+"Hey Global Scope, I have an LHS reference for a variable called foo. 
+Have you heard of him?"
+Global Scope: 
+"Yes you declared him in line 1, (step 1 of compiler Order)"
+
+If the RHS was more complicated than just an immediate value, a string, we would need to do another look up. However with the look ups now complete, we assign the value to the location and Step 1 is complete.
+
+Lets add a few more lines to our code.
+
+ 1 var foo = "bar";
+ 2
+ 3 function bar() {
+ 4   var foo = "baz";
+ 5 }
+ 6 
+ 7 function baz(foo) {
+ 8   foo = "bam";
+ 9   bam = "yay";
+10 }
+11
+12 bar();
+13 baz();
+
+Now for Step 2 lines 3-10 don't exist, they too, like the 'vars' have been compiled away.
+So when call bar on line 12, step 2 follows.
+
+Step 2:
+Executer: "Hey Scope of Bar, I have an LHS reference for the variable foo. Ever heard of him?"
+Scope Of Bar: "Yes you declared him in line 4 (step 3 of Compler Order)"
+Assign the string "baz" to foo. (maybe)
+
+Step 3.
+Has foo been declared? Yes. As a param (line 7; CO: step 5). "bam" is assigned.
+
+Step 4:
+"Scope of Baz, you heard of bam?" -- "Nope - Go fish!"
+so we move up a level.
+"Global Scope, you heard of bam?" -- "Nope. I'll make you one!"
+Without strict mode. GS will declare bam without the var keyword, during execution.
+
+An undeclared LHS reference means
+we were unable to find a reference in any of the scopes we had access to.
+Undefined is something else.
+it is more akin the word uninitialised.
+it is a proper value, it's not an vacuum, it exists.
+keep undeclared and undefined seperate in your mind.
+
+==Next Example==
+
+ 1 var foo = "bar";
+ 2
+ 3 function bar() {
+ 4   var foo = "baz";
+ 5 
+ 6   function baz(foo) {
+ 7     foo = "bam";
+ 8     bam = "yay";
+ 9   }
+10   baz();
+11 }
+12 
+13 bar();
+14 foo;
+15 bam;
+16 baz();
+
+
+
+COMPILER ORDER
+
+ 1 | 1 var foo
+ 2 | 3 function bar()
+ 3 | 4 { var foo }
+ 4 | 6 function baz()
+ 5 | 6 (foo)
+
+Step 1: "Hey GS, I have a declaration for a variable called foo"
+"Got it. I've got him registered in the scope now, you can move on."
+Step 2: "Hey GS, I have a function called bar, and I want to register him, in the global scope."
+Step 3: "Hey Scope of Bar, I have a declaration for a variable called foo"
+Step 4: "Hey Scope of Bar, I have a declaration for a function called baz"
+Step 5: "Hey Scope of Baz, I have a declaration as a named parameter but I have a declaration for an identifier called foo"
+
+==Execute Order==
+
+ 1 | 1 foo = "bar";
+ 2 |13 bar();
+ 3 | 4 foo = "baz";
+ 4 |10 baz();
+ 5 | 7 foo = "bam";
+ 6 | 8 bam = "yay";
+ 7 |14 foo; 
+ 8 |15 bam; 
+ 9 |16 baz(); 
+
+Step 1: "Hey GS, I have an LHS reference for a variable called foo. Have you heard of him?"
+"Yes I have. Here's a reference you declared earlier."
+Then we proceed with our assignment to it because we have an immediate value. We make our assignment to foo.
+
+Step 2: 
+Line's 3-11 don't exist anymore because they were compiled away.
+"Hey GS, I have an RHS declaration for a function called bar. Have you heard of him?"
+The reason it's an RHS, is because it is not an LHS. There is no assignment taking place. bar() is not being assigned, it's being used.
+An RHS is going to behave differently to an LHS when executed.
+GS: "Yes, you declared it earlier" 
+GS then gives us our function object.
+Then we see the () and so we attempt to execute the function object we just retrieved from the bar variable.
+
+Step 3:
+"Hey Scope of Bar, I have an LHS reference called foo, have you heard of him?"
+"Yes you declared him earlier, here's a reference"
+We make our assignment to foo. (the local one)
+Side Note: This is called shadowing. when the local foo steals the reference from the global foo.
+
+Step 4:
+"Hey SoBar, I have an RHS reference for a variable called baz. Have you heard of him?"
+"Yes, you delared him earlier. Here's the function object."
+Then we see the () so we execute the freshly retrieved function object stored tin the baz variable.
+
+Step 5:
+Hey SoBaz, I have an LHS reference to a variable called foo. Have you heard of him?"
+"Yes. You declared him as a named parameter."
+We then assign "bam" to line 7 foo. the local foo. 
+
+Step 6:
+Hey SoBaz, I have an LHS reference to bam. Ever heard of him?
+No. Go Fish. Hey SoBar... No. Go fish. Hey GS...
+Ah, I just made it for you. I'm a very helpful guy.
+"yay", is assigned to the bam variable on the global scope.
+
+Step 7:
+Hey GS, I have an RHS reference to a variable called foo. Have you heard of him?
+Yes, it's value is "bar"
+
+Step 8:
+Hey GS, I have an RHS reference to a variable called bam. Have you heard of him?
+Yeah I just created hom in Step 6. His value is "yay".
+
+Step 9:
+Hey GS, I have an RHS reference for a variable called baz. Heard of him?
+No. Error. 
+
+# Step 1: Compile Code.
+Take all the variable declarations and register them to the appropriate scope.
+# Step 2: Execute the Code.
+
+ 1 var foo = function bar() {
+ 2   var foo = "baz";
+ 3 
+ 4   function baz(foo) {
+ 5     foo = bar;
+ 6     foo;      // function...
+ 7   }
+ 8   baz();
+ 9 };
+10 
+11 foo();
+12 bar();        // Error!
+
+# The difference between function declarations and function expressions
+In line 1 the function does not start with the word function, it starts with the word var.
+Therefore it is a function expression.
+If it did start with function, it would be a declaration and it would be registered in the GS.
+
+3 reasons why a named function expression is better than an anonymous function expression.
+1. In line 5 the function refers to itself. 'this' wont work - 'bar' does :-)
+2. debugging
+3. self documenting code.
+
+==Block Scope==
+
+ 1 var = foo;
+ 2 
+ 3 try {
+ 4   foo.length;
+ 5 }
+ 6 catch (err) {
+ 7   console.log(err); // TypeError
+ 8 }
+ 9 
+10 console.log(err);   // ReferenceError
+
+err is only accessible in the catch Block Scope.
+
+Lexical Scope and Dynamic Scope
+
+With lexical scope, the code learns where everything is scope wise at compile time.
+
+# Cheating Lexical Scope
+
+ 1 var bar = "bar";
+ 2 
+ 3 function foo(str) {
+ 4   eval(str);        // cheating!
+ 5   console.log(bar); // 42
+ 6 }
+ 7 
+ 8 foo("var bar = 42;");
+
+
+==The With Keyword==
+
+ 1 var obj = {
+ 2   a: 2,
+ 3   b: 3,
+ 4   c: 4
+ 5 };
+ 6 
+ 7 obj.a = obj.b + obj.c;
+ 8 obj.c = obj.b - obj.a;
+ 9 
+10 with (obj) {
+11   a = b + c;
+12   d = b - a;
+13   d = 3; // ??
+14 }
+15 
+16 obj.d; // undefined
+17 d; // 3 -- oops!
+
+Avoid the keywords 'with' and 'eval'
+
+==The IIFE Patern==
+
+ 1 var foo = "foo";
+ 2 
+ 3 (function(){
+ 4 
+ 5   var foo = "foo2";
+ 6   console.log(foo); // "foo2"
+ 7 
+ 8 })();
+ 9 
+10 console.log(foo); // "foo"
+
+The Immediately Invoked Function Expression
+http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+
+==Let==
+
+attach that variable implicitly to whatever block it appears in, rather than attaching it to the function
+
+==Dynamic Scope==
+
+Lexical Scoping
+Dynamic Scoping
+Runtime Decision
+AupaTime Decision
+
+==Quiz==
+
+1. What Type of Scoping Rules Does Javascript have?
+ - Lexical Scope
+ - Cheating Lexical Scope
+   - eval
+   - with
+
+2. What are the different ways you can create a new scope?
+ - functions
+ - catch box
+ - curly braces with the let keyword.
+
+3. What's the difference between undeclared and undefined?
+ - undefined is a value
+ - undefined means doesn't currently have a value. It's an empty placeholder
+ - But there definitely was an undeclared variable. 
+ - If there's not a declared variable you will return a reference error.
+
+==Hoisting==
+
+Hoisting isn't actually a thing, it's a mental model to describe what happens
+
+ 1 a;         // ???
+ 2 b;         // ???
+ 3 var a = b;
+ 4 var b = 2;
+ 5 b;         // 2
+ 6 a;         // ???
+
+How is line 1 going to be executed?
+ - It will be compiled first... 
+The declarations will be hoisted to the top of the code.
+
+ 1 var a;
+ 2 var b;
+ 3 a;         // ???
+ 4 b;         // ???
+ 5 a = b;
+ 6 b = 2;
+ 7 b;         // 2
+ 8 a;         // ???
+ 
+All the LHS stuff is happening at compile time
+All the RHS stuff is happening at runtime
+
+ 1 var a = b();
+ 2 var c = d();
+ 3 a;                   // ???
+ 4 c;                   // ???
+ 5 
+ 6 function b() {       // This function declaration will be hoisted
+ 7   return c;
+ 8 }
+ 9 
+10 var d = function() { // This function expression will not be hoisted
+11   return b();
+12 };
+
+# Line 1:
+I have an LHS reference called a. Is it gonna find a declared?
+yes (but not defined).
+I have an RHS reference called b. Is it gonna find b declared?
+yes because function b is compiled.
+I have an RHS reference called c. Is it gonna find c declared?
+yes, the compiler declared everything first.
+it will still be undefined
+
+Line 6: The function declaration will be hoisted.
+Line 10: The function expression will not be hoisted.
+The compiler declares everything but it will still all be undefined.
+
+The proper way to think of the code:
+
+The functions get hoisted,
+
+ 1 function b() {
+ 2   return c;
+ 3 }
+
+Then all the variables get hoisted,
+
+ 4 var a;
+ 5 var c;
+ 6 var d;
+
+Then we start executing.
+
+ 7 a = b();
+ 8 c = d();
+ 9 a;
+10 c;
+11 d = function() {
+12  return b();
+13 };
+
+The compiler pulls out the declarations first.
+
+ 1 foo(); // "foo"
+ 2 
+ 3 var foo = 2;
+ 4 
+ 5 funcion foo() {
+ 6   console.log("bar");
+ 7 }
+ 8
+ 9 function foo() {
+10   console.log("foo");
+11 }
+
+The functions are hoisted first. The second one trumps the first one.
+
+ 5 funcion foo() {
+ 6   console.log("bar");
+ 7 }
+ 8
+ 9 function foo() {
+10   console.log("foo");
+11 }
+
+The var foo is ignored becuase foo has already been defined (as opposed to declared)
+
+ 3 var foo = 2;
+
+So foo now equals "foo".
+
+ 1 foo(); // "foo"
+
+function declaration are a declaratin that implies the value comes along with it.
+Variable declarations leave the value behind to get executed (and defined) later.
+
+== Mutual Recussion ==
+
+11:00
+
+ 1 a(1);  // 39
+ 2 
+ 3 function a(foo) {
+ 4   if (foo > 20) return foo;
+ 5   return b(foo+2);
+ 6 }
+ 7 funvtion b(foo) {
+ 8   return c(foo) + 1;
+ 9 }
+10 function c(foo) {
+11   return a(foo*2);
+12 }
+
+exercise
+
+== The this Keyword ==
+
+Every function, while executing, has a reference to its current execution context, called 'this'.
+
+ 1 function foo() {
+ 2   console.log(this.bar);
+ 3 }
+ 4 
+ 5 var bar = "bar1";
+ 6 var o2 = { bar: "var2". foo: foo };
+ 7 var o3 = { bar: "bar3", foo: foo };
+ 8 
+ 9 foo();                  // "bar1"
+10 o2.foo();               // "bar2"
+11 o3.foo();               // "bar3"
+
+There are 4 rules as to how the 'this' keyword gets bound.
+They all depend on what we call the call site.
+The call site is the place in code where a function gets executed.
+( with it's () parenthesis)
+
+What does the call site look like?
+^ this is the only thing that matters.
+
+4. The Default Binding Rule
+line 9.
+If you're in strict mode default the 'this' keyword to the 'undefined' value.
+If not, default the 'this' keyword to the global object.
+Same thing if it's an iife
+
+3. The Implicit Binding Rule
+Note: everything in javascript is a reference to a function or an object.
+None of the vars in the above example 'own' the function. 
+None store copies of an original. 
+They're all just references.
+What does the call site look like?
+Where are the parenthises called.
+on line 10 foo() is called on the the o2 obj. 
+so this refers to o2
+Same with line 11 and o3
+
+Emphasising the point.
+
+ 1 var o1 = {
+ 2   var: "bar1",
+ 3   foo: function() {
+ 4     console.log(this.bar);
+ 5   }
+ 6 };
+ 7 var o2 = { bar: "bar2", foo: o1.foo };
+ 8 
+ 9 var ba "bar3";
+10 var foo = o1.foo;
+11 
+12 o1.foo();       // "bar1"
+13 o2.foo();       // "bar2"
+14 foo();          // "bar3"
+
+It doesn't matter that foo is originally created within o1. It still is only relevant to the call site in which it is called.
+
+== A Stack Overflow Question ==
+
+# The Question. Why won't this work?
+
+ 1 function foo() {
+ 2   var bar = "bar1";
+ 3   baz();
+ 4 }
+ 5 function baz() {        // They don't control this function. 
+ 6   console.log(this.bar);
+ 7 }
+ 8 
+ 9 var bar = "bar2";
+10 foo();          // ???
+
+in line 3 the user is trying to make line 6 reference line 2. Nope!
+
+2 models
+The Lexical Scoping mechanism and
+The This Scoping mechanism
+
+It is impossible to create a crossover between the lexical environment and the 'this' binding mechanism. They are 2 fundamentally different mechanisms and they don't cross over.
+
+# The Wrong Answer:
+
+ 1 function foo() {
+ 2   var bar = "bar1";
+ 3   this.baz = baz;
+ 4   this.baz();
+ 5 }
+ 6 function baz() {
+ 7   console.log(this.bar);
+ 8 }
+ 9 
+10 var bar = "bar2";
+11 foo();                // ???
+
+The 'this' reference gets set by the call-site of the function call.
+
+2. The Explicit Binding Rule
+
+ 1 function foo() {
+ 2   console.log(this.bar);
+ 3 }
+ 4 
+ 5 var bar = "bar1";
+ 6 var obj = { bar: "bar2" };
+ 7 
+ 8 foo();                    // "bar1"
+ 9 foo.call(obj);            // "bar2"
+
+If you use .call() or .apply() at the call-site...
+both of those utilities take a 'this'-binding as their first param.
+
+# this a plain old default binding role.
+ 8 foo();                    // "bar1"
+
+# This one says, use obj as my 'this'. same rule for .apply()
+ 9 foo.call(obj);            // "bar2"
+
+== Hard Binding ==
+ 
+ 1 function foo() {
+ 2   console.log(this.bar);
+ 3 }
+ 4 
+ 5 var obj = { bar: "bar" };
+ 6 var obj2 = { bar: "bar2" };
+ 7 
+ 8 var orig = foo;
+ 9 foo = function(){ orig.call(obj); };
+10 
+11 foo();                    // "bar"
+12 foo.call(obj2);           // ???
+
+whatever you put inside the params of line 12, line 9 ensures this will always be obj.
+
+Lets create a bind function.
+
+ 1 function bind(fn,o) {
+ 2   return function() {
+ 3     fn.call(o);
+ 4   };
+ 5 }
+ 6 function foo() {
+ 7   console.log(this.bar);
+ 8 }
+ 9 
+10 var obj = { bar: "bar" };
+11 var obj2 = { bar: "bar2 };
+12 
+13 foo = bind(foo,obj);
+14 
+15 foo();                 // "bar"
+16 foo.call(obj2);        // ???
+
+The call-site for foo is not the parens on line 15. My guess is line 3?
+02-19 Explicit Binding 
+07:30
+From this point on Everything went over my head.
+
+1. The New Keyword
+
+When we put the new keyword in front of any function call, it magically turns that function call into what you might call a constructor call.
+
+(still has nothing to do with classes)
+
+Turns a function call into a constructor call.
+
+ 1 function foo() {
+ 2   this.baz = "baz";
+ 3   console.log(this.bar + " " + baz);
+ 4 }
+ 5 
+ 6 var bar = "bar";
+ 7 var baz = new foo();     // ???
+
+The new keyword does 4 things
+
+1. A brand new empty object will be created out of thin air
+2. That object gets linked to a different object.*
+3. The new object gets bound as the this object for the purposes of that function call
+4. If the function does not otherwise return anything, then it will implicityly insert (between lines 3 and 4) a 'return this'.
+
+So that brand new 'poof' object, will be implicitly returned for us from the purposes of the call.
+
+What this means is, You can take any function, put the new keyword in front of it and you have hijacked that function call as a constructor call.
+
+It will do all the things it's supposed to do but by virtue of putting the new keyword in front of it, it will also do the 4 things above.
+
+It's Like a side channel
+ - create an object
+ - link it
+ - bind it
+ - return it
+
+This is the fourth and final way that a 'this' keyword can be bound. It can be bound to a brand new object that was created as part of a contructor call hijacking.
+
+== Precedence ==
+
+Which of the four possibilities trumps the other?
+
+Find the call-site and ask these questions in order.
+
+1. Was the function called with the 'new' keyword?
+// if so use that object.
+2. Was it called with 'call' or 'apply'?
+// Was it an explicit binding?
+3. Was the function called via a owning or containing context (object)?
+// if so use that object.
+4. DEFAULT: global object (or undefined in strict mode)
+
+The new keyword is able to ovewrite any of the other rules.
