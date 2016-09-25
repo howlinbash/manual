@@ -26,4 +26,5 @@ Hello and welcome to The Howlin Developer Guide.
  * [jQuery](./frameworks/jquery.md)
 ### Languages
 ### Unix
+ * [Introduction](./unix/intro.md)
 ### Arch
