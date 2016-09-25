@@ -22,53 +22,27 @@ $(document).ready(function() {
 ## Selectors
 
 ```javascript
-// class selector
-$(".class");
-
-// id selector
-$("#id");
-
-// descendent selector 
-$("ul li");
-
-// direct child selector
-$("ul > li");
-
-// multiple selector
-$(".class, #id");
-
-// first psuedo selector
-$("ul :first");
-
-// even psuedo selector
-$("ul :even");
+$(".class");       // class selector
+$("#id");          // id selector
+$("ul li");        // descendent selector 
+$("ul > li");      // direct child selector
+$(".class, #id");  // multiple selector
+$("ul :first");    // first psuedo selector
+$("ul :even");     // even psuedo selector
 ```
-
 
 
 
 ## Methods
 
 ```javascript
-// Selects or changes the text of an html element
-.text()
-
-// Selects of changes the html in scope
-.html()
-
-// An event handler
-.on()
-
-// Get/Set the input value
-.val()
-
-// Grab the data from the html5 data tag
-.data()
-
-// Returns ```TRUE``` if selected element has specified class
-.hasClass()
+.text()            // Selects or changes the text of an html element
+.html()            // Selects of changes the html in scope
+.on()              // An event handler
+.val()             // Get/Set the input value
+.data()            // Grab the data from the html5 data tag
+.hasClass()        // Returns "TRUE" if selected element has specified class
 ```
-
 
 
 
@@ -147,33 +121,17 @@ $(document).ready(function(){
 ```
 
 ```javascript
-// Searches down the dom for the element passed
-.find()                 
-
-// Find the first element
-.first()
-
-// Find the last element
-.last()
-
-// Find the next element
-.next()
-
-// Find the previous element
-.prev()
-
-// Find the parent to the element
-.parent()
-
-// Find the children to the element
-.children()
-
-// Find the children to the element that are list items
-.children("li")
-
-// Searches up through ancestors
-.closest()
+.find()            // Searches down the dom for the element passed
+.first()           // Find the first element
+.last()            // Find the last element
+.next()            // Find the next element
+.prev()            // Find the previous element
+.parent()          // Find the parent to the element
+.children()        // Find the children to the element
+.children("li")    // Find the children to the element that are list items
+.closest()         // Searches up through ancestors
 ```
+
 
 
 ## Manipulating The DOM
