@@ -27,4 +27,10 @@ Hello and welcome to The Howlin Developer Guide.
 ### Languages
 ### Unix
  * [Introduction](./unix/intro.md)
+ * [Basics](./unix/basics.md)
+ * [Bash](./unix/bash.md)
+ * [Network](./unix/network.md)
+ * [OS X](./unix/osx.md)
+ * [Search](./unix/search.md)
+ * [System Debugging](./unix/debug.md)
 ### Arch
