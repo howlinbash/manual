@@ -26,6 +26,7 @@ Hello and welcome to The Howlin Developer Guide.
 ### Frameworks
  * [Express](./frameworks/express.md)
  * [jQuery](./frameworks/jquery.md)
+ * [Node.js](./frameworks/node.md)
 ### Languages
 ### Unix
  * [Introduction](./unix/intro.md)
