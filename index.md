@@ -13,6 +13,7 @@
  * [Express](./frameworks/express.md)
  * [Git](./tools/git.md)
  * [Grunt](./apps/grunt.md)
+ * [Javascript](./languages/javascript.md)
  * [jQuery](./frameworks/jquery.md)
  * [Network (Unix)](./unix/network.md)
  * [Node.js](./frameworks/node.md)

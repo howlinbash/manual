@@ -28,6 +28,7 @@ Hello and welcome to The Howlin Developer Guide.
  * [jQuery](./frameworks/jquery.md)
  * [Node.js](./frameworks/node.md)
 ### Languages
+ * [Javascript](./languages/javascript.md)
 ### Unix
  * [Introduction](./unix/intro.md)
  * [Basics](./unix/basics.md)
