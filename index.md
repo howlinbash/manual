@@ -11,6 +11,7 @@
  * [Bash](./bash.md)
  * [Bower](./apps/bower.md)
  * [Express](./frameworks/express.md)
+ * [Git](./tools/git.md)
  * [Grunt](./apps/grunt.md)
  * [jQuery](./frameworks/jquery.md)
  * [Network (Unix)](./unix/network.md)
