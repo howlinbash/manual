@@ -12,10 +12,10 @@
 ## Quick Start
 
 ```bash
-# install git to projects home directory
+# Install git to projects home directory
 git init
 
-# all steps to 1st commit. don't push to keep offline.
+# All steps to 1st commit. don't push to keep offline.
 git status
 git add -A
 git commit -m "first commit"
@@ -27,27 +27,29 @@ git push
 ## Branches
 
 ```bash
-# make a new branch
+# Make a new branch
+git branch new-branch
+git checkout new-branch
 
-# merge the branch. push/pull for online repository.
+# Merge the branch. push/pull for online repository.
 git checkout master	
 git pull
 git merge new-branch
 git push
 
-# delete branch
+# Delete branch
 git branch -d new-branch
 
-# push a branch as a branch
+# Push a branch as a branch
 git checkout -b another-branch
 git add file1 file2
 git commit -m "another-edit"
 git push origin another-branch 		   
 
-# push local branch to hub
+# Push local branch to hub
 git push -u origin branch-name
 
-# delete branch on hub
+# Delete branch on hub
 git push --delete origin pigeon-comments
 
 ```
@@ -57,7 +59,7 @@ git push --delete origin pigeon-comments
 ## Analysis
 
 ```bash
-#list all commits
+# List all commits
 git log
 
 # Show details of last commit
@@ -81,7 +83,7 @@ git checkout file
 # Remove your last commit
 git reset --soft HEAD~1
 
-#revert to last commit -delete all changes since!
+# Revert to last commit -delete all changes since!
 git reset --hard hash1
 ```
 
