@@ -21,6 +21,7 @@ Hello and welcome to The Howlin Developer Guide.
  * [Vagrant](./apps/vagrant.md)
  * [Yeoman](./apps/yeoman.md)
 ### Tools
+ * [Vim](./tools/vim.md)
 ### Frameworks
  * [Express](./frameworks/express.md)
  * [jQuery](./frameworks/jquery.md)

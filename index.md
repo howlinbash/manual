@@ -20,5 +20,5 @@
  * [Unix Basics](./unix/basics.md)
  * [Unix System Debugging](./unix/debug.md)
  * [Vagrant](./apps/vagrant.md)
+ * [Vim](./tools/vim.md)
  * [Yeoman](./apps/yeoman.md)
-
