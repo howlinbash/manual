@@ -52,3 +52,20 @@ type ll
 # If not append the alias to the .bash_aliases file
 echo "alias ll='ls -l'" >> .bash_aliases
 ```
+
+
+## Tricks
+```bash
+# move everything into newly created test dir
+mkdir test && mv !(test) test
+# 
+!!
+!$
+!^
+cp bash{,.bak}
+cp {_,}bash
+```
+
+
+
+
