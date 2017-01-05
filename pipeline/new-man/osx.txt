@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=8RwlEZ88rKM
+
+os x kernal
+
+xnu
+x is not unix
+Mach 
+BSD
+I/O-Kit
+
+==Mach==
+
+Mach is not a monolithic kernal it is a microkernal
+developed by CMU (carnegie Mellon University)
+
+=Monolithic Kernals=
+EGs of MLKs: unix BSD Linux
+other components run kernal mode like
+API, DEV, NET, SEC, VFS.
+
+=vs. microkernals=
+with an MK only vital components like
+scheduler, memory manager, IPC inter process communication...
+the others are operated by user mode
+
+=advantages=
+with less components reliant on the kernal, the system is more secure.
+

@@ -1,0 +1,48 @@
+Mr Machina has a  wonderful explanation below but if you're looking for a slightly more ELI5 summary:
+
+The computer needs to be able to tell the difference between 'regular text' (like the contents of a book or email) and 'programming language' text. Of course the same alphabet and symbols are used in each so how is a computer to tell when you are using words and symbols as 'regular text' from when you are using words and symbols as a 'programming language'.
+
+**The solution is the 'String'**
+
+Modern computers have been designed so that regular users don't have to interact with programming languages. Most of the words/symbols regular users type into a computers are 'Strings' (or regular text, like the inside of a book/contents of an email). However computers don't actually 'understand' strings, nor do they 'understand' the English language, they only 'understand' programming languages.
+
+**This is where the String comes in handy.**
+
+The string tells the computer when to stop interpreting the text it's receiving as a programming language and to start interpreting the text just as text. Or stop interpreting the text as something it understands (a programming language) and start interpreting it as something it *doesn't understand* like the English language.
+
+**What a String looks like**
+
+Inside a computer program you can recognise a string because it is wrapped in quotation marks like this
+
+    Start ComputerLanguage
+
+        var a = bleep;
+        var b = blop;
+
+        function = ComputerFunction(){
+
+            String = "This is a string inside a made-up computer language"';
+
+        };
+
+    End  ComputerLanguage
+
+**But WTF is an ESCAPE CHARACTER!!?**
+
+The command line is one of those places where you still type programming languagues or 'commands' into the computer by default. This is why many new users are scared of the command line.
+
+/u/deux3xmachina has an elegant summary but perhaps i can offer an ELI5/TL;DR
+
+Computers can't understand human languages they only understand programming languages. So when we need a computer program to work with a human language we wrap it in a 'string' with quotation marks.
+
+In the terminal a spaces are important because they mark a different part of the program. for instance
+
+    $ ls /home/user/
+
+The first part tells the computer to use the 'ls' program the second part tells the ls program which directory's contents to list. Without the space the computer could not find the ls program.
+
+    $ ls -al /home/user
+
+In this example the space allows to introduce a variation on the above by loading a preset into the ls program.
+
+that means that when working will file and directory names (human language)

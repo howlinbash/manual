@@ -1,0 +1,14 @@
+reboot sin single user mode
+
+**/dev/rdisk1s2
+	Using cacheBlockSize=32K cacheTotalBlock=65536 cacheSize=2097152K.
+** Root file system
+	Executing… (version diskdev_cmds-557.3.1~5).
+** Checking non-journaled HFS Plus Volume.
+	The volume name is Mac OS X Base System
+
+http://www.everythingmacintosh.com/tech-notes/repair-your-hard-disk-in-single-user-mode/
+
+invalid B-tree node size
+The volume could not be verified completely.
+Error: This disk needs to be repaired. Click Repair Disk

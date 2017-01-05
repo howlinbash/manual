@@ -1,0 +1,49 @@
+# lspci -vnn
+00:01.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Wrestler [Radeon HD 6290] [1002:9807] (prog-if 00 [VGA controller])
+	Subsystem: ASUSTeK Computer Inc. Device [1043:103b]
+	Flags: bus master, fast devsel, latency 0, IRQ 11
+	Memory at c0000000 (32-bit, prefetchable) [size=256M]
+	I/O ports at f000 [size=256]
+	Memory at feb00000 (32-bit, non-prefetchable) [size=256K]
+	Expansion ROM at <unassigned> [disabled]
+	Capabilities: <access denied>
+
+# sudo lshw -numeric -C display
+  *-display UNCLAIMED
+       description: VGA compatible controller
+       product: Wrestler [Radeon HD 6290] [1002:9807]
+       vendor: Advanced Micro Devices, Inc. [AMD/ATI] [1002]
+       physical id: 1
+       bus info: pci@0000:00:01.0
+       version: 00
+       width: 32 bits
+       clock: 33MHz
+       capabilities: pm pciexpress msi vga_controller bus_master cap_list
+       configuration: latency=0
+       resources: memory:c0000000-cfffffff ioport:f000(size=256) memory:feb00000-feb3ffff
+
+# sudo dmidecode -t baseboard | grep -i 'Product'
+	Product Name: 1225B
+
+# inxi -M
+Machine:   System: ASUSTeK product: 1225B v: 1.0
+           Mobo: ASUSTeK model: 1225B v: 209 Bios: American Megatrends v: 209 date: 06/05/2012
+0m
+
+# glxinfo | grep OpenGL
+OpenGL vendor string: VMware, Inc.
+OpenGL renderer string: Gallium 0.4 on llvmpipe (LLVM 3.5, 128 bits)
+OpenGL version string: 3.0 Mesa 10.3.2
+OpenGL shading language version string: 1.30
+OpenGL context flags: (none)
+OpenGL extensions:
+
+# inxi -Gxx
+Graphics:  Card: Advanced Micro Devices [AMD/ATI] Wrestler [Radeon HD 6290] bus-ID: 00:01.0 chip-ID: 1002:9807
+           Display Server: X.Org 1.16.4 drivers: fbdev,ati,vesa,radeon Resolution: 1024x768@61.00hz
+           GLX Renderer: Gallium 0.4 on llvmpipe (LLVM 3.5, 128 bits)
+           GLX Version: 3.0 Mesa 10.3.2 Direct Rendering: Yes
+0m
+
+# FIX. install prop-bin-blobs; restart
+sudo apt-get install firmware-linux-nonfree libgl1-mesa-dri xserver-xorg-video-ati

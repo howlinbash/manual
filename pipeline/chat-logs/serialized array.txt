@@ -1,0 +1,108 @@
+
+Current Stable Version 4.1 : http://wp.me/sZhYe-dinah | Download: http://wordpress.org/download | Docs: http://codex.wordpress.org & http://phpdoc.wordpress.org | Chat Logs: ht>>
+20:17:45            gics | sterndata, good to know and sorry for PM you                                                                                         │@hlin
+20:17:52             --> | josh_k (~josh_k@drupal.org/user/3313/view) has joined #wordpress                                                                     │ [1]mkc
+20:18:01             <-- | effigy (~effigy@c-50-171-23-66.hsd1.tx.comcast.net) has quit                                                                         │ [fields]
+20:18:06       sterndata | two-gun: you're missing a quote somewhere... somethings out of balance.                                                              │ \mSg
+20:18:12       sterndata | np, gics                                                                                                                             │ _dFshadow
+20:18:21       sterndata | I thought I saw you say you'd figured it out?                                                                                        │ _opicron
+20:18:34             --> | amdbcg (~Thunderbi@12.218.194.2) has joined #wordpress                                                                               │ _TheAvatar
+20:18:50          amdbcg | hello                                                                                                                                │ `Lost
+20:18:55            gics | not really figured it out, but i think to have found something interesting                                                           │ aarcane
+20:19:06             --> | srsly_ (~srsly@unaffiliated/srsly) has joined #wordpress                                                                             │ abian
+20:19:18            gics | sterndata, you can see --> http://pastebin.com/dhK7AzT6                                                                              │ abqcheeks
+20:19:24             <-- | hosttor (~Thunderbi@50.12.138.82) has quit (Quit: hosttor)                                                                           │ acidjnk
+20:19:30          amdbcg | I'm trying to setup a ticketing system - gather form data, pay for a ticket... any suggestions on how to do this?                    │ adam-
+20:19:43             --> | leolrrj (~leolrrj@200-171-80-47.dsl.telesp.net.br) has joined #wordpress                                                             │ Aikar
+20:19:48          amdbcg | (and store form data in a database)                                                                                                  │ ajf-
+20:19:49       sterndata | those are serialized fields and when you edited the record, you broke something.                                                     │ ajpiano
+20:19:51            gics | sterndata, from what i can understand in sql, they are same by couple                                                                │ ajrty33
+20:20:25             <-- | spikeheadon (~spikehead@122.168.199.215) has quit (Quit: Leaving)                                                                    │ akawaka
+20:20:43             --> | spikeheadon (~spikehead@122.168.199.215) has joined #wordpress                                                                       │ alexlist
+20:20:48            gics | sterndata, i don't say no, but try please reading pastebin code                                                                      │ allejo
+20:21:04       sterndata | count the lengths of each field. I"m not going to go through and do it for each one.                                                 │ amdbcg
+20:21:10             <-- | ManikM (~quassel@14.139.122.114) has quit (Read error: Connection reset by peer)                                                     │ amore123
+20:21:13             --> | Manny (~quassel@14.139.122.114) has joined #wordpress                                                                                │ AndrewBC
+20:21:43       sterndata | Look up the format of a serialzed array if you need to figure out what each thing is.                                                │ apatton
+20:22:09         two-gun | sterndata: thanks for taking a look. any pointers on how i might look up the format of a serialized array?                           │ arcanine_
+20:22:25       sterndata | google php serialzed array, perhaps?                                                                                                 │ Arpmeister
+20:23:08             --> | dboskovic_ (uid12178@gateway/web/irccloud.com/x-qdsqeaormsadnegp) has joined #wordpress                                              │ artmann
+20:23:24             --> | daspence (~daspence@h177.20.185.173.dynamic.ip.windstream.net) has joined #wordpress                                                 │ Asbra
+20:23:34         two-gun | ok will do thanks                                                                                                                    │ Auriel__
+20:23:38            gics | sterndata, mmm how do you count each field? in characters?                                                                           │ autochthon_
+20:24:13            gics | sterndata, aside from that, i can see old format have thumbnails as 150/300/600                                                      │ BackEndCoder
+20:24:22             <-- | dboskovic_ (uid12178@gateway/web/irccloud.com/x-qdsqeaormsadnegp) has quit (Client Quit)                                             │ baloney
+20:24:36            gics | sterndata, and the new uploaded pics 420/744                                                                                         │ barning
+20:24:49       sterndata | Hmmm... interesting. A change in themes?                                                                                             │ Bass10
+20:24:50             --> | dboskovic (uid12178@gateway/web/irccloud.com/x-jsobhbwghjqmkwjk) has joined #wordpress                                               │ bayousoft
+20:24:53           kalen | maybe_unserialize                                                                                                                    │ bbankes_
+20:25:42            gics | sterndata, yes, i've also changed themes                                                                                             │ bekabug
+20:26:07            gics | sterndata, are you saying if i put old theme all go ok? Let's try                                                                    │ belic
+20:26:08       sterndata | The key to restoring a site successfully is to do one thing at a time.                                                               │ benjaminr
+20:26:17       sterndata | but the new stuff may be broken.                                                                                                     │ benjick
+20:26:43             <-- | jblz (~jblz@unaffiliated/jblz) has quit (Quit: hasta la byebye)                                                                      │ Biappi
+20:27:03             --> | THORR_ (~THORR@ip72-208-206-127.ph.ph.cox.net) has joined #wordpress                                                                 │ bigLanky
+20:27:09             --> | CheckDavid (uid14990@gateway/web/irccloud.com/x-qejrvstydzlmpqje) has joined #wordpress                                              │ BinaryKitten
+20:27:11             --> | sharkbone (~sharkbone@aftr-37-201-226-173.unity-media.net) has joined #wordpress                                                     │ Blacklite_
+20:27:42     daynaskully | {Q} with the next/previous_post_link() it doesn't show next when at the end of the list, or prev when at the beginning (How do i     │ blackmes1
+                         | allow it to show placeholder text that isn't linked?)                                                                                │ blobaugh
+20:28:57             <-- | THORR (~THORR@ip72-208-206-127.ph.ph.cox.net) has quit (Ping timeout: 264 seconds)                                                   │ blubberbop
+20:29:12       sterndata | daynaskully: isn't it "normal" not to show "next" when there isn't one?                                                              │ bobdobbs
+20:30:27     daynaskully | perhaps, but the design spec i'm working on requires the placeholder text to be there (but greyed out kinda) know what i mean?       │ BOKALDO       ++
+20:30:39    EleanorEllis | In the settings for the TinyMCE Advanced plugin, I have selected "Stop removing the <p> and <br /> tags when saving and show them in │ [1]mkc
+                         | the Text editor". I have also installed the Don't Muck My Markup plugin https://wordpress.org/plugins/dont-muck-my-markup/ and       │ [fields]
+                         | enabled it on the page I am editing. However, Wordpress still wraps an iframe in p tags and moves my <a id="map"> tag to a           │ \mSg
+                         | completely different place to where I p                                                                                              │ _dFshadow
+20:30:56             <-- | CodeTroth (~sstanton@ip68-3-123-165.ph.ph.cox.net) has left #wordpress                                                               │ _opicron
+20:31:10       sterndata | Check the template file that generates it. It probably doesn't output it if there's none. So change it to output just the text with  │ _TheAvatar
+                         | some class that lets you gray it.                                                                                                    │ `Lost
+20:31:31       sterndata | gotta go again.... back l85                                                                                                          │ aarcane
+20:31:32            gics | sterndata, old theme same story, but now i have another point, if you see in the image that doesn't work there is                    │ abian
+                         | "wysija-newsletters-max" which is related to the plugin that gave me problems                                                        │ abqcheeks
+20:31:35       sterndata | l8r                                                                                                                                  │ acidjnk
+20:31:46            gics | sterndata, ok                                                                                                                        │ adam-
+20:32:17             --> | blackmes1 (~blackmesa@aftr-37-201-225-40.unity-media.net) has joined #wordpress                                                      │ Aikar
+20:32:23     daynaskully | sterndata:: i think this is what i need http://codex.wordpress.org/Function_Reference/get_adjacent_post                              │ ajf-
+20:32:32 circ-user-HuxEj | i assigned a password to root in mysqladmin, set the same password in config.inc.php, created a user and grant all priviledges in    │ ajpiano
+                         | mysql                                                                                                                                │ ajrty33
+20:33:15     daynaskully | circ-user-HuxEj:: i would recommend you not use root account (and to create a new user/password with specific privlidges to the      │ akawaka
+                         | table)                                                                                                                               │ alexlist
+20:33:31 circ-user-HuxEj | i do so                                                                                                                              │ allejo
+20:33:40 circ-user-HuxEj | i did already will not use root                                                                                                      │ amdbcg
+20:34:09             --> | bbankes (~bbankes@97-126-255-78.slkc.qwest.net) has joined #wordpress                                                                │ amore123
+20:34:28             --> | Jan (~Jan@d54C0597D.access.telenet.be) has joined #wordpress                                                                         │ AndrewBC
+20:34:34     daynaskully | your user also needs to be set based on if it's local host only or remote                                                            │ apatton
+20:34:36             --> | georgestephanis (~georgeste@pa-67-239-37-26.dhcp.embarqhsd.net) has joined #wordpress                                                │ arcanine_
+20:34:43     daynaskully | root is typically set for local host only                                                                                            │ Arpmeister
+20:34:44     daynaskully | fyi                                                                                                                                  │ artmann
+20:34:54  SeriousMatters | I have a multisite.  Is it possible to restrict a theme (a custom child theme) for only 1 particular subsites?                       │ Asbra
+20:35:35 circ-user-HuxEj | yes i use local host. the only problem is that the local website is not working: error establishing a database connection            │ Auriel__
+20:35:45             --> | bbankes_ (~bbankes@97-126-255-78.slkc.qwest.net) has joined #wordpress                                                               │ autochthon_
+20:36:42             --> | Respek (~textual@c-50-177-29-153.hsd1.ma.comcast.net) has joined #wordpress                                                          │ BackEndCoder
+20:36:56     daynaskully | circ-user-HuxEj:: k so what's defined in wp-config.php for the db_user?                                                              │ baloney
+20:37:23             --> | xcyclist (ae18e78e@gateway/web/freenode/ip.174.24.231.142) has joined #wordpress                                                     │ barning
+20:37:26          Respek | Hi there. Will I damage my live site's DB if I install wp on a subdomain with the same db?                                           │ Bass10
+20:37:39             Jan | I have a problem with a webshop (Wordpress-Woocommerce),  When i have for example 20 articles then are the articles divided over 2   │ bayousoft
+                         | pages                                                                                                                                │ bbankes_
+20:37:51             Jan | the first page is displayed                                                                                                          │ bekabug
+20:38:06             Jan | but the second not                                                                                                                   │ belic
+20:38:17             Jan | the url is not working                                                                                                               │ benjaminr
+20:38:22             <-- | bbankes (~bbankes@97-126-255-78.slkc.qwest.net) has quit (Ping timeout: 240 seconds)                                                 │ benjick
+20:38:58        xcyclist | I keep getting uniform gray images when trying to upload a favicon.ico.  Is there some standard I am not following?  I use           │ Biappi
+                         | http://www.favicon.cc/ to create it the last time, and another seemingly reasoinable site the first  time.                           │ bigLanky
+20:39:08             Jan | http://mysite.com/?product_cat=brood#038;paged=2                                                                                     │ BinaryKitten
+20:39:18             Jan | this is a fault url                                                                                                                  │ Blacklite_
+20:39:52             <-- | cassio3 (~cassio3@natewp.scls.lib.wi.us) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)                                  │ blackmes1
+20:39:55             <-- | dgpalmer (~dgpalmer@206.214.35.235) has quit (Quit: dgpalmer)                                                                        │ blobaugh
+20:39:56             --> | Smily (~Smily@93-103-71-218.dynamic.t-2.net) has joined #wordpress                                                                   │ blubberbop
+20:39:58     daynaskully | jan the paged=2 is ignored as a variable                                                                                             │ bobdobbs
+20:40:02     daynaskully | since it's after #                                                                                                                   │ BOKALDO       ++
+20:40:12             Jan | it should be : http://mysite.com/?product_cat=brood&paged=2                                                                          │ bigLanky
+20:40:18     daynaskully | it should                                                                                                                            │ BinaryKitten
+20:40:34             <-- | haleys (~jonrhoads@cpe-75-185-84-82.cinci.res.rr.com) has quit (Quit: haleys)                                                        │ Blacklite_
+20:40:36             Jan | this is my problem                                                                                                                   │ blackmes1
+20:40:47             Jan | can any body help me ?                                                                                                               │ blobaugh
+20:40:56             <-- | TallChris (~TallChris@wsip-24-248-177-158.ph.ph.cox.net) has quit (Quit: TallChris)                                                  │ blubberbop
+20:40:57             --> | andrei1 (~andrei@79.112.172.103) has joined #wordpress                                                                               │ bobdobbs      ++
+[20:41] [2] [irc/irc.freenode.net] 2:#wordpress(+Ccntjf 4:12 #wordpress-unregistered){542} [Act: 1] 
+[two-gun(i)] 

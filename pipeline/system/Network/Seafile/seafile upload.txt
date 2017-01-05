@@ -1,0 +1,62 @@
+Tech Redesign
+
+Cryptography
+Dev
+	Programs
+	WebDev
+Me
+	Art
+	Data
+System
+	Network
+	OSX
+	Problems
+	...Terminal
+…Code
+
+==DEV==
+
+Reference
+Projects
+	Sites
+Design	googlefontdirectory	Social ButtonsSites	Xploit ThisWMD	320g	182g
+JG	500g	67g
+
+WMD	Arch	5.5g
+	Bac
+	Doc	16g	MS User Data
+			RDC connect
+	Img	.5
+	Mov	8g
+	Pro	22,5g
+	Sit
+	Tec	1	Terminal
+		53.5g
+JG	Mus	70g
+
+iTunes	140g
+iPhoto	15g
+
+			250	320
+			83	200
+Archive		Cloud			5.5	Done
+Backup		Cloud			170	
+Documents	Both	16	16		Done
+Images		Cloud			.5	Done
+Movies		Cloud			8	Done
+Music		Cloud			70	
+Projects	Both	22.5	22.5		Done
+Sites		Both	2	2		Done
+Tech		Both	1	1		Done
+iTunes		Both	120	156
+iPhoto		MM	0	15
+
+			41.5	
+			53
+
+iTunes	156
+iPhoto	15
+Music	70
+
+
+

@@ -1,0 +1,656 @@
+13:44:30       Galas | two #                                                                 │
+13:44:31       Galas | ahah                                                                  │
+13:45:13 adamski2600 | two-gun: been looking for a uk community for a while, so happy to be  │
+                     | part of it from the beginning :) Rails dev here, formerly PHP. How    │
+                     | about you guys?                                                       │
+13:45:36    @two-gun | Galas: yeah i suppose i could've done one # and called it             │
+                     | /r/ukdevchat but by the time i'd figured that out i'd already created │
+                     | the channel                                                           │
+13:45:42       Galas | I do mostly frontend                                                  │
+13:45:55       Galas | I'm getting into rails though and I know a bit of php!                │
+13:46:18 adamski2600 | Only been working with Rails for about six months or so but I love it │            │13:32:22       <-- | jamesbdev (~jamesbdev@27.124.101.34) has quit (Ping timeout: 245   │@rslashwebdev
+                     | so far!                                                               │            │                   | seconds)                                                           │@scriptor
+13:47:38    @two-gun | adamski2600: I'm just starting out. been banging around with          │            │13:32:56       --> | jamesbdev (~jamesbdev@27.124.101.34) has joined #/r/webdev         │@timebot2
+                     | wordpress and mediawiki for a while, almost finished code acedmy and  │            │13:34:34   two-gun | Hello webdevs, redditors on this thread http://bit.ly/1HOM41N      │@wdkevin
+                     | cs50 and planning on learning javascript properly next year and       │            │                   | showed a lot of interest in a UK IRC/subreddit so i've created     │+Pilate
+                     | landing a job. but in fairness i just love playing around with        │            │                   | both. If you're UK based, come say hello.                          │+Voziv
+                     | computers. (got a rasperry pi for my birthday. it's fairly moreish    │            │                   | http://ukdevchat.reddit.com & @ freenode: ##ukdevchat              │ [LE]
+13:48:24       Galas | two-gun, try codeschool for javascript                                │            │13:34:36 @timebot2 | Web Developer here looking for more tech-y friends! : webdev       │ _will_
+13:48:34         <-- | claymore (~claymore_@unaffiliated/claymore) has left ##ukdevchat      │            │13:34:36 @timebot2 | Hangout for uk devs of all stripes; noobs to pros.                 │ Ackis
+                     | ("Leaving")                                                           │            │13:36:12       <-- | Khao8 (17e96b66@gateway/web/freenode/ip.23.233.107.102) has quit   │ adamski2600
+13:48:43       Galas | it's paid, but it's better than codeacademy imo                       │            │                   | (Quit: Page closed)                                                │ adhipg
+13:48:48 adamski2600 | two-gun: sounds cool, definitely recommend sticking with js, it's     │            │13:37:49       --> | qwebirc65719 (b2be5f9d@gateway/web/freenode/ip.178.190.95.157) has │ Alram
+                     | definitely the big thing these days                                   │            │                   | joined #/r/webdev                                                  │ aphid
+13:49:03    @two-gun | Galas: thanks. i'll check it out.                                     │            │13:38:17       <-- | qwebirc60776 (6d98dbab@gateway/web/freenode/ip.109.152.219.171)    │ astaves
+13:49:09 adamski2600 | got two pi's at home, been meaning to find some cool projects to do   │            │                   | has quit (Quit: Page closed)                                       │ b14d3
+                     | with them..                                                           │            │13:54:31       --> | HannahsBadger                                                      │ brkfst
+13:49:21       Galas | adamski I am doing a project with a rails dev so I kind of just felt  │            │                   | (~HannahsBa@cpc2-cwma7-2-0-cust962.7-3.cable.virginm.net) has      │ Bsport
+                     | into it, but because I read a bit on ruby Is started on extremely     │            │                   | joined #/r/webdev                                                  │ caffeinatedcode
+                     | fast                                                                  │            │13:54:31       <-- | HannahsBadger                                                      │ capin
+13:49:26       Galas | it has a very soft learning curve I think                             │            │                   | (~HannahsBa@cpc2-cwma7-2-0-cust962.7-3.cable.virginm.net) has quit │ dansken
+13:49:45       Galas | I think ruby is easier than JS (for a beginner)                       │            │                   | (Changing host)                                                    │ DarkArcher
+13:50:01    @two-gun | one thing i'm concerned about if i plan to go into front-end is will  │            │13:54:31       --> | HannahsBadger (~HannahsBa@unaffiliated/hannahsbadger) has joined   │ dorxy
+                     | i be required to do photoshop and all that. i don't think of myself   │            │                   | #/r/webdev                                                         │ Dragory
+                     | as a graphic deisgner. just enjoy coding                              │            │13:57:21       <-- | qwebirc65719 (b2be5f9d@gateway/web/freenode/ip.178.190.95.157) has │ Enthralled
+13:50:04 adamski2600 | I love Ruby, coming from PHP I'm constantly amazed by how easy it is  │            │                   | quit (Quit: Page closed)                                           │ Floens
+                     | to read code haha                                                     │            │14:09:23       --> | paul__ (~paul@184.75.215.18) has joined #/r/webdev                 │ Galas
+13:50:50 adamski2600 | two-gun: we've got a frontend dev at work who's kinda split between   │            │14:09:25       --> | Bsport (~Adium@131.176.187.81.in-addr.arpa) has joined #/r/webdev  │ gde33
+                     | frontend dev and web design.. but I think 99% of frontend jobs is   
+                     | just straight up coding                                               │ adamski2600│12:31:42 irc.freenode.net  -- | - of this server, details of which can be found above.
+13:51:21    @two-gun | Galas: i'm well up for learning rails. i'm gonna do ruby soon on      │ Galas      │12:31:42 irc.freenode.net  -- | - 
+                     | codeacademy so i'll beintroduced to it and it's so easy to pick this  │            │12:31:42 irc.freenode.net  -- | End of /MOTD command.
+                     | stuff up with google at your fingertips                               │            │12:31:42 irc.freenode.net  -- | User mode [+i] by pi1
+13:51:37       Galas | adamski, I'm a bit like that                                          │            │12:31:43 irc.freenode.net  -- | NickServ (NickServ@services.): This nickname is registered. Please choose
+13:51:39    @two-gun | adamski2600: music to my ears                                         │            │                              | a different nickname, or identify via /msg NickServ identify <password>.
+13:51:51       Galas | but I'm more interested in coding nowadays, to be honest              │            │12:31:48 irc.freenode.net  -- | NickServ (NickServ@services.): This nickname is registered. Please choose
+13:52:17       Galas | I'm a developer/designer but basically because I work at a very small │            │                              | a different nickname, or identify via /msg NickServ identify <password>.
+                     | agency I gravitate between design and full-stack                      │            │12:32:07 irc.freenode.net  -- | MSG(NickServ): identify **************
+13:52:49       Galas | as in i'll debug php if necessary for instance                        │            │12:32:07 irc.freenode.net  -- | NickServ (NickServ@services.): You are now identified for two-gun.
+13:53:06       Galas | I don't like php at all, so welcome to the future (ruby) lol          │            │12:32:07 irc.freenode.net  -- | NickServ (NickServ@services.): 5 failed logins since last login.
+13:54:05    @two-gun | adamski2600: also i set up a NAS with my raspberry pi. 4tb WD drive   │            │12:32:07 irc.freenode.net  -- | NickServ (NickServ@services.): Last failed attempt from:
+                     | attached to my router and installed seafile. i've never configured    │            │                              | two-gun!~pi@host109-152-219-171.range109-152.btcentralplus.com on Nov 30
+                     | that sort of stuff before and found it a bit tricky to start off with │            │                              | 12:07:40 2014.
+                     | but now it's working great and it's such a great felling to have      │            │12:32:46 irc.freenode.net  -- | #webdev: ##webdev :Forwarding to another channel
+                     | everything backed up & synced accross machines. it was also my first  │            │12:37:02 irc.freenode.net  -- | MSG(ChanServinfo): ##ukdevchat
+                     | linux distro so has opened up that world to me. which i now love      │            │12:37:02 irc.freenode.net  -- | ChanServinfo: No such nick/channel
+13:54:24       Galas | awww that's awesome                                                   │            │12:50:35 irc.freenode.net  -- | MSG(chanserv): register ##ukdevchat
+13:55:10 adamski2600 | two-gun: that's great - knowing your way around linux is like a life  │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.): ##ukdevchat is now registered to two-gun.
+                     | skill these days haha                                                 │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.):
+13:55:21    @two-gun | Galas: i'm very intersted to have a playaround with node.js at        │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.): Channel guidelines can be found on the
+                     | somepoint. for no other reason that it sounds cool                    │            │                              | freenode website
+13:55:29       Galas | once you are *nix based you can't go back                             │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.):
+13:55:34       Galas | I'll never use windows again                                          │            │                              | (http://freenode.net/channel_guidelines.shtml).
+13:55:52       Galas | especially for development                                            │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.): This is an "about" channel as per
+13:56:06 adamski2600 | agreed                                                                │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.):
+13:56:59       Galas | what distro did you try?                                              │            │                              | http://freenode.net/policy.shtml#topicalchannels
+13:58:13       Galas | node.js is very trendy nowadays, at least here in london              │            │[14:14] [4] [irc] 1:server[irc.freenode.net] [Act: 2(2)]
+13:58:30    @two-gun | well i got virtual box and just lst week i downloaded ubuntu,         │            │[two-gun(i)] 
+                     | rasbpian and trisquel but i wan to to try out i3-wm so i'm currently  │            │http://www.reddit.com/r/webdev | Use https://cryptbin.com for sharing code | Don't ask to ask, just ask>>
+                     | trying to set that up in debian. but other than that i'm just playing │            │13:29:07        -- | Channel created on Tue, 17 Jul 2012 14:09:21                       │@cryptbin
+                     | around with raspbian                                                  │            │13:32:22       <-- | jamesbdev (~jamesbdev@27.124.101.34) has quit (Ping timeout: 245   │@rslashwebdev
+13:58:35       Galas | if you do frontend you'll at least use NPM                            │            │                   | seconds)                                                           │@scriptor
+13:59:12       Galas | yeah, shop around until you find a distro that you really like        │            │13:32:56       --> | jamesbdev (~jamesbdev@27.124.101.34) has joined #/r/webdev         │@timebot2
+13:59:17    @two-gun | Galas: thanks i'll get it learned                                     │            │13:34:34   two-gun | Hello webdevs, redditors on this thread http://bit.ly/1HOM41N      │@wdkevin
+13:59:30    @two-gun | what about you guys do you have any favourtie distros?                │            │                   | showed a lot of interest in a UK IRC/subreddit so i've created     │+Pilate
+13:59:39       Galas | I'm on OSX                                                            │            │                   | both. If you're UK based, come say hello.                          │+Voziv
+13:59:46 adamski2600 | I'm running arch on one of my pi's which is great for learning        │            │                   | http://ukdevchat.reddit.com & @ freenode: ##ukdevchat              │ [LE]
+13:59:53       Galas | but i'm mostly familiar with ubuntu                                   │            │13:34:36 @timebot2 | Web Developer here looking for more tech-y friends! : webdev       │ _will_
+13:59:57 adamski2600 | Do all my dev stuff on osx, usually with vagrant                      │            │13:34:36 @timebot2 | Hangout for uk devs of all stripes; noobs to pros.                 │ Ackis
+14:00:37       Galas | mint looks nice                                                       │            │13:36:12       <-- | Khao8 (17e96b66@gateway/web/freenode/ip.23.233.107.102) has quit   │ adamski2600
+14:01:09 adamski2600 | I spend way too much time browsing /r/unixporn haha                   │            │                   | (Quit: Page closed)                                                │ adhipg
+14:01:19       Galas | osx is convenient, I think                                            │            │13:37:49       --> | qwebirc65719 (b2be5f9d@gateway/web/freenode/ip.178.190.95.157) has │ Alram
+14:02:04 adamski2600 | what editors are you using on osx?                                    │            │                   | joined #/r/webdev                                                  │ aphid
+14:02:10 adamski2600 | Recently got hooked on Atom                                           │            │13:38:17       <-- | qwebirc60776 (6d98dbab@gateway/web/freenode/ip.109.152.219.171)    │ astaves
+14:02:58       Galas | sublime text                                                          │            │                   | has quit (Quit: Page closed)                                       │ b14d3
+14:03:02       Galas | I was going to ask that                                               │            │13:54:31       --> | HannahsBadger                                                      │ brkfst
+14:03:03       Galas | ahah                                                                  │            │                   | (~HannahsBa@cpc2-cwma7-2-0-cust962.7-3.cable.virginm.net) has      │ Bsport
+14:03:15       Galas | I haven't tried atom yet                                              │            │                   | joined #/r/webdev                                                  │ caffeinatedcode
+14:03:30    @two-gun | adamski2600: ha! i'll have to check that out. yeah i've got a nacmini │            │13:54:31       <-- | HannahsBadger                                                      │ capin
+                     | a macbook pro and a pi so i'm mostly os x thinking of setting up a    │            │                   | (~HannahsBa@cpc2-cwma7-2-0-cust962.7-3.cable.virginm.net) has quit │ dansken
+                     | stand alone linux laptop though or a dual-boot. but that's gonna hvae │            │                   | (Changing host)                                                    │ DarkArcher
+                     | to be next year otherwise i'll never finish this course               │            │13:54:31       --> | HannahsBadger (~HannahsBa@unaffiliated/hannahsbadger) has joined   │ dorxy
+14:04:25    @two-gun | i've been meaning to get sublime text so far been making do with      │            │                   | #/r/webdev                                                         │ Dragory
+                     | textmate but am actively learning vim. have a bit of a cli fetish     │            │13:57:21       <-- | qwebirc65719 (b2be5f9d@gateway/web/freenode/ip.178.190.95.157) has │ Enthralled
+                     | going on                                                              │            │                   | quit (Quit: Page closed)                                           │ Floens
+14:04:37       Galas | vim is very popular                                                   │            │14:09:23       --> | paul__ (~paul@184.75.215.18) has joined #/r/webdev                 │ Galas
+14:04:48 adamski2600 | it's not as fast as sublime but it's got some cool git integration,   │            │14:09:25       --> | Bsport (~Adium@131.176.187.81.in-addr.arpa) has joined #/r/webdev  │ gde33
+                     | shows you untracked files etc. surprised sublime doesn't have that 
+14:04:48 adamski2600 | it's not as fast as sublime but it's got some cool git integration,   │            │                              | a different nickname, or identify via /msg NickServ identify <password>.
+                     | shows you untracked files etc. surprised sublime doesn't have that    │            │12:32:07 irc.freenode.net  -- | MSG(NickServ): identify **************
+                     | yet                                                                   │            │12:32:07 irc.freenode.net  -- | NickServ (NickServ@services.): You are now identified for two-gun.
+14:04:54       Galas | and relatively useful to know                                         │            │12:32:07 irc.freenode.net  -- | NickServ (NickServ@services.): 5 failed logins since last login.
+14:05:16       Galas | there's a trend now of doing development exclusively on vim           │            │12:32:07 irc.freenode.net  -- | NickServ (NickServ@services.): Last failed attempt from:
+14:05:22 adamski2600 | vim's great, but I don't know how many keyboard shortcuts my brain    │            │                              | two-gun!~pi@host109-152-219-171.range109-152.btcentralplus.com on Nov 30
+                     | can handle                                                            │            │                              | 12:07:40 2014.
+14:05:57       Galas | I suppose it is advantageous for *certain* stuff, but for JS I don't  │            │12:32:46 irc.freenode.net  -- | #webdev: ##webdev :Forwarding to another channel
+                     | think it's worth the hassle                                           │            │12:37:02 irc.freenode.net  -- | MSG(ChanServinfo): ##ukdevchat
+14:06:17       Galas | yeah the git integration is the selling point I suppose               │            │12:37:02 irc.freenode.net  -- | ChanServinfo: No such nick/channel
+14:06:18    @two-gun | sounds like i'm barking up some of the *right* trees                  │            │12:50:35 irc.freenode.net  -- | MSG(chanserv): register ##ukdevchat
+14:06:34 adamski2600 | ever tried webstorm? got a years free license recently and it's       │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.): ##ukdevchat is now registered to two-gun.
+                     | pretty awesome for js stuff                                           │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.):
+14:06:48 adamski2600 | not usually a fan of ide's though                                     │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.): Channel guidelines can be found on the
+14:06:57    @two-gun | aint learned git yet. but it's coming.there is a course for           │            │                              | freenode website
+                     | *everything*!                                                         │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.):
+14:08:11    @two-gun | mmm looks fancy                                                       │            │                              | (http://freenode.net/channel_guidelines.shtml).
+14:08:24    @two-gun | webstorm that is                                                      │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.): This is an "about" channel as per
+14:08:57 adamski2600 | jetbrains make some pretty sweet editors, trying to persuade my boss  │            │12:50:35 irc.freenode.net  -- | ChanServ (ChanServ@services.):
+                     | to get a company license for rubymine haha                            │            │                              | http://freenode.net/policy.shtml#topicalchannels
+14:09:38       Galas | jetbrains is good                                                     │            │[14:15] [4] [irc] 1:server[irc.freenode.net] [Act: 2(2)]
+14:09:51       Galas | I'm not a fan of IDEs either though                                   │            │[two-gun(i)] 
+14:10:11       Galas | I've used so much crap in the past that now I'm very happy about      │            │http://www.reddit.com/r/webdev | Use https://cryptbin.com for sharing code | Don't ask to ask, just ask>>
+                     | sublime and no one is going to take that away from me                 │            │                   | seconds)                                                           │@cryptbin
+14:10:41       Galas | when I learned to do web stuff I was a kid so I used to do stuff in   │            │13:32:56       --> | jamesbdev (~jamesbdev@27.124.101.34) has joined #/r/webdev         │@rslashwebdev
+                     | plain ol' notepad! no colours! no highlighting! meh...                │            │13:34:34   two-gun | Hello webdevs, redditors on this thread http://bit.ly/1HOM41N      │@scriptor
+14:10:59       Galas | git is great and it's super important nowadays                        │            │                   | showed a lot of interest in a UK IRC/subreddit so i've created     │@timebot2
+14:11:03       Galas | it's not rocket science though                                        │            │                   | both. If you're UK based, come say hello.                          │@wdkevin
+14:11:17       Galas | a couple of commands, a general understanding and you are good to go  │            │                   | http://ukdevchat.reddit.com & @ freenode: ##ukdevchat              │+Pilate
+14:11:25 adamski2600 | I can't remember the last time I used an editor with a white          │            │13:34:36 @timebot2 | Web Developer here looking for more tech-y friends! : webdev       │+Voziv
+                     | background haha                                                       │            │13:34:36 @timebot2 | Hangout for uk devs of all stripes; noobs to pros.                 │ [LE]
+14:11:35       Galas | I actually like white backgrounds                                     │            │13:36:12       <-- | Khao8 (17e96b66@gateway/web/freenode/ip.23.233.107.102) has quit   │ _will_
+14:11:38       Galas | for some reason                                                       │            │                   | (Quit: Page closed)                                                │ Ackis
+14:11:42       Galas | I know it's an oddity                                                 │            │13:37:49       --> | qwebirc65719 (b2be5f9d@gateway/web/freenode/ip.178.190.95.157) has │ adamski2600
+14:11:45 adamski2600 | agreed with git too, I learned it on the job, some confusing concepts │            │                   | joined #/r/webdev                                                  │ adhipg
+                     | but easy to visualise when you're working with it                     │            │13:38:17       <-- | qwebirc60776 (6d98dbab@gateway/web/freenode/ip.109.152.219.171)    │ Alram
+14:12:11       Galas | I think if you get familiar with the command line git is pretty       │            │                   | has quit (Quit: Page closed)                                       │ aphid
+                     | self-explanatory                                                      │            │13:54:31       --> | HannahsBadger                                                      │ astaves
+14:12:26       Galas | couple of tricky things with certain merges but then again it's not   │            │                   | (~HannahsBa@cpc2-cwma7-2-0-cust962.7-3.cable.virginm.net) has      │ b14d3
+                     | like he's gonna be the one setting it up                              │            │                   | joined #/r/webdev                                                  │ brkfst
+14:13:17 adamski2600 | branching freaked me out for a while, now it's just second nature     │            │13:54:31       <-- | HannahsBadger                                                      │ Bsport
+                     | really                                                                │            │                   | (~HannahsBa@cpc2-cwma7-2-0-cust962.7-3.cable.virginm.net) has quit │ caffeinatedcode
+14:13:48    @two-gun | sounds v do-able so how long have you guys been in the industry?      │            │                   | (Changing host)                                                    │ capin
+14:14:28       Galas | hm.. I learned how to code when I was 11                              │            │13:54:31       --> | HannahsBadger (~HannahsBa@unaffiliated/hannahsbadger) has joined   │ dansken
+14:14:40       Galas | then I went on to do a completely different degree, I worked in the   │            │                   | #/r/webdev                                                         │ DarkArcher
+                     | arts sector                                                           │            │13:57:21       <-- | qwebirc65719 (b2be5f9d@gateway/web/freenode/ip.178.190.95.157) has │ dorxy
+14:14:43       Galas | and now I'm back                                                      │            │                   | quit (Quit: Page closed)                                           │ Dragory
+14:14:54       Galas | I've been freelancing since 2012, got a job about 6 months ago        │            │14:09:23       --> | paul__ (~paul@184.75.215.18) has joined #/r/webdev                 │ Enthralled
+14:15:18       Galas | very entry level                                                      │            │14:09:25       --> | Bsport (~Adium@131.176.187.81.in-addr.arpa) has joined #/r/webdev  │ Floens
+14:15:23 adamski2600 | been a developer for almost 2 years, worked as a sysadmin for a year  │            │14:10:37       <-- | paul__ (~paul@184.75.215.18) has left #/r/webdev                   │ Galas
+                     | before that, IT grunt before that. Never went to uni so had to work   │            │14:15:44       --> | qwebirc13966 (a73d0e32@gateway/web/freenode/ip.167.61.14.50) has   │ gde33
+                     | my way up                
+
+14:32:13       Galas | I'm portuguese                                                                                                                                                                  │ adamski2600
+14:32:42    @two-gun | Ola                                                                                                                                                                             │ Galas
+14:32:50       Galas | been here for 3 years                                                                                                                                                           │ Sinical
+14:32:53       Galas | Olá!                                                                                                                                                                            │ two-gun
+14:32:59    @two-gun | Not as sunny ;-)                                                                                                                                                                │
+14:33:14       Galas | either you just know a couple of words or this is a huge coincidence LOL                                                                                                        │
+14:33:33    @two-gun | Or i know google translate ;-)                                                                                                                                                  │
+14:33:43    @two-gun | I do know something from city of god... hold on                                                                                                                                 │
+14:33:53 adamski2600 | yep lived in Wales all my life! There's a pretty large webdev community in Cardiff, shit ton of web design agencies here and such so I'm hoping to stay here rather than move   │
+                     | to London/Bristol for work. Although rails jobs aren't that big here :(                                                                                                         │
+14:34:19       Galas | I am actually considering trying to move to a smaller city                                                                                                                      │
+14:34:34       Galas | London is just too expensive                                                                                                                                                    │
+14:34:47    @two-gun | Galas: cala boca filho da puta                                                                                                                                                  │
+14:34:58       Galas | I thought Cardiff was a bit high on employment figures though?                                                                                                                  │
+14:35:03 adamski2600 | Bristol would be a great choice, awesome city and a huge tech scene there                                                                                                       │
+14:35:05       Galas | two-gun, do you know what that means? ahahaha                                                                                                                                   │
+14:35:37       Galas | yeah you know, I have a bit of an impostor syndrome                                                                                                                             │
+14:35:45    @two-gun | Galas: oh yeah! i know one or two other 'bad' phrases but let's keep it clean ;-)                                                                                               │
+14:35:47       Galas | I like Bristol very much                                                                                                                                                        │
+14:36:20       Galas | but I'm not sure about my employment prospects yet, I'm sort of navigating the scene and see what can happen                                                                    │
+14:37:21    @two-gun | Galas: why imposter? professionally or like deeper? identity stuff?                                                                                                             │
+14:41:12         === | ========== End of backlog (20 lines) ==========                                                                                                                                 │
+14:41:12         --> | two-gun (~pi@host109-152-219-171.range109-152.btcentralplus.com) has joined ##ukdevchat                                                                                         │
+14:41:13          -- | Nicks ##ukdevchat: [adamski2600 Galas Sinical two-gun]                                                                                                                          │
+14:41:13          -- | Channel ##ukdevchat: 4 nicks (0 ops, 0 halfops, 0 voices, 4 normals)                                                                                                            │
+14:41:13       Galas | ah it's a term                                                                                                                                                                  │
+14:41:15          -- | Mode ##ukdevchat [+cnt]                                                                                                                                                         │
+14:41:15          -- | Channel created on Sun, 30 Nov 2014 12:49:30                                                                                                                                    │
+14:41:19       Galas | like                                                                                                                                                                            │
+14:41:25       Galas | because I don't have formal qualifications                                                                                                                                      │
+14:41:38     Sinical | Good afternoon :)                                                                                                                                                               │
+14:41:41       Galas | It's a bit more difficult to know exactly how good I am compared to my peers                                                                                                    │
+14:41:44       Galas | Hey Sinical                                                                                                                                                                     │
+14:41:57 adamski2600 | I think every dev gets it from time to time                                                                                                                                     │
+14:42:00 adamski2600 | Hey Sinical                                                                                                                                                                     │
+14:42:23     Sinical | How's it going?                                                                                                                                                                 │
+14:43:01       Galas | yeah I think so                                                                                                                                                                 │
+14:43:21       Galas | It's just that my background is so odd                                                                                                                                          │
+14:43:33 adamski2600 | good thanks! yourself? what kinda dev are you?                                                                                                                                  │
+14:43:53     two-gun | Galas: don't sweat it man i think EVERYONE gets that regardless of where or who they are. the great thing about our industry is that it's meritocratic much more so than other  │
+                     | fields and so whatyou know is where you aer to a much larger degree that other places.                                                                                          │
+14:44:03     two-gun | Sinical: welcome!                                                                                                                                                               │
+14:44:22     Sinical | Aspiring web/mobile dev, completed a 2 year apprenticeship as a web developer from 16-18 and just in my first year of a software engineering degree now :)                      │
+14:44:28       Galas | tiny correction: I'm a girl :)                                                                                                                                                  │
+14:44:29       Galas | lol                                                                                                                                                                             │
+14:44:37       Galas | oh nice                                                                                                                                                                         │
+14:44:40 adamski2600 | sounds cool!                                                                                                                                                                    │
+14:44:50     Sinical | How about you peoples?                                                                                                                                                          │
+14:44:54       Galas | I'm glad to see that there's so many people in CS degrees wanting to do web now                                                                                                 │
+14:45:10       Galas | back when I went to uni everyone in CS wanted to do distributed systems                                                                                                         │
+14:45:17 adamski2600 | Rails dev here                                                                                                                                                                  │
+14:45:23       Galas | front-ender                                                                                                                                                                     │
+14:46:13     Sinical | I did actually start on a 'Web design and development degree' this year, but it was 90% design (design theory etc, little coding) and I'm more interested in back-end so I      │
+                     | swapped to SEngineering                                                                                                                                                         │
+14:46:17     two-gun | Sinical: I'm the rookie, looking at javascript front-end. me & galas are london based, adamski is cardiff based. where you based?                                               │
+14:46:22 adamski2600 | what did you study at uni Galas?                                                                                                                                                │
+14:46:28       Galas | art                                                                                                                                                                             │
+14:47:01       Galas | :)                                                                                                                                                                              │
+14:47:13     Sinical | Live in Hemel Hempstead, Herts but currently at Southampton Solent University so down here for a while. Aiming for London for my industry year though :P                        │
+14:47:24 adamski2600 | oh cool, so how'd you get into webdev?          
+14:47:39       Galas | :I started tinkering with it                                                                                                                                                    │ Galas
+14:47:42       Galas | when I was a kid                                                                                                                                                                │ Sinical
+14:47:52       Galas | so I did a lot of work when I was a teenager                                                                                                                                    │ two-gun
+14:47:55       Galas | freelancing                                                                                                                                                                     │
+14:48:02       Galas | I learned perl first                                                                                                                                                            │
+14:48:17     two-gun | one thing that hasn't been to clear to me is where front-end and back end seperate. is back-end purely database stuff? in a classic lamp stack the PHP is still front end       │
+                     | right?                                                                                                                                                                          │
+14:48:24       Galas | then I switched on to mainly design, CSS and a bit of JS as JS was in maybe 99/2000                                                                                             │
+14:48:50       Galas | no, php is backend imo, though a frontend developer will have some familiarity with PHP because of the endpoints in templating                                                  │
+14:48:55     Sinical | i thought back-end was anything that's on the server side, but the line is very blurry in my opinion                                                                            │
+14:49:14     Sinical | including php server side programming ofc                                                                                                                                       │
+14:49:40 adamski2600 | two-gun: php can render frontend views, so what you see on the frontend can depend on what's going on server side                                                               │
+14:50:05     two-gun | yeah it's gonna be hard for me to stay focused sticking to front-end to begin with just always want to see the complete picture.                                                │
+14:50:12       Galas | yeah, it's not a clear separation                                                                                                                                               │
+14:50:36       Galas | and even amongst front-end there are shades of grey                                                                                                                             │
+14:50:39 adamski2600 | The line get's even more blurred with things like node                                                                                                                          │
+14:50:49     two-gun | oh lord!                                                                                                                                                                        │
+14:50:59       Galas | there's UI development, there's more complex frontend...                                                                                                                        │
+14:51:26     Sinical | Do you guys work full time in companies or freelance?                                                                                                                           │
+14:51:33       Galas | and for example server side frameworks like rails abstract the databse with things like active record                                                                           │
+14:51:37     two-gun | i dont work yet. hopefully next year                                                                                                                                            │
+14:51:40       Galas | so you're not directly writing, for instance, SQL                                                                                                                               │
+14:51:49 adamski2600 | full time here, with some occasional freelance work                                                                                                                             │
+14:51:56       Galas | I work in a company as a contractor and I freelance as well                                                                                                                     │
+14:52:40 adamski2600 | Galas: some people don't like all of the 'magic' about Rails because there's so many abstractions, it makes it so much easier to work with though imo                           │
+14:52:40     Sinical | ahh awesome, i wanted to work for maybe a digital agency/tech company for a few years and slowly move over to having my own devshop once I gain a bit of industry experience    │
+14:52:49       Galas | adamski, exactly, me too                                                                                                                                                        │
+14:52:51     two-gun | can i ask salaries or is that too personal on an anon irc ;-)                                                                                                                   │
+14:53:14       Galas | but the thing about magic is that its generally good to know what is happening                                                                                                  │
+14:53:28       Galas | like with jquery for instance I find it very useful to know what exactly is happening                                                                                           │
+14:53:35     Sinical | £95 as an apprentice, once I finished it they bumped me up to £5.50 p/hour. Now I'm freelancing for the same company whilst at uni and on £15 p/hour                            │
+14:53:39       Galas | I just do not want to write the vanilla JS for it                                                                                                                               │
+14:53:45     Sinical | £95 per week that is                                                                                                                                                            │
+14:54:14 adamski2600 | definitely, I've done a few builds using sinatra (tiny ruby framework) and doing all the legwork that's automatically done for you in rails gives you a good understanding of   │
+                     | what it's actually doing in the background                                                                                                                                      │
+14:54:45       Galas | yeah                                                                                                                                                                            │
+14:54:47       Galas | especially with frameworks                                                                                                                                                      │
+14:54:57       Galas | because the day you need to do something that is less conventional                                                                                                              │
+14:55:06       Galas | is the day you rue not knowing ruby/php whatever                                                                                                                                │
+14:55:42       Galas | knowing a bit of ruby to be honest really boosted everything else                                                                                                               │
+14:55:50       Galas | especially regarding types, recursion, classes                                                                                                                                  │
+14:56:32 adamski2600 | you find a lot of people try to learn rails first without knowing ruby (same with jquery/js), it's such a backwards way to learn though                                         │
+14:57:01       Galas | I did learn jquery before I had complete grasp of JS                                                                                                                            │
+14:57:11       Galas | but I only really really understood it when I dived deeper in JS                                                                                                                │
+14:57:23       Galas | and sort of when JS became less of a toy language                                                                                                                               │
+14:57:33       Galas | JS when I first tinkered with it was a bloody mess                                                                                                                              │
+14:58:01       Galas | tightly coupled, event listeners bound directly in views, etc                                                                                                                   │
+14:58:08     two-gun | so you guys have any preferred frameworks for JS?                                                                                                                               │
+14:58:28     Sinical | I feel like I can implement and alter JS snippets really well, but actually writing JS myself is a little harder                                                                │
+14:58:38 adamski2600 | I've got a lot of love for js, most of the client side stuff I do these days is in coffeescript, but it took me such a long time to get my head around the language, coming     │
+                     | from php..                                                                                                                                                                      │
+14:58:52       Galas | I think ruby is a great language to learn basic theoretical concepts of programming                                                                                             │
+14:59:07     Sinical | But on my degree, we're actually learning JS/jQuery which is quite cool with how up to date the material is                                                                     │
+14:59:08       Galas | two-gun I learned a bit of angular but I'm looking to get into react + backbone                                                                                                 │
+15:00:09 adamski2600 | still haven't got around to using any real js frameworks...backbone has been taking my interest lately though                                                                   │
+15:01:50     Sinical | Galas, do you prefer SASS or LESS? I've been using both for about a year and prefer SASS so much more than LESS                                                                 │
+15:01:51       Galas | backbone is slightly less opinated than the others                                                                                                                              │
+15:01:54       Galas | SASS                                                                                                                                                                            │
+15:02:05       Galas | I have never used less                                
+15:02:28       Galas | may I have a little moment now and say that I'm one of thsoe pople who absolutely loves CSS                                                                                     │ Galas
+15:02:32       Galas | despite all its flaws                                                                                                                                                           │ Sinical
+15:03:02       Galas | avoid angular for now, the community is getting very angry at google over angularJS 2.0 and I suspect most books are going to be outdated                                       │ two-gun
+15:03:43     two-gun | Galas: nice tip. i'll do some backbone once i've got a better handle of JS and come back to angular later                                                                       │
+15:04:00 adamski2600 | afk for a bit - need to grab some lunch :)                                                                                                                                      │
+15:04:26       Galas | I have a soft spot for ember because I loooove yehuda katz                                                                                                                      │
+15:04:35       Galas | I learned a lot from his stuff                                                                                                                                                  │
+15:04:41       Galas | but the adoption is meh                                                                                                                                                         │
+15:04:43     two-gun | adamski2600: nice chattin with you. i think i'm gonna take a break too guys. gonna keep the thread open though. feel free to invite more peeps                                  │
+15:04:52       Galas | yeah I'm going out for a coffee as well                                                                                                                                         │
+15:05:27     two-gun | Sinical: stick around buddy. we can crack on later                                                                                                                              │
+15:05:54     Sinical | Catch you later :)                                                                                                                                                              │
+15:06:26       Galas | brb                                                                                                                                                                             │
+15:10:50         <-- | Galas (522dc010@gateway/web/freenode/ip.82.45.192.16) has quit (Ping timeout: 246 seconds)                                                                                      │
+15:52:07         <-- | Sinical (6dafb187@gateway/web/freenode/ip.109.175.177.135) has quit (Ping timeout: 246 seconds)                                                                                 │
+15:55:41         --> | Galas (522dc010@gateway/web/freenode/ip.82.45.192.16) has joined ##ukdevchat                                                                                                    │
+18:00:22       Galas | we've gone quiet                                                                                                                                                                │
+18:08:50 adamski2600 | idling ;)                                                                                                                                                                       │
+18:22:53       Galas | I'm playing with SVGs                                                                                                                                                           │
+18:27:21 adamski2600 | anything interesting? I'm trying to sort out my music collection at the moment, looking for a decent alternative to itunes..                                                    │
+18:50:16         <-- | Galas (522dc010@gateway/web/freenode/ip.82.45.192.16) has quit (Ping timeout: 246 seconds)                                                                                      │
+18:51:57         --> | Galas (522dc010@gateway/web/freenode/ip.82.45.192.16) has joined ##ukdevchat                                                                                                    │
+18:52:00       Galas | hm                                                                                                                                                                              │
+18:52:06       Galas | good question                                                                                                                                                                   │
+18:52:10       Galas | I don't like itunes either                                                                                                                                                      │
+19:31:50     two-gun | i love iTunes but i'd love a good alternative one day. I made this stupid chain of smart playlists that helps me keep track of my collection as i turn tracks that i have taken │
+                     | from my mates and tidy them up. (add album art, male sure all the tracks are there and in the right order, title-case, etc)                                                     │
+19:32:37     two-gun | i haven't updated it for a while because i'm convinvced they're gonna ruin whta i love about it one day                                                                         │
+19:35:17 adamski2600 | i don't actually mind itunes, but it seems to fall over when you've got a fairly big library                                                                                    │
+19:35:46       Galas | meh, I never really liked itunes nor the rest of the little addons in mac                                                                                                       │
+19:35:50       Galas | that kinda force you to use them                                                                                                                                                │
+19:36:07       Galas | https://github.com/captbaritone/winamp2-js                                                                                                                                      │
+19:36:14       Galas | you always have this, unfortunately no playlists                                                                                                                                │
+19:47:18     two-gun | i neeeed the playlists.                                                                                                                                                         │
+19:48:23     two-gun | so do you guys mind if i ask your salries. or if you do any idea of what i should expect as a first job without degree or experience? should i build something?                 │
+19:54:36       Galas | anything from 18k to up to 25kish, usually                                                                                                                                      │
+19:54:42       Galas | that's a starting salary                                                                                                                                                        │
+19:55:44 adamski2600 | my first job was minimum wage, although that was a junior position at a really small agency. I'm on £13 per hour right now                                                      │
+19:56:31 adamski2600 | I tend to find working for small agencies/startups is a lot more fun, but bigger companies can afford to pay a lot more..                                                       │
+19:58:28       Galas | 13 is nice considering you're outside london                                                                                                                                    │
+19:59:05       Galas | some startups in london pay pretty well now though                                                                                                                              │
+20:00:06 adamski2600 | I'm on a 12 month contract currently so I'm not sure how long that will last. There's a tonne of good paying .net jobs around here, but I'd have to be unemployed for a while   │
+                     | before I'd consider applying for one of them                                                                                                                                    │
+20:00:18       Galas | .net... nope nope nope                                                                                                                                                          │
+20:00:36       Galas | yeah but with two years experience you can find something permanent for sure                                                                                                    │
+20:00:45       Galas | especially with rails                                                                                                                                                           │
+20:00:51       Galas | rails is really sought after down here                                                                                                                                          │
+20:00:57       Galas | not many people                                                                                                                                                                 │
+20:02:17       Galas | basically from what I see from my friends the two years is that time when things become nicer in terms of employment prospects                                                  │
+20:02:17 adamski2600 | I'm really hoping to stick with rails or failing that python/django, don't see too many positions like that over here though                                                    │
+20:04:52     two-gun | is .net a big no no because it's microsoft? (it is microsoft right?) 18-25 sounds spot on for me.                                                                               │
+20:05:45     two-gun | Galas: you mentioned that you ight like to move on from london, is there anywhere in particular you were thinking of heading? Are there other places in europe where your       │
+                     | skills may be better used?                                                                                                                                                      │
+20:06:40       Galas | All my friends are in Berlin but I speak very little german and I don't have formal qualifications                                                                              │
+20:06:46       Galas | so the london experience is a good thing                                                                                                                                        │
+20:07:17       Galas | .NET is a piece of crap, and yes, it (mostly) bonds you to using windows                                                                                                        │
+20:07:25       Galas | but it's a very corporate plaftorm                                                                                                                                              │
+20:07:44 adamski2600 | they're actually open sourcing .net which is great, but for me it's so far removed from everything else. It's fairly easy to transition from one language to another or one     │
+                     | framework to another when you've spent a fair bit of time with them, but from what I've seen of .net it's just it's own thing completely, feels very proprietary 
+20:08:11       Galas | most coders I know that do .net aren't very good either                                                                                                                         │ Galas
+20:08:26       Galas | as in... it's not really elegant code like in ruby for instance, or python                                                                                                      │ natzim
+20:08:32       Galas | it's more like hammer driven development                                                                                                                                        │ Sinical
+20:09:00         --> | Sinical (6dafb187@gateway/web/freenode/ip.109.175.177.135) has joined ##ukdevchat                                                                                               │ two-gun
+20:09:06 adamski2600 | I felt like that when I did php - so many average php devs that churn out terrible code                                                                                         │
+20:09:19     two-gun | Sinical: hey welcome back!                                                                                                                                                      │
+20:09:24       Galas | yeah, common in php also                                                                                                                                                        │
+20:09:30 adamski2600 | hey Sinical                                                                                                                                                                     │
+20:09:36       Galas | but you can write good php and laravel is a decent framework                                                                                                                    │
+20:09:37     Sinical | Good Evening                                                                                                                                                                    │
+20:09:58       Galas | or  zend                                                                                                                                                                        │
+20:09:58 adamski2600 | agreed, I've been wanting to check laravel out for a while                                                                                                                      │
+20:10:11       Galas | my personal pet hate is magento                                                                                                                                                 │
+20:10:14       Galas | and I have to use on the job                                                                                                                                                    │
+20:10:18 adamski2600 | ugh                                                                                                                                                                             │
+20:10:51 adamski2600 | when I was a sysadmin I basically had to run a bunch of megento stores, no experience developing it but just maintaining them was a pain in the ass                             │
+20:11:06     Sinical | What I really don't understand with Web Development is how to apply it all to an overarching project, I've completed the back-end web dev track on team treehouse but I'm still │
+                     | finding it hard to fit all the pieces together                                                                                                                                  │
+20:11:07       Galas | magento feels like you are back in 2001                                                                                                                                         │
+20:11:19       Galas | the interface is terrible                                                                                                                                                       │
+20:11:29     two-gun | oh wow! i work at a company that is thinking of using magento. it looks to me like it could be a huge mistake but i know nothing about magento                                  │
+20:11:37       Galas | well                                                                                                                                                                            │
+20:11:41       Galas | it's reasonably stable                                                                                                                                                          │
+20:11:44       Galas | lots of people use it                                                                                                                                                           │
+20:11:50       Galas | customers seem to get along with it                                                                                                                                             │
+20:11:55 adamski2600 | I love how they have certifications you can spend 100s of £s on to become a 'magento professional'                                                                              │
+20:11:58       Galas | I just think it's a legacy option                                                                                                                                               │
+20:13:11       Galas | it's a question of modernisation                                                                                                                                                │
+20:13:39       Galas | Sinical, essentially you have 4 layers                                                                                                                                          │
+20:13:42       Galas | you have the database                                                                                                                                                           │
+20:13:45       Galas | you have the backend                                                                                                                                                            │
+20:13:47       Galas | the frontend                                                                                                                                                                    │
+20:14:20       Galas | the backend mainly interacts with the server and the db                                                                                                                         │
+20:14:54       Galas | the front exists in the browser and renders the views and the interaction                                                                                                       │
+20:15:45       Galas | so essentially what the user sees                                                                                                                                               │
+20:15:55     Sinical | Yeah just feels like I know little snippets but actually building it into something tangible is where I get lost                                                                │
+20:16:09       Galas | so for instance if you are using rails                                                                                                                                          │
+20:16:36       Galas | rails runs on a DB, let's go for mysql for praticality                                                                                                                          │
+20:16:44       Galas | it defines your models                                                                                                                                                          │
+20:16:49       Galas | your business logic in the controllers                                                                                                                                          │
+20:16:54       Galas | and finally renders the views                                                                                                                                                   │
+20:17:09       Galas | which you can then style accordingly                                                                                                                                            │
+20:18:00 adamski2600 | what are you coding in Sinical? try building some simple projects that use backend and frontend, you'll soon visualise how it all fits together                                 │
+20:18:28       Galas | sorry business logic in the model, the controller acts upon the model                                                                                                           │
+20:18:30     Sinical | Well I can handle the front end fine, but its PHP that I'm finding the disconnect happens                                                                                       │
+20:18:50     two-gun | how about a wordpress analogy? ;-)                                                                                                                                              │
+20:18:52       Galas | yeah                                                                                                                                                                            │
+20:18:54       Galas | do a tiny website                                                                                                                                                               │
+20:18:56       Galas | like a blog                                                                                                                                                                     │
+20:19:09       Galas | wordpress is your 'rails'                                                                                                                                                       │
+20:19:11       Galas | in this                                                                                                                                                                         │
+20:19:20     Sinical | The same happens with Python, I've had 3 python exams at uni so far and got 95, 90 and 100 percent but combining all of those skills is whats hard                              │
+20:19:29     Sinical | Yeah I'm building a blog for my portfolio right now :P                                                                                                                          │
+20:19:36       Galas | except rails is more agnostic and wordpress is SORT of a framework now                                                                                                          │
+20:20:00       Galas | yes, the blog is a good sarting project                                                                                                                                         │
+20:20:01 adamski2600 | try using a framework, if you're comfortable with python take a look at flask                                                                                                   │
+20:20:28       Galas | or a to do app                                                                                                                                                                  │
+20:20:39       Galas | with persistence                                                                                                                                                                │
+20:21:04       Galas | leave php alone and move on to ruby/python                
+20:21:16       Galas | easier to learn imo and you'll learn how to organise things easily                                                                                                              │
+20:21:22       Galas | because of the focus on best practices                                                                                                                                          │
+20:21:44     Sinical | yeah i hear a lot of negativity about php                                                                                                                                       │
+20:22:02     Sinical | is there a lot of job availability in other backends like ruby/python?                                                                                                          │
+20:22:40       Galas | Sinical, try to find one of those rails/django workshops                                                                                                                        │
+20:22:46       Galas | a couple in London                                                                                                                                                              │
+20:22:54 adamski2600 | you'll find more php jobs, but you'd be a lot happier working with ruby or python (at least I am..)                                                                             │
+20:23:01       Galas | they teach you how to develop a simple app from end to end                                                                                                                      │
+20:23:22       Galas | adamski2600, most php jobs I see right now envolve frameworks                                                                                                                   │
+20:23:56     two-gun | Galas: have you done one of these courses? do you where they are? do you have to pay for them?                                                                                  │
+20:24:09       Galas | no, I haven't, but they're usually free                                                                                                                                         │
+20:24:14     two-gun | nice                                                                                                                                                                            │
+20:24:26       Galas | there's railsgirls but that's girls only, but surely there's something similar                                                                                                  │
+20:24:44       Galas | or hackathons                                                                                                                                                                   │
+20:24:48     two-gun | i'll have a look at railsgirls to see what you mean                                                                                                                             │
+20:24:58 adamski2600 | there's far too many wordpress/joomla/drupal php jobs out there though, working with laravel or something would be great, but bootstrapping wordpress themes all day is hardly  │
+                     | a real dev job :(                                                                                                                                                               │
+20:25:41     Sinical | im in the process of applying for Googles summer traineeship program which is for people who have just finished their first year of uni & I'm also organising a hackathon with  │
+                     | my python tutor at the moment for our uni as they don't really have anything like that down here                                                                                │
+20:26:11       Galas | adam, that's why I'm looking to change LOL                                                                                                                                      │
+20:27:08 adamski2600 | Galas: what do you mainly work with? wordpress?                                                                                                                                 │
+20:27:20       Galas | wordpress, magento, and then a shitton of css/sass                                                                                                                              │
+20:27:30       Galas | freelance I only use rails usually                                                                                                                                              │
+20:27:37 adamski2600 | love me some sass                                                                                                                                                               │
+20:28:07     two-gun | why do you guys prefer SASS over LESS?                                                                                                                                          │
+20:28:47       Galas | I just prefer the syntax                                                                                                                                                        │
+20:28:50 adamski2600 | we use Foundation a lot in work which is sass based, it's written in ruby so it's fairly popular with rails too.. never really used less that much to be honest                 │
+20:29:31       Galas | so when I had to choose I went for sass                                                                                                                                         │
+20:29:44       Galas | there's a bootstrap-sass version now was well                                                                                                                                   │
+20:30:04     two-gun | how many websites do you guys build a year? freelance or shop stuff                                                                                                             │
+20:30:13     Sinical | I found LESS easier to use in a windows environment but i haven't touched it since I got my mac                                                                                 │
+20:30:21       Galas | and there's also libsass for those who do not use rails                                                                                                                         │
+20:30:46       Galas | right now freelance I build maybe 2-3 a month                                                                                                                                   │
+20:30:48       Galas | tiny stuff                                                                                                                                                                      │
+20:30:56       Galas | in a good month                                                                                                                                                                 │
+20:31:49     two-gun | wow. and do you charge to remain affiliated with that site in a support capacity or do yo wash your hands of the project once it's built                                        │
+20:32:13       Galas | in the agency it depend                                                                                                                                                         │
+20:32:15       Galas | depends                                                                                                                                                                         │
+20:32:30 adamski2600 | we do a lot of rapid prototyping in work so anywhere from 1 - 8 a month I guess (mix of static sites and rails apps)                                                            │
+20:32:57       Galas | yah at work pretty much the same                                                                                                                                                │
+20:34:20       Galas | foundation is actually quite nice                                                                                                                                               │
+20:34:24       Galas | I think it's better than bootstrap                                                                                                                                              │
+20:34:47     two-gun | do you ever pick up freelance work from site like odesk i think there was another one as well something like e-trepaneur or something                                           │
+20:34:53     Sinical | What back-end projects can I work on to hopefully get an internship during the summer with a devshop in london? - I've got a web app idea based on music playlist               │
+                     | ranking/sharing but it's a huge project that'll take months                                                                                                                     │
+20:36:25       Galas | well when you are a junior                                                                                                                                                      │
+20:36:31       Galas | you get the grunt tasks sort of                                                                                                                                                 │
+20:36:34       Galas | so debugging                                                                                                                                                                    │
+20:36:53       Galas | doing css seems quite popular as well because a lot of devs don't like it                                                                                                       │
+20:38:44     Sinical | Well I have 2 years experience, 1 year as an apprentice and 1 year as the only 'web developer' at the company (basically built the company website which is responsive but also │
+                     | static so no backend apart from form handling)                                                                                                                                  │
+20:39:38     Sinical | I just went to uni as I feel it'll help my prospects and the life skills it'll teach are invaluable - Not a lot of companies wanted to hire an 18 year old junior               │
+20:40:53         --> | natzim (~nat@175.66.199.146.dyn.plus.net) has joined ##ukdevchat                                                                                                                │
+20:41:15      natzim | Hello!                                                                   
+20:41:39       Galas | uni is great                                                                                                                                                                        │
+20:41:41       Galas | hi natzim                                                                                                                                                                           │
+20:42:35     two-gun | natzim: Yo! Welcome!                                                                                                                                                                │
+20:43:27 adamski2600 | hey natzim, whats up?                                                                                                                                                               │
+20:43:59     Sinical | Good evening Natzim                                                                                                                                                                 │
+20:47:26     two-gun | for brevity i'm gonna go back to the old days. natzim: a/s/l? I'm 30/m/london and a total noob. these guys all have  much more exp. how about yourself?                             │
+20:48:10       Galas | woo hoo I'm not the oldest here                                                                                                                                                     │
+20:48:16       Galas | I thought you were younger two-gun                                                                                                                                                  │
+20:48:43     two-gun | Galas: hahaha i ALWAYS knew i was gonna be the oldest. i just thought i'd hold out as long as i could ;-)                                                                           │
+20:49:21     Sinical | Galas, if you don't mind me asking, where did you attend uni?                                                                                                                       │
+20:50:43       Galas | I have a completely unrelated degree, but I did a MA at Central Saint Martins                                                                                                       │
+20:51:09       Galas | the web stuff is a very old hobby                                                                                                                                                   │
+20:51:13     Sinical | was just wondering because of location, did you grow up in london?                                                                                                                  │
+20:51:16       Galas | I'm actually considering doing a conversion degree                                                                                                                                  │
+20:51:23       Galas | No, I'm not even british                                                                                                                                                            │
+20:51:43       Galas | I'm a filthy immigrant :D                                                                                                                                                           │
+20:51:47     Sinical | ahhh, bad assumptions, apologies                                                                                                                                                    │
+20:52:29       Galas | no worries                                                                                                                                                                          │
+20:52:34       Galas | I'm kidding                                                                                                                                                                         │
+20:54:16       Galas | two-gun seeing as you're a bit older and you probably have an OK job                                                                                                                │
+20:54:22       Galas | have you considered approaching your company                                                                                                                                        │
+20:54:28       Galas | and see if they let you get involved with the web part                                                                                                                              │
+20:54:34       Galas | if they have one                                                                                                                                                                    │
+20:56:48     two-gun | Galas: i have considered, but it's an emotional one for me. i need to leave my company. i've been here too long. looking forward to starting a new chapter. they would probably     │
+                     | take me and it probably wouldn't be a bad career move but emotionally i have to leave. they do have a webside and i'm sure i could improve it with my knowledge today, but nope,    │
+                     | nope nope :-D btw welcome to our country please don't                                                                                                                               │
+20:56:48     two-gun | judge us by our tories ;-)                                                                                                                                                          │
+20:57:51       Galas | two-gun, I understand, but it would be a good start                                                                                                                                 │
+20:57:57       Galas | maybe they're willing to even pay a course or two                                                                                                                                   │
+20:58:05       Galas | so keep that in mind                                                                                                                                                                │
+20:58:20       Galas | oh I'm used to your tories already, I went to uni in England with cameron in power                                                                                                  │
+20:58:21       Galas | LOL                                                                                                                                                                                 │
+20:58:54     two-gun | i wont rule it out completely                                                                                                                                                       │
+20:59:06         --> | hellier (~hellier@host-2-98-63-178.as13285.net) has joined ##ukdevchat                                                                                                              │
+20:59:06     Sinical | Saw one of those 'web developer bootcamps' £7k for a rails course that gets you job ready in 12 weeks and then a guaranteed 3 month paid internship at the end                      │
+20:59:21     hellier | Let people know it's double hash.                                                                                                                                                   │
+20:59:38     two-gun | hellier: SORRY! OK! welcome                                                                                                                                                         │
+20:59:54     hellier | HI                          
+20:59:54     hellier | Hi*                                                                                                                                                                                 │ Sinical
+20:59:59       Galas | Sinical, I'm  abit skeptical about those bootcamps                                                                                                                                  │ two-gun
+21:00:08     hellier | You folks have websites?                                                                                                                                                            │
+21:00:12       Galas | 12 weeks is not a lot of time                                                                                                                                                       │
+21:00:14 adamski2600 | hey hellier                                                                                                                                                                         │
+21:00:31       Galas | hey hellier                                                                                                                                                                         │
+21:00:32     hellier | Howdy                                                                                                                                                                               │
+21:00:33     Sinical | I have a website which is quite old, redesigning mine atm                                                                                                                           │
+21:00:41     two-gun | Sinical: yeah! £7k sounds like a CRAZY amount of money in todays world of pirates and torrents ;-)                                                                                  │
+21:01:12     two-gun | hellier: i dont                                                                                                                                                                     │
+21:01:19     Sinical | they claim to have the government as one of their hiring partners                                                                                                                   │
+21:01:26      natzim | Yo I forgot about IRC. I'm 17/m/Derbyshire                                                                                                                                          │
+21:01:29       Galas | I'm doing mine at the moment...                                                                                                                                                     │
+21:01:45       Galas | yeah, but the thing is                                                                                                                                                              │
+21:01:46     two-gun | natzim: lol, welcome                                                                                                                                                                │
+21:01:52       Galas | 7k                                                                                                                                                                                  │
+21:01:57       Galas | you might get a job                                                                                                                                                                 │
+21:02:07       Galas | but are you really learning something in depth?                                                                                                                                     │
+21:02:17       Galas | an important thing to remember when going into development                                                                                                                          │
+21:02:23       Galas | is that is continuous learning, forever                                                                                                                                             │
+21:02:30       Galas | its*                                                                                                                                                                                │
+21:02:38     two-gun | Sinical: playing the 30 year old card. they would get 7k when i get the job at the end and not before. do you know what i mean?                                                     │
+21:02:40       Galas | so you need solid foundations                                                                                                                                                       │
+21:02:54       Galas | yeah exactly                                                                                                                                                                        │
+21:03:02       Galas | and like... 7k is how much a MASTERS DEGREE costs                                                                                                                                   │
+21:03:08 adamski2600 | I learned php and ruby on the job, as long as you're willing to dive into it head on then you shouldn't need any kind of courses like that :)                                       │
+21:03:14       Galas | which lasts 1-2 years                                                                                                                                                               │
+21:03:22     Sinical | oh its 6 months, my bad                                                                                                                                                             │
+21:03:24     Sinical | http://wegotcoders.com/trainee-web-developer-course                                                                                                                                 │
+21:03:40       Galas | yeah, on the job I think it's acceptable                                                                                                                                            │
+21:03:43       Galas | because it's a different setting                                                                                                                                                    │
+21:04:02     Sinical | i think alternate forms of education is good though                                                                                                                                 │
+21:04:14       Galas | why does everyone get to learn languages on the job and all jobs I see ask me for years of experience argh                                                                          │
+21:04:33       Galas | yeah, I do too. Online courses are great. I just think 7k for a course that leads to not qualification is a bit too high                                                            │
+21:04:49      natzim | Years of experience sounds like a safer option for the employer I guess                                                                                                             │
+21:04:52     hellier | paying anything for a course that teaches web dev is a joke                                                                                                                         │
+21:05:15     hellier | it's all trial and error. No need to pay for it.                                                                                                                                    │
+21:05:18       Galas | what *could* make a difference                                                                                                                                                      │
+21:05:19       Galas | imo                                                                                                                                                                                 │
+21:05:26       Galas | is learning core computer science skills                                                                                                                                            │
+21:05:31       Galas | because at least for me                                                                                                                                                             │
+21:05:42 adamski2600 | things like treehouse and codeschool are pretty decent, but it's nothing you can't learn from a book                                                                                │
+21:06:10     hellier | where you all based? anyone around Essex?                                                                                                                                           │
+21:06:19     Sinical | treehouse is awesome, as a student its £5 a month                                                                                                                                   │
+21:06:33     Sinical | but my uni provides lynda.com accounts too all students                                                                                                                             │
+21:06:35      natzim | I've always found doing it interactively helps me to learn the basics much faster, then reading documentation when you have a better idea of what you are doing                     │
+21:06:40       Galas | I had lynda and I like codeschool                                                                                                                                                   │
+21:06:42 adamski2600 | cardiff here                                                                                                                                                                        │
+21:06:54       Galas | It's good for refreshing content                                                                                                                                                    │
+21:06:54     Sinical | in southampton for uni, but based in hertfordshire                                                                                                                                  │
+21:06:58     two-gun | london                                                                                                                                                                              │
+21:06:59       Galas | as a digest of sorts                                                                                                                                                                │
+21:07:04       Galas | london                                                                                                                                                                              │
+21:07:13     Sinical | do you guys live in london or commute?                                                                                                                                              │
+21:07:29     Sinical | the town I'm from in a commuter hub to london                                                                                                                                       │
+21:07:30      natzim | I'm from Derbyshire                                                                                                                                                                 │
+21:07:36     hellier | http://www.lissaexplains.com/ still better than any online course :P                                                                                                                │
+21:07:40      natzim | woop woop 500kb/s download speed                                                                                                                                                    │
+21:09:54       Galas | you guys are spoiled for choice now anyways  
+21:10:00       Galas | I had to use newsgroups and the like!                                                                                                                                               │ Sinical
+21:10:05     two-gun | ha i'm in zone 2 have peaked at Mb/s down 20Mb/s up. i am aware of my privilage                                                                                                     │ two-gun
+21:10:33 adamski2600 | http://eloquentjavascript.net/ for anyone learning js :)                                                                                                                            │
+21:10:57       Galas | eloquent is nice but not the easiest of books I think                                                                                                                               │
+21:10:58     two-gun | hellier: beautiful                                                                                                                                                                  │
+21:11:09       Galas | I like the good parts                                                                                                                                                               │
+21:11:22     hellier | It's where I learned to code back in the day, two-gun.                                                                                                                              │
+21:11:45 adamski2600 | Galas: great book too! I've got the definitive guide aswell but it's just far too big                                                                                               │
+21:11:54       Galas | the definite guide is a bit boring                                                                                                                                                  │
+21:11:58     Sinical | something like 500 down and 500 up on our campus connection in accomodation                                                                                                         │
+21:12:00      natzim | nah mate w3schools is where it's at /s                                                                                                                                              │
+21:12:05       Galas | it's more interesting as a reference book I think                                                                                                                                   │
+21:12:20     hellier | nothing wrong with w3schools tbh                                                                                                                                                    │
+21:12:25 adamski2600 | yeah agreed                                                                                                                                                                         │
+21:12:32       Galas | I learned from html goodies                                                                                                                                                         │
+21:12:49 adamski2600 | w3schools is dated, mdn is a much better resource imo                                                                                                                               │
+21:12:59     hellier | I find the hate it gets is ridic, and often regurgitated crap from years ago                                                                                                        │
+21:13:03       Galas | and eric meyer                                                                                                                                                                      │
+21:13:07     hellier | no way is mdn a better resource than w3schools                                                                                                                                      │
+21:13:14     hellier | their ui is a nightmare to navigate                                                                                                                                                 │
+21:13:17       Galas | I think mdn is a way better resource than w3 schools                                                                                                                                │
+21:13:28       Galas | much more in depth                                                                                                                                                                  │
+21:13:28     hellier | any noob learning to code will prefer w3schools any day                                                                                                                             │
+21:13:31 adamski2600 | use mdn almost daily                                                                                                                                                                │
+21:13:35     hellier | its easier to understand                                                                                                                                                            │
+21:13:41     hellier | and digest                                                                                                                                                                          │
+21:14:06 adamski2600 | tutorial wise maybe, as a reference though I'd never recommend it                                                                                                                   │
+21:14:07       Galas | I actually like the MDN ui                                                                                                                                                          │
+21:14:35       Galas | I don't find anything particularly painful with it                                                                                                                                  │
+21:14:40       Galas | why do you say that?                                                                                                                                                                │
+21:14:48      natzim | I think w3schools is a lot better than it used to be                                                                                                                                │
+21:15:00     hellier | From a noobs perspective, it's much easier to digest the content.                                                                                                                   │
+21:15:09      natzim | like there were a lot of issues with incorrect practices for mysql and such                                                                                                         │
+21:15:32     hellier | https://developer.mozilla.org/en-US/docs/Web/CSS vs http://www.w3schools.com/js/js_scope.asp                                                                                        │
+21:15:35     hellier | come on                                                                                                                                                                             │
+21:15:46     Sinical | They try to get us to use w3schools at uni, luckily our class is quite savvy                                                                                                        │
+21:15:47     hellier | there is a reason google have w3schools as #1 for most search terms                                                                                                                 │
+21:16:04       Galas | .asp                                                                                                                                                                                │
+21:16:21     hellier | http://www.w3schools.com/css/default.asp rather                                                                                                                                     │
+21:16:22     Sinical | w3fools                                                                                                                                                                             │
+21:16:35 adamski2600 | mdn is much more in depth though, it's a proper reference guide                                                                                                                     │
+21:17:03       Galas | yeah exactly                                                                                                                                                                        │
+21:17:14       Galas | at one point you need to get used to proper documentation                                                                                                                           │
+21:17:37 adamski2600 | I love how w3schools still has those £50 certifications... I wonder if anyone has actually bought one                                                                               │
+21:17:46     hellier | aye, that is really scammy of them                                                                                                                                                  │
+21:17:56     hellier | can't knock the hustle tho                                                                                                                                                          │
+21:19:06       Galas | More than 10 000 certificates already issued!                                                                                                                                       │
+21:19:10       Galas | apparently yes                                                                                                                                                                      │
+21:19:52 adamski2600 | It's just what my CV needs                                                                                                                                                          │
+21:20:09     hellier | you all have real jobs then?                                                                                                                                                        │
+21:20:29       Galas | sort of                                                                                                                                                                             │
+21:20:30       Galas | LOL                                                                                                                                                                                 │
+21:20:37 adamski2600 | rails dev here                                                                                                                                                                      │
+21:20:46         <-- | Sinical (6dafb187@gateway/web/freenode/ip.109.175.177.135) has quit (Ping timeout: 246 seconds)                                                                                     │
+21:20:47     hellier | <- php                                                                                                                                                                              │
+21:20:55     hellier | haters gonna hate                                                                                                                                                                   │
+21:21:24 adamski2600 | still work with php from time to time                                                                                                                                               │
+21:22:28       Galas | <- front-end, also do some php as needed                                                                                                                                            │
+21:22:37       Galas | but want to be doing rails                                 
+21:23:08 adamski2600 | move to cardiff Galas, we could use more rails devs!                                                                                                                                │ Sinical
+21:23:33       Galas | I'm not a *rails* dev                                                                                                                                                               │ two-gun
+21:23:40       Galas | I'm a dev with some basic knowledge of rails                                                                                                                                        │
+21:23:41       Galas | LOL                                                                                                                                                                                 │
+21:24:15 adamski2600 | it's such an easy framework to pick up though :)                                                                                                                                    │
+21:24:21 adamski2600 | and a great community behind it                                                                                                                                                     │
+21:24:45       Galas | yeah it is                                                                                                                                                                          │
+21:24:48       Galas | I'm doing this project                                                                                                                                                              │
+21:24:53       Galas | and I only knew a little ruby                                                                                                                                                       │
+21:24:58       Galas | and with a couple of instructions I was doing stuff                                                                                                                                 │
+21:25:39       Galas | it's not that php is hard tho                                                                                                                                                       │
+21:26:09 adamski2600 | i found php to be a lot less intuitive                                                                                                                                              │
+21:26:33       Galas | I usually avoid backend                                                                                                                                                             │
+21:26:48       Galas | but with ruby every time I touch it I feel like learning more about it                                                                                                              │
+21:30:12      natzim | so much PHP hate all the time. I don't get it                                                                                                                                       │
+21:31:35       Galas | the problem with PHP is lack of standards                                                                                                                                           │
+21:32:35         --> | Sinical (6dafb187@gateway/web/freenode/ip.109.175.177.135) has joined ##ukdevchat                                                                                                   │
+21:32:52     Sinical | is there any decent irc clients for iPhone?                                                                                                                                         │
+21:33:46 adamski2600 | I think you can get limechat on there, not tried it though                                                                                                                          │
+21:36:19      natzim | I know PHP doesn't enforce good standards, but so long as you are working with people who follow the same style guide, it's fine                                                    │
+21:37:03       Galas | http://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/                                                                                                                          │
+21:38:29 adamski2600 | I think the main reason its still so popular is because it's easy to get php setup for webdev, whereas other languages take a bit more effort. php has had it's day though imo      │
+21:38:56       Galas | an interesting point of view                                                                                                                                                        │
+21:39:06     Sinical | well every shared hosting plan has lamp installed                                                                                                                                   │
+21:42:40     hellier | php will outlast every web language but js :P                                                                                                                                       │
+21:43:05     hellier | because it's forgiving                                                                                                                                                              │
+21:43:18       Galas | there are still perl developers around you know :p                                                                                                                                  │
+21:43:33 adamski2600 | my brother is actually a perl dev                                                                                                                                                   │
+21:43:38     hellier | aye, but I mean, as the top dawg server side language                                                                                                                               │
+21:44:16 adamski2600 | that's my version of hell though. 30 years from now, still working with php, theming wordpress v17                                                                                  │
+21:45:40     hellier | easy life                                                                                                                                                                           │
+21:50:39       Galas | perl was the first language I learned                                                                                                                                               │
+21:50:46       Galas | unfortunately I remember none of it                                                                                                                                                 │
+21:52:29         <-- | hellier (~hellier@host-2-98-63-178.as13285.net) has quit (Quit: Lost terminal)                                                                                                      │
+21:58:30         <-- | natzim (~nat@175.66.199.146.dyn.plus.net) has quit (Remote host closed the connection)                                                                                              │
+22:01:49         --> | natzim (~nat@175.66.199.146.dyn.plus.net) has joined ##ukdevchat                                                                                                                    │
+22:02:10      natzim | So has anyone got any side projects on the go right now?                                                                                                                            │
+22:03:43 adamski2600 | I'm building a blackjack game in pure js right now, that's it at the moment though :)                                                                                               │
+22:05:04     Sinical | Re-doing my portfolio for www.joshharrowell.co.uk                                                                                                                                   │
+22:05:25     Sinical | and working on a site for a computing society and hackathon I'm setting up for my university                                                                                        │
+22:07:03      natzim | Sweet. I'm working on a reddit clone using Laravel. It's good fun and I've learned a lot from doing it.                                                                             │
+22:08:26       Galas | I'm doing my folio, a commercial website and a tiny app using maps                                                                                                                  │
+22:10:26     Sinical | yeah I'm working on this music app which plugs into most music streaming services with API's and allows you to upload playlists and assign moods and genres to them, then has user  │
+                     | voting etc.                                                                                                                                                                         │
+22:10:48     Sinical | Have all the branding and design documentation done, just need to get up to scratch on the backend technology required                                                              │
+22:13:48 adamski2600 | I'm gonna call it a night, up ridiculously early tomorrow. Nice speaking with you guys, I'll probably idle while I'm in work so speak soon :)                                       │
+22:14:06      natzim | Night                                                                                                                                                                               │
+22:14:08     Sinical | Catchya later                                                                                                                                                                       │
+22:14:56 adamski2600 | later guys!                                                                                                                                                                         │
+22:15:03         <-- | adamski2600 (~adamski26@host-92-26-205-244.as13285.net) has quit                                                                                                                    │
+22:25:02       Galas | bye!                                                                                                                                                                                │
+22:25:05       Galas | oops                                                                                                                                                                                │
+22:25:10      natzim | too late mate                                                                                                                                                                       │
+22:25:38      natzim | Finally managed to update my vagrant box, now time for bed. Night fellas                                                                                                            │
+22:25:41         <-- | natzim (~nat@175.66.199.146.dyn.plus.net) has quit (Quit: WeeChat 1.0.1)                                                                                                            │
+22:28:37     Sinical | mhmm I've never used vagrant                                                                                                                                                        │
+22:33:51     two-gun | oops missed those two. nice of you lot to pop by. i really learned a lot from you ugys hope i can be of some use to guy guys also further down the line. dont forget to show some   │
+                     | love on the subreddit. just so people know we're alive. i'll update the double hash thing. i'm also gonna call it a night. thanks everyone. catch ya                                │
+22:47:12       Galas | I posted something!     

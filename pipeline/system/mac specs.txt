@@ -1,0 +1,12 @@
+
+	Year	CPU	Ram			HD
+MBP-r	m-10	2.66	4			320
+			63.99			79.99	
+			http://bit.ly/12QzI8y	http://bit.ly/12QzXjS
+MBP-b	m-09	2.53	4			250
+			63.99			79.99		
+
+MM-b	m-10	2.4	8			320
+						79.99
+
+harddrive 125	http://bit.ly/12QAi69

@@ -1,0 +1,25 @@
+Time Machine backup
+
+Cuckoo
+TM - Reetta 
+Steven
+Seafile (to delete?)	53 GB
+
+Freecom
+TM - Willie
+
+Data1
+
+
+Data2
+
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       2.9T  208G  2.6T   8% /media/shares/data1
+/dev/sda2       715G   69M  679G   1% /media/shares/data2
+
+Filesystem      Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk1s2   466Gi  343Gi  123Gi    74% 89848546 32221764   74%   /Volumes/FREECOM HDD
+/dev/disk1s3   465Gi  278Gi  187Gi    60% 72931380 49072206   60%   /Volumes/Cuckoo
+
+where are the mysql databases stored?

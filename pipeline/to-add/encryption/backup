@@ -1,0 +1,93 @@
+/etc/mkinitcpio.comf
+/crypto_keyfile.bin
+/etc/lvm/archive/vg_00000...vg
+/etc/default/grub
+sudo cryptsetup luksDump /dev/sda1
+IE
+
+physical volume
+volume group
+logical volume
+
+understand system
+understand encryption
+understand time machine
+restore complete os from backup
+restore individual file
+
+install 
+
+
+https://calum.org/posts/backup-your-LUKS-header-and-LVM-config
+backup luks header
+cryptsetup luksHeaderBackup /dev/sda2 --header-backup-file=/boot/luks-header 
+
+backup lvm
+cp /etc/lvm /boot/lvm-backup -Rafv 
+
+
+## Strategy
+
+**Big Picture**
+
+backup to myBook
+backup myBook to myBook2
+
+**Current Space**
+
+21
+ - Size: 3.22 tb
+ - Used: 1.73 tb
+ - Potn: 
+ - Need: 3 tb
+
+Wolf
+ - Size: 250 gb
+ - Used: 
+ - Potn: 
+ - Need: 3 tb
+
+SeaFile
+ - Size: 3.22 tb
+ - Used: 1.73 tb
+ - Potn: 
+ - Need: 3 tb
+
+If I can reduce 21 space, I should be able to backup everything to the 2 drives.
+
+Plan 
+ - 1tb wolf
+ - 1tb fbox
+ - 1.5tb 21
+
+what not to backup 
+ - /dev
+ - /lost+found
+ - /mnt
+ - /media
+ - /proc
+ - /run
+ - /sys
+ - /tmp
+
+Partitions?
+ - /home
+ - /boot
+
+What to Backup
+ - /bin
+ - /etc
+ - /lib
+ - /lib64
+ - /opt
+ - /root
+ - /sbin
+ - /srv
+ - /usr
+ - /var
+ - /crypto_keyfile.bin
+
+## Questions
+ - Should I seperate root and home dirs?
+ - Should I backup boot:wq
+

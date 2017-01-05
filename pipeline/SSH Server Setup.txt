@@ -1,0 +1,17 @@
+SSH Server Setup
+
+https://www.youtube.com/watch?v=iTmNXBgNMUU
+https://www.youtube.com/results?search_query=mac+ssh+&oq=mac+ssh+&gs_l=youtube.3...8548.12010.0.12502.6.6.0.0.0.0.79.438.6.6.0...0.0...1ac.1.11.youtube.2CmrKGURtmA
+
+Terminal Command Glossary:
+http://ss64.com/osx/
+
+Permission Denied
+https://www.google.co.uk/search?q=mac+ssh+password+not+working&ie=utf-8&oe=utf-8&rls=org.mozilla:en-US:official&client=firefox-a&gws_rd=cr#client=firefox-a&hs=Ipe&rls=org.mozilla:en-US%3Aofficial&sclient=psy-ab&q=mac+ssh+password+denied&oq=mac+ssh+password+denied&gs_l=serp.3..0j0i22i30l3.4060.4783.0.5570.7.7.0.0.0.0.142.826.2j5.7.0....0...1c.1.23.psy-ab..0.7.802.m6LVoxPlCO0&pbx=1&bav=on.2,or.r_qf.&bvm=bv.50165853,d.d2k&fp=b238d6239009a633&biw=1920&bih=883
+https://discussions.apple.com/thread/3136497?start=0&tstart=0
+https://discussions.apple.com/thread/1141223?start=0&tstart=0
+http://forums.macrumors.com/showthread.php?t=1038207
+https://help.github.com/articles/error-permission-denied-publickey
+https://discussions.apple.com/thread/303862?start=0&tstart=0
+
+

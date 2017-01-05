@@ -1,0 +1,38 @@
+/Users/apple/Desktop/WikiUncut/Website/Site/bin/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/cache/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/cgi-bin/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/docs/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/extensions/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/facebook/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/hacked_page,
+/Users/apple/Desktop/WikiUncut/Website/Site/images/index.php
+
+
+Marked
+/Users/apple/Desktop/Reetta  Harddrive/buffalo/MANOLO/Faruk/Sibelius 4/Sibelius 4 Keygen.dmg
+/Users/apple/Desktop/Reetta  Harddrive/Adobe Photoshop CS4 Extended v.11 + Activation/Adobe Photoshop CS4 Extended v.11 + Activation.rar,
+/Users/apple/Desktop/Reetta  Harddrive/Adobe Photoshop CS4 Extended v.11 + Activation/Adobe Photoshop CS4 Extended v.11 + Activation/Adobe Photoshop CS4 Extended v.11 + Activation/Adobe_Keygen.exe
+
+08/04/13
+
+Virus 
+OSX/Yontoo-B 
+
+Users/apple/Downloads/Custom Installer 2.app/Contents/MacOS/Custom Installer,
+/Users/apple/Downloads/Custom Installer 3.app/Contents/MacOS/Custom Installer,
+/Users/apple/Downloads/Custom Installer 4.app/Contents/MacOS/Custom Installer,
+/Users/apple/Downloads/Custom Installer.app/Contents/MacOS/Custom Installer
+
+Troj/HckHTML-C 
+
+/Users/apple/Desktop/WikiUncut/Website/Site/bin/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/cache/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/cgi-bin/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/docs/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/hacked_page,
+/Users/apple/Desktop/WikiUncut/Website/Site/languages/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/maintenance/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/math/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/mediawiki-1.16.0/index.php.hacked,
+/Users/apple/Desktop/WikiUncut/Website/Site/serialized/index.php,
+/Users/apple/Desktop/WikiUncut/Website/Site/skins/index.php

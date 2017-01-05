@@ -1,0 +1,66 @@
+gm
+t   
+~   
+dj
+dk
+dvj
+d<C-V>j
+dap
+g_
+W
+E
+ge (gE)
+(/)
+[[
+cwBAR/FOO<enter>.n.n.n.n
+
+
+    gm
+move across line to middle of screen
+    t   
+move to before char (like f)
+    ~   
+swap case
+    dj
+deletes 2 lines down
+    dk
+deletes 2 lines up
+    dvj
+deletes from the cursor position unitil the character below the cursor
+          d<C-V>j
+deletes the character under the cursor and the character below the cursor. >
+    dap
+delete around paragraph
+    g_
+To the last non blank character
+    W
+WORD
+    E
+END
+    ge (gE)
+backward to the end of word
+    (/)
+[count] sentences backwards/forwards
+
+experiment with 
+[[
+]]
+][
+[]
+
+leader bindings on vimrc file
+keep a cheat sheet  
+
+Macros
+you can edit macros by treating them as registers.
+.
+FOO
+cwBAR/FOO<enter>.n.n.n.n
+
+
+
+# Macros
+tab to col 20      hvgeldi 19.020|vwhd0
+
+
+

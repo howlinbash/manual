@@ -1,0 +1,227 @@
+
+
+
+Encrypted boot partition (GRUB)
+-------------------------------
+
+This setup utilizes the same partition layout and configuration for the system'
+s root partition as the previous [ #LVM on LUKS ] section, with two distinct 
+differences:
+
+1. The setup is performed for an [ UEFI ] system and
+2. A special feature of the [ GRUB ] bootloader is used to additionally 
+   encrypt the boot partition "/boot". See also [ GRUB#Boot partition ].
+
+The disk layout in this example is:
+
+  +---------------+----------------+----------------+----------------+------- ~
+  |ESP partition: |Boot partition: |Volume 1:       |Volume 2:       |Volume  ~
+  |               |                |                |                |        ~
+  |/boot/efi      |/boot           |root            |swap            |home    ~
+  |               |                |                |                |        ~
+  |               |                |/dev/store/root |/dev/store/swap |/dev/st ~
+  |/dev/sdaX      |/dev/sdaY       +----------------+----------------+------- ~
+  |unencrypted    |LUKS encrypted  |/dev/sdaZ encrypted using LVM on LUKS     ~
+  +---------------+----------------+----------------------------------------- ~
+
+  ~  +----------------+
+  ~  |Volume 3:       |
+  ~  |                |
+  ~  |home            |
+  ~  |                |
+  ~  |/dev/store/home |
+  ~  +----------------+
+  ~                   |
+  ~  -----------------+
+
+  Tip: All scenarios are intended as examples. It is, of course, possible to 
+  apply both of the two above distinct installation steps with the other 
+  scenarios as well. See also the variants linked in [ #LVM on LUKS ].
+
+
+
+Preparing the disk
+------------------
+
+Prior to creating any partitions, you should inform yourself about the 
+importance and methods to securely erase the disk, described in [ Dm-crypt/
+Drive preparation ].
+
+Create an [ EFI System Partition ] with an appropriate size, it will later be 
+mounted at "/boot/efi".
+
+Create a partition to be mounted at "/boot" of type "8300" with a size of 100 
+MB or more.
+
+  Tip: When using the [ GRUB ] bootloader together with a BIOS/GPT, create a 
+       BIOS Boot Partition as explained in [ GRUB#BIOS ] systems instead of 
+       the ESP.
+
+Create a partition of type [ 8E00 ], which will later contain the encrypted 
+container.
+
+Create the LUKS encrypted container at the "system" partition.
+
+  # cryptsetup luksFormat /dev/sdaZ
+
+For more information about the available cryptsetup options see the [ LUKS 
+encryption options ] prior to above command.
+
+Your partition layout should look similar to this:
+
+   gdisk /dev/sda 
+  Number  Start (sector)    End (sector)  Size       Code  Name
+     1            2048         1050623   512.0 MiB   EF00  EFI System
+     2         1050624         1460223   200.0 MiB   8300  Linux filesystem
+     3         1460224        41943006   19.3 GiB    8E00  Linux LVM
+
+Open the container:
+
+  # cryptsetup open --type luks /dev/sdaZ lvm
+
+The decrypted container is now available at "/dev/mapper/lvm".
+
+
+
+Preparing the logical volumes
+-----------------------------
+
+The LVM logical volumes of this example follow the exact layout as the 
+previous scenario. Therefore, please follow [ Preparing the logical volumes ] 
+above or adjust as required.
+
+
+
+Preparing the boot partition
+----------------------------
+
+The bootloader loads the kernel, [ initramfs ], and its own configuration 
+files from the "/boot" directory.
+
+First, create the LUKS container where the files will be located and installed 
+into:
+
+  # cryptsetup luksFormat /dev/sdaY 
+
+Next, open it:
+
+  # cryptsetup open /dev/sdaY cryptboot 
+
+Create a filesystem on the partition intended for "/boot". Any filesystem that 
+can be read by the bootloader is eligible:
+
+  # mkfs.ext2 /dev/mapper/cryptboot
+
+Create the directory "/mnt/boot":
+
+  # mkdir /mnt/boot
+
+Mount the partition to "/mnt/boot":
+
+  # mount /dev/mapper/cryptboot /mnt/boot
+
+Create a mountpoint for the [ EFI System Partition ] at "/boot/efi" for 
+compatibility with "grub-install" and mount it:
+
+  # mkdir /mnt/boot/efi
+  # mount /dev/sdaX /mnt/boot/efi
+
+At this point, you should have the following partitions and logical volumes 
+inside of "/mnt":
+
+  lsblk
+  NAME              	  MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+  sda                       8:0      0   200G  0 disk  
+  ├─sda1                    8:1      0   512M  0 part  /boot/efi
+  ├─sda2                    8:2      0   200M  0 part  
+  │ └─boot		  254:0    0   198M  0 crypt /boot
+  └─sda3                    8:3      0   100G  0 part  
+    └─lvm                   254:1    0   100G  0 crypt 
+      ├─MyStorage-swapvol   254:2    0     8G  0 lvm   [SWAP]
+      ├─MyStorage-rootvol   254:3    0    15G  0 lvm   /
+      └─MyStorage-homevol   254:4    0    77G  0 lvm   /home
+
+Afterwards continue with the installation procedure up to the mkinitcpio step.
+
+
+
+Configuring mkinitcpio
+----------------------
+
+Add the "encrypt" and "lvm2" hooks to [ mkinitcpio.conf ]: 
+
+  /etc/mkinitcpio.conf
+  HOOKS="... encrypt lvm2 ... filesystems ..."
+
+See [ dm-crypt/System configuration#mkinitcpio ] for details and other hooks 
+that you may need.
+
+
+
+Configuring the boot loader
+---------------------------
+
+Configure GRUB to recognize the LUKS encrypted "/boot" partition and unlock 
+the encrypted root partition at boot:
+
+  /etc/default/grub
+  GRUB_CMDLINE_LINUX="... cryptdevice=UUID=<device-UUID>:lvm root=/dev/mapper/MyStorage-rootvol ..."
+  GRUB_ENABLE_CRYPTODISK=y
+
+See [ Dm-crypt/System configuration#Boot loader ] and [ GRUB#Boot partition ] 
+for details. The "<device-UUID>" refers to the UUID of "/dev/sdaZ" (the 
+partition which holds the lvm containing the root filesystem), see [ 
+Persistent block device naming ].
+
+Generate GRUB's [ configuration ] file and [ install ] to the mounted ESP:
+
+  # grub-mkconfig -o /boot/grub/grub.cfg
+  # grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck
+
+If this finished without errors, GRUB should prompt for the passphrase to 
+unlock the "/boot" partition after the next reboot.
+
+
+
+Configuring fstab and crypttab
+------------------------------
+
+This section deals with extra configuration to let the system mount the 
+encrypted "/boot".
+
+While GRUB asks for a passphrase to unlock the encrypted "/boot" after above 
+instructions, the partition unlock is not passed on to the initramfs. Hence, "/
+boot" will not be available after the system has re-/booted, because the "
+encrypt" hook only unlocks the system's root.
+
+If you used the genfstab script during installation, it will have generated "/
+etc/fstab" entries for the "/boot" and "/boot/efi" mount points already, but 
+the system will fail to find the generated device mapper for the boot partition
+. To make it available, add it to [ crypttab ]. For example:
+
+  /etc/crypttab
+  cryptboot  /dev/sdaY      none        luks
+
+will make the system ask for the passphrase again (i.e. you have to enter it 
+twice at boot: once for GRUB and once for systemd init). To avoid the double 
+entry for unlocking "/boot", follow the instructions at [ Dm-crypt/Device 
+encryption#Keyfiles ] to:
+
+  1. Create a [ randomtext keyfile ],
+  2. Add the keyfile to the ("/dev/sdaY") [ boot partition's LUKS header ] and
+  3. Check the "/etc/fstab" entry and add the "/etc/crypttab" line to [ unlock 
+     it automatically at boot ].
+
+If for some reason the keyfile fails to unlock the boot partition, systemd 
+will fallback to ask for a passphrase to unlock and, in case that is correct, 
+continue booting.
+
+  Tip: Optional post-installation steps:
+  
+  - It may be worth considering to add the GRUB bootloader to the ignore list 
+    of "/etc/pacman.conf" in order to take particular control of when the 
+    bootloader (which includes its own encryption modules) is updated.
+  
+  - If you want to encrypt the "/boot" partition to protect against offline 
+    tampering threats, the [ mkinitcpio-chkcryptoboot ] hook has been 
+    contributed to help.

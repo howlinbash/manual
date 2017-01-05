@@ -1,0 +1,95 @@
+Seafile backup 
+
+
+//directory should look like this
+
+haiwen       # Replace the name with your organization name
+  --seafile-server-2.x.x # untar from seafile package
+  --seafile-data   # seafile configuration and data (if you choose the default)
+  --seahub-data    # seahub data
+  --ccnet          # ccnet configuration and data 
+  --seahub.db      # sqlite3 database used by seahub
+  --seahub_settings.py # optional config file for seahub
+
+it actually looks like this
+
+Cloud
+  --ccnet
+  --conf
+  --Installed
+  --logs
+  --pids
+  --seafile-server-3.1.6
+  --seafile-server-latest -> seafile-server-3.1.6
+  --seahub-data
+  --seahub_settings.py
+  --seahub_settings.pyc
+
+
+Present			Surprises		Missing
+seafile-server-3.1.6	conf			seafile-data
+seahub-data		Installed		seahub.db
+ccnet			logs
+seahub_settings.py	pids
+			seafile-server-latest
+			seahub_settings.pyc
+
+/media/shares/data1/MyCloud/
+
+commits
+fs
+httptemp
+library-template
+seafile.conf
+storage
+tmpfiles
+
+//For MySQL, the databases are created by the administrator, so the names can be different from one deployment to another. There are 3 databases:
+
+ccnet-db: contains user and group information
+seafile-db: contains library metadata
+seahub.db: contains tables used by the web front end (seahub)
+
+Database
+
+to access mysql from the home directory type
+
+mysql -u root -p
+
+type 'root' at the password prompt.
+
+type
+SHOW VARIABLES WHERE Variable_name LIKE "%dir";
++---------------------------+----------------------------+
+| Variable_name             | Value                      |
++---------------------------+----------------------------+
+| basedir                   | /usr                       |
+| character_sets_dir        | /usr/share/mysql/charsets/ |
+| datadir                   | /var/lib/mysql/            |
+| innodb_data_home_dir      |                            |
+| innodb_log_group_home_dir | ./                         |
+| lc_messages_dir           | /usr/share/mysql/          |
+| plugin_dir                | /usr/lib/mysql/plugin/     |
+| slave_load_tmpdir         | /tmp                       |
+| tmpdir                    | /tmp                       |
++---------------------------+----------------------------+
+
+select @@datadir;
++-----------------+
+| @@datadir       |
++-----------------+
+| /var/lib/mysql/ |
++-----------------+
+
+/var/lib/mysql/
+ccnet@002ddb  
+debian-5.5.flag  
+ibdata1	
+ib_logfile0  
+ib_logfile1  
+mysql  
+mysql_upgrade_info  
+performance_schema  
+seafile@002ddb  
+seahub@002ddb
+

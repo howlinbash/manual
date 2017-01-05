@@ -1,0 +1,25 @@
+Sorry, that took a while. "cat my… " was a dumb way of saying copy and paste my output into a text document. Bash-it: https://github.com/Bash-it/bash-it; Vim: vim 7.3; Terminal: iTerm2 2.0; Computer: os x 10.8; Screenshot: http://imgur.com/N8trQPF; Thanks
+
+http://jsbin.com/tefuraf/edit?js
+http://jsbin.com/nekopa/edit?js
+http://jsbin.com/fejake/edit?js
+
+"au BufNewFile,BufRead *.log  Sve	"
+":Sve	
+as a next step you might want to "set ft=debug" on "foo.log" files automatically.  this can be done via an "autocommand".
+
+11:22 < SvenG> two-gun: example: http://www.guckes.net/tmp/two-gun.debugger_output.colour.txt.html
+11:25 < SvenG> two-gun: now.. it's just an example of coloring
+11:25 < SvenG> two-gun: what do you want to colour.. and how?
+11:31 < SvenG> syn match foo1 socket.io:socket
+11:31 < SvenG> hi        foo1 ctermfg=green
+11:32 < SvenG> and i think you can do the others easily yourself
+11:33 < SvenG> put the resulting color file into your syntax directory, eg ~/.vim/syntax/debug.vim - and then use ":set ft=debug" on your resulting logfile.
+11:33 < SvenG> -> colour! :)
+11:33 < SvenG> as a next step you might want to "set ft=debug" on "foo.log" files automatically.  this can be done via an "autocommand".
+11:36 < SvenG> -> "au BufNewFile,BufRead *.log  set ft=debug"
+11:39 < SvenG> two-gun: and maybe you want to assign different colours to the milliseconds there..
+11:40 < SvenG> syn match ms1digit '+\dms'
+11:41 < SvenG> syn match ms2digits '+\d\dms'
+11:41 < SvenG> syn match ms3digits '+\d\d\dms'
+11:41 < SvenG> .. and give the colours like before, too
