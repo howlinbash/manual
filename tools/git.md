@@ -137,12 +137,9 @@ git push -u origin master
 ```
 
 
-
-## New Tricks
+## Git book to integrate
 
 ```bash
-
-
 ## Short Status
 
 git status -s                 # Left column: staging area; right: working tree
@@ -445,4 +442,20 @@ git clean -d -n               # same but remove dirs as well
 git clean -n -d -x            # remove gitignore files
 git clean -i                  # interactive	
 
+```
+
+
+## New Tricks
+
+```bash
+# pair the correct ssh key (host) with the correct remote repo
+git remote set-url origin git@<host>:howlinbash/dot.git
+git remote set-url origin git@gitl:howlinbash/dot.git
+
+git reflog                    # view git history (a git of git if you will)
+git reset HEAD@{1}            # 
+
+git stash show -p             # show last stash diff
+git stash list                # show all stashes
+git stash apply               # un stash stash to return to where left off
 ```
