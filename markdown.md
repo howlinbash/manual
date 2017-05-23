@@ -1,7 +1,8 @@
 
 
-
 [The Howlin Developer Guide](./home.md)
+
+
 
 
 
@@ -9,7 +10,8 @@
 
 
 
-## Headings
+### Headings
+
 
 ```markdown
 # Header 1
@@ -41,7 +43,8 @@ Combined emphasis with **asterisks and _underscores_**.
 
 
 
-## Lists
+### Lists
+
 
 ```markdown
 1. First ordered list item
@@ -84,7 +87,7 @@ Combined emphasis with **asterisks and _underscores_**.
 + Or pluses
 
 
-### Checklists
+**Checklists**
 
 ```markdown
 - [ ] done
@@ -98,7 +101,8 @@ Combined emphasis with **asterisks and _underscores_**.
 
 
 
-## Links
+### Links
+
 
 ```markdown
 [I'm an inline-style link](https://www.google.com)
@@ -146,7 +150,8 @@ The reference links remain hidden.
 
 
 
-## Images
+### Images
+
 
 Here's Mr Bash (hover to see the title text):
 
@@ -169,7 +174,8 @@ Reference-style:
 
 
 
-## Code and Syntax Highlighting
+### Code and Syntax Highlighting
+
 
 ```markdown
 Inline `code` has `back-ticks around` it.
@@ -216,7 +222,8 @@ But let's throw in a <b>tag</b>.
 
 
 
-## Tables
+### Tables
+
 
 ```markdown
 Colons can be used to align columns.
@@ -256,7 +263,8 @@ Markdown | Less | Pretty
 
 
 
-## Blockquotes
+### Blockquotes
+
 
 ```markdown
 > Blockquotes are very handy in email to emulate reply text.
@@ -276,7 +284,8 @@ Quote break.
 
 
 
-## Inline HTML
+### Inline HTML
+
 
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
@@ -300,7 +309,8 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
 
 
-## Horizontal Rule
+### Horizontal Rule
+
 
 ```markdown
 Three or more...

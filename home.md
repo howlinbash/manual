@@ -1,7 +1,12 @@
 
 
 
+
+
 # The Howlin Developer Guide
+
+
+
 
 Hello and welcome to The Howlin Developer Guide.
 
@@ -11,7 +16,10 @@ Hello and welcome to The Howlin Developer Guide.
 
 
 
+
 ## Contents
+
+
 
 ### Cheatsheets
 ### Apps

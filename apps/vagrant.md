@@ -1,7 +1,8 @@
 
 
-
 [The Howlin Developer Guide](../home.md)
+
+
 
 
 
@@ -9,7 +10,9 @@
 
 
 
-## Quick Start
+
+### Quick Start
+
 
 ```bash
 # Check installation worked ok
@@ -36,7 +39,8 @@ vagrant halt
 
 
 
-## Setup Developer Vhost Domain
+### Setup Developer Vhost Domain
+
 
 ```bash
 # Open Vagrant config file
@@ -58,7 +62,8 @@ sudo vim /etc/hosts
 
 
 
-## Next
+### Next
+
 
 Setup Vagrant Machine
 

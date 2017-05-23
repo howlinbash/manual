@@ -292,6 +292,7 @@ You can run this code by "calling" the function, like this:
     };
 ```
 
+
 #### Choose Your own Adventure
 
 ```javascript
@@ -460,7 +461,9 @@ To make sure a loop runs at least once before conditional checked.
 ```
 
 
+
 ### Arrays
+
 
 An object that holds values (of any type) in numerically indexed positions.  
 Any time you see data surrounded by [ ], it is an array.
@@ -637,6 +640,7 @@ c. are *ordered* so the position of each piece of data is fixed
 
 ### Hoisting
 
+
  - Functions are hoisted to the top and read
  - Variables are hoisted to the top, registered but not read
  - If you assign a function to a variable it will be registered but not read.
@@ -662,7 +666,6 @@ Runs like this.
 
 So here, the name 'foo' is hoisted, but the body is left behind.  
 It will only be assigned during execution.
-
 
 ```javascript
     function test() {
@@ -830,7 +833,6 @@ Execution:
 Look up variables and functions
 execute the code the compiler created
 
-
 ```javascript
     // This will be broken up into 2 statements.
     var a = 2;
@@ -851,7 +853,6 @@ We can break the engine into 3 parts
  - Compiler declares a variable
    - and produces code for Engine to run to assign variable in next step
  - Engine looks up the variable in Scope and assigns to it
-
 
 ```javascript
 
@@ -883,6 +884,7 @@ We can break the engine into 3 parts
  9 │                                     9 │    bam = "yay";
 10 │  }                                 10 │  }
 ```
+
 
 #### Engine's variable look-up (LHS & RHS)
 
