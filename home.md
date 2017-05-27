@@ -21,7 +21,6 @@ Hello and welcome to The Howlin Developer Guide.
 
 
 
-### Cheatsheets
 ### Apps
  * [Autoreload](./apps/autoreload.md)
  * [Bower](./apps/bower.md)
@@ -45,4 +44,3 @@ Hello and welcome to The Howlin Developer Guide.
  * [OS X](./unix/osx.md)
  * [Search](./unix/search.md)
  * [System Debugging](./unix/debug.md)
-### Arch

@@ -1,4 +1,9 @@
-# README
+# The Howlin Developer Guide
 
-this is a test
-this is a second test
+A simple developer reference wiki.
+
+## Usage
+
+This manual can be viewed in the terminal, on [github](https://github.com/howlinbash/manual/blob/master/home.md) or in the browser (with a [markdown extension](https://chrome.google.com/webstore/detail/gpoigdifkoadgajcincpilkjmejcaanc?hl=en-US))
+
+It can also easily be operated with the [how](https://github.com/howlinbash/how) interface.
