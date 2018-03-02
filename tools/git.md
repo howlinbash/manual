@@ -90,6 +90,9 @@ git remote show origin             # sshes into hub
 
 
 ```bash
+# Undo an overzealous 'git add' run:
+git reset
+
 # Reset file
 git checkout file
 
