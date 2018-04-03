@@ -1,23 +1,23 @@
-
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-# Bash
+Bash
+====
 
 [Back to Unix](./intro.md)
 
 
+Tips
+----
 
-## Tips
 
  * If you press 'Ctrl-s' by accident, unfreeze the terminal with 'Ctrl-Q'
 
 
+Setup
+-----
 
-## Setup
 
 ```bash
 # Aggregate history of all terminals in the same .history. On your .bashrc
@@ -34,8 +34,9 @@ vim ~/.inputrc
 ```
 
 
+History
+-------
 
-## History
 
 ```bash
 # print the 2133rd command from the history log
@@ -43,8 +44,9 @@ history 2133
 ```
 
 
+alias
+-----
 
-## alias
 
 ```bash
 # Does command already exist?
@@ -54,7 +56,10 @@ echo "alias ll='ls -l'" >> .bash_aliases
 ```
 
 
-## Tricks
+Tricks
+------
+
+
 ```bash
 # move everything into newly created test dir
 mkdir test && mv !(test) test
@@ -65,7 +70,3 @@ mkdir test && mv !(test) test
 cp bash{,.bak}
 cp {_,}bash
 ```
-
-
-
-

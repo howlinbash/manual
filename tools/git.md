@@ -1,22 +1,16 @@
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
+Git
+===
 
 
-# Git
-
-
-
-
-## Basics
-
+Basics
+------
 
 
 ### Quick Start
-
 
 ```bash
 # Install git to projects home directory
@@ -30,9 +24,7 @@ git push
 ```
 
 
-
 ### Branches
-
 
 ```bash
 # Make a new branch
@@ -62,9 +54,7 @@ git push --delete origin branch-name
 ```
 
 
-
 ### Analysis
-
 
 ```bash
 # List all commits
@@ -85,9 +75,7 @@ git remote show origin             # sshes into hub
 ```
 
 
-
 ### Back-tracking
-
 
 ```bash
 # Undo an overzealous 'git add' run:
@@ -116,14 +104,11 @@ git checkout [hash] -- path/to/file
 ```
 
 
-
-
-## Committing
-
+Committing
+----------
 
 
 ### Tips
-
 
 ```bash
 # commit all tracked/modified files without using add
@@ -138,9 +123,7 @@ git mv                        # this command is shorthand for...
 ```
 
 
-
 ### Removing files
-
 
 ```bash
 rm <file>                     # rm file from working dir -but not repo or stage
@@ -155,7 +138,6 @@ git rm \*~                    # rm all files that end with ~
 
 ### git tags
 
-
 ```bash
 git tag                       # list the tags
 git tag -l "v0.12*"           # list all versions prefixed with 0.12
@@ -168,10 +150,8 @@ git checkout -b version2 v2.0 # checkout (to branch-name version2) v.2.0
 ```
 
 
-
-
-## Branching
-
+Branching
+---------
 
 
 ```bash 
@@ -184,7 +164,6 @@ git branch --no-merged        # contains un-merged work (-d will fail)
 git branch -d testing         # delete branch
 git branch -D testing         # force delete branch
 ```
-
 
 
 ### A Useful Workflow
@@ -242,15 +221,11 @@ git branch -d iss53
 ```
 
 
-
-
-## Merging
-
+Merging
+-------
 
 
 ### Rebasing
-
-
 
 ```bash
    -------------------------------------------------------
@@ -289,9 +264,7 @@ git merge experiment          # fast foward master to c4
 The end result is the same commit that merge would create (c5 == c4)
 but the history would look linear with rebase. No trace of 'experment' branch.
 
-
 #### A topic branch off another topic branch
-
 You branched a topic branch (server) to add some server-side functionality to
 your project, and made a commit.
 
@@ -359,10 +332,8 @@ git branch -d server          # so they can be deleted
 ```
 
 
-
-
-## Analysis
-
+Analysis
+--------
 
 
 ### Log
@@ -397,7 +368,6 @@ git log --oneline --decorate --graph -10 --all
 
 ### Short Status
 
-
 ```bash
 git status -s                 # Left column: staging area; right: working tree
 
@@ -409,9 +379,7 @@ M  lib/simplegit.rb           # A modified file; staged.
 ```
 
 
-
 ### Staging
-
 
 ```bash
 git diff                      # compares all working dir changes to staging
@@ -420,14 +388,11 @@ git diff --cached             # compares all staged changes to last commit
 ```
 
 
-
-
-## Working with Remotes
-
+Working with Remotes
+--------------------
 
 
 ### Create Remote Repo for Untracked Project
-
 
 Create new repo on Gitlab and grab ssh url
 
@@ -443,7 +408,6 @@ git push -u origin master
 
 
 ### Remotes
-
 
 ```bash
 git remote                    # See which remote servers you have configured
@@ -523,9 +487,8 @@ git push origin --delete hotfix
 ```
 
 
-
-
-## Back Tracking
+Back Tracking
+-------------
 
 
 ### Undoing Things
@@ -540,14 +503,11 @@ git reset HEAD <file>         # unstage a file
 ```
 
 
-
-
-## House Keeping
-
+House Keeping
+-------------
 
 
 ### Ignoring Files
-
 
 ```bash
 *.a                           # ignore all files ending with .a
@@ -561,9 +521,7 @@ doc/**/*.pdf                  # ignore all .pdf files in the doc/ directory
 ```
 
 
-
 ### Git Clean
-
 
 ```bash
 git clean                     # this will remove all untracked (unwanted) files
@@ -576,9 +534,7 @@ git clean -i                  # interactive
 ```
 
 
-
 ### Git Stash
-
 
 ```bash
 git stash                     # save mess to be commited later
@@ -596,14 +552,11 @@ git stash branch              # recover stash from old commit and apply
 ```
 
 
-
-
-## WorkFlows
-
+WorkFlows
+---------
 
 
 ### NVIE
-
 
 http://nvie.com/posts/a-successful-git-branching-model/
 
@@ -660,9 +613,7 @@ http://nvie.com/posts/a-successful-git-branching-model/
                                                            ``-( )   
 ```
 
-
 #### Feature branches 
-
 May branch off from:
  - dev
 
@@ -691,9 +642,7 @@ git branch -d myfeature
 git push origin dev
 ```
 
-
 #### Release branches
-
 May branch off from:
  - dev
 
@@ -733,9 +682,7 @@ We may now remove the release branch.
 git branch -d release-1.2
 ```
 
-
 #### Hotfix branches
-
 May branch off from:
  - master
 
@@ -787,9 +734,9 @@ $ git merge --no-ff hotfix-1.2.1
 You may instead wish to merge the hotfix into the release branch instead.
 
 
+New Tricks
+----------
 
-
-## New Tricks
 
 ```bash
 # pair the correct ssh key (host) with the correct remote repo
@@ -805,4 +752,3 @@ git stash apply               # un stash stash to return to where left off
 
 git merge --squash <branch>   # merge branch as 1 commit
 ```
-

@@ -1,11 +1,10 @@
-
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-# Unix
+Unix
+====
+
 
  * [Unix Basics](./basics.md)
  * [Bash](./bash.md)
@@ -15,16 +14,18 @@
  * [System Debugging](./debug.md)
 
 
+To Do
+-----
 
-## To Do
 
 * Grab CS50 Notes
 * build users and groups
 * finish utilities
 
 
+Utilities
+---------
 
-## Utilities
 
 ### Cal
 
@@ -45,8 +46,9 @@ xargs
 ```
 
 
+Cool Tricks
+-----------
 
-## Cool Tricks
 
 ```bash
 # Chain commands with the semi-colon.
@@ -88,8 +90,9 @@ cp filename{-v1,-v2}
 ```
 
 
+Cat, Pipe and Redirection
+-------------------------
 
-## Cat, Pipe and Redirection
 
 cat > newdoc.txt
  - then type what you want in the document carriage returns are fine. 
@@ -104,12 +107,13 @@ cat ./* >> newfile.txt
 ```
 
 
+Users & Groups
+--------------
 
-## Users & Groups
 
+Permissions
+-----------
 
-
-## Permissions
 
 ```bash
 #print numerical chmod value
@@ -123,8 +127,9 @@ chmod 600 <filename>
 ```
 
 
+Filesystem
+----------
 
-## Filesystem
 
 For more info on unmentioned dirs check out:  
 
@@ -157,6 +162,7 @@ For more info on unmentioned dirs check out:
 |```/user/share/doc```|Most packages installed on the system will include some kind of documentation In /usr/share/doc, we will find documentation files organized by package.
 |```/var```|**Variable**: A place for files that may change often - especially in size, for example e-mail sent to users on the system, or process-ID lock files.
 
+
 ### OS X Variations
 
 |Path | Description
@@ -164,6 +170,7 @@ For more info on unmentioned dirs check out:
 |```-/Users```|**Root**: 
 |```-/Library```|**Root**: 
 |```-/Volumes```|**Root**: 
+
 
 ### To Add
 

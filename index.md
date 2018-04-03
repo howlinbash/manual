@@ -1,14 +1,9 @@
-
-
 [The Howlin Developer Guide](./home.md)
 
 
 
-
-
-# Index
-
-
+Index
+=====
 
 
  * [Autoreload](./apps/autoreload.md)

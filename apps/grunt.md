@@ -1,18 +1,12 @@
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-
-
-# Grunt
-
-
+Grunt
+=====
 
 
 ### Quick Start
-
 
 ```bash
 # Install

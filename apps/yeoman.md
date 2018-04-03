@@ -1,18 +1,12 @@
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-
-
-# Yeoman
-
-
+Yeoman
+======
 
 
 ### Quick Start
-
 
 ```bash
 # Install

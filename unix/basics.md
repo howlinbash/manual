@@ -1,17 +1,16 @@
-
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-# Unix Basics
+Unix Basics
+===========
 
 [Back to Unix](./intro.md)
 
 
+Navigation
+----------
 
-## Navigation
 
 ```bash
 pwd                # Print working directory (where am I?)
@@ -26,8 +25,9 @@ cd -               # Go back to last working directory
 ```
 
 
+Modification
+------------
 
-## Modification
 
 ```bash
 rm                 # Remove file
@@ -42,8 +42,9 @@ mkdir -p           # Create nested directory (like/this)
 ```
 
 
+Help 
+-----
 
-## Help 
 
 ```bash
 type               # Write description of command type
@@ -57,8 +58,9 @@ file               # Determine file type
 ```
 
 
+ls
+--
 
-## ls
 
 ```bash
 ls -1              # List dir contents in one column

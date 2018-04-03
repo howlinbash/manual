@@ -1,17 +1,15 @@
-
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-# Search
+Search
+======
 
 [Back to Unix](./intro.md)
 
 
-
-## To Parse
+To Parse
+--------
 
 
 ```bash
