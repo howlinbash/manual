@@ -1,22 +1,16 @@
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
+jQuery
+======
 
 
-# jQuery
-
-
-
-
-## Basics
-
+Basics
+------
 
 
 ### Document Ready Function
-
 
 ```javascript
 $(document).ready(function() {
@@ -25,9 +19,7 @@ $(document).ready(function() {
 ```
 
 
-
 ### Selectors
-
 
 ```javascript
 $(".class");       // class selector
@@ -40,9 +32,7 @@ $("ul :even");     // even psuedo selector
 ```
 
 
-
 ### Methods
-
 
 ```javascript
 .text()            // Selects or changes the text of an html element
@@ -54,12 +44,9 @@ $("ul :even");     // even psuedo selector
 ```
 
 
-
 ### Events
 
-
 #### Mouse Events
-
 ```javascript
 click
 dblclick
@@ -74,18 +61,14 @@ mouseleave
 mouseout
 ```
 
-
 #### Keyboard Events
-
 ```javascript
 keypress
 keydown
 keyup
 ```
 
-
 #### Form Events
-
 ```javascript
 blur
 select
@@ -95,17 +78,13 @@ submit
 ```
 
 
-
-
-## The Dom
-
+The Dom
+-------
 
 
 ### Traversing the DOM
 
-
 #### HTML
-
 ```bash
 Doc
 │
@@ -124,9 +103,7 @@ Doc
             └── li
 ```
 
-
 #### jQuery
-
 ```javascript
 $(document).ready(function(){
     $(".vacation).on("click", ".expand", function(){
@@ -149,9 +126,7 @@ $(document).ready(function(){
 ```
 
 
-
 ### Manipulating The DOM
-
 
 ```javascript
 .append()
@@ -171,56 +146,43 @@ $(document).ready(function(){
 ```
 
 
-
-
-## Debugging
-
+Debugging
+---------
 
 
 ```javascript
 alert($('element').length);
 ```
 
-
 #### Type Casting 
-
 <span>12</span> 
 $(this) = string = 12
 +$(this) = int = 12
 
-
 #### Bugs
-
 .preventDefault
 .stopPropagation
 
 
-
-
-## Styles
-
+Styles
+------
 
 
 #### Dirty Styles
-
 ```javascript
 $(this).css('background-color', '#252b30')
         .css('border-color', '1px solid #967');
 ```
 
-
 #### Object Styles
-
 ```javascript
 $(this).css({'background-color': '#252b30',
             'border-color': '1px solid #967'});
 ```
 
 
-
-
-## Animation
-
+Animation
+---------
 
 
 ```javascript

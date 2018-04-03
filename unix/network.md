@@ -1,18 +1,15 @@
-
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-# Network
+Network
+=======
 
 [Back to Unix](./intro.md)
 
 
-
-## SSH
-
+SSH
+---
 
 
 ### Generate new key-pair
@@ -37,12 +34,15 @@ xclip -sel clip < ~/.ssh/id_rsa_git.pub
 ssh -T git@gitlab.com
 ```
 
+
 ### Glossary
+
 ```bash
 config             # Config file
 authorized_keys    # keys that have access to my computer
 known_hosts        # a server i've connected to before
 ```
+
 
 ### Config File
 
@@ -62,8 +62,9 @@ Host brace
 ```
 
 
+Rsync and filesharing
+---------------------
 
-## Rsync and filesharing
 
 ```bash
 # Create target directory
@@ -74,9 +75,11 @@ rsync -av . drjones@muddy.local:~/test
 ```
 
 ### Alternatives
+
  * scp
  * ftp
  * sftp
+
 
 ### FTP
 
@@ -90,8 +93,9 @@ put filename
 ```
 
 
+To Parse
+--------
 
-## To Parse
 
 ```bash
 NETWORKING
@@ -133,4 +137,3 @@ NETWORKING
       AuthMethod=LOGIN
       FromLineOverride=YES
 ```
-

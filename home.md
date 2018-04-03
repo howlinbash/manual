@@ -1,11 +1,8 @@
 
 
 
-
-
-# The Howlin Developer Guide
-
-
+The Howlin Developer Guide
+==========================
 
 
 Hello and welcome to The Howlin Developer Guide.
@@ -15,11 +12,8 @@ Hello and welcome to The Howlin Developer Guide.
  * [Guide Index](./index.md)
 
 
-
-
-## Contents
-
-
+Contents
+--------
 
 ### Apps
  * [Autoreload](./apps/autoreload.md)

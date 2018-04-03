@@ -1,17 +1,16 @@
-
-
-
 [The Howlin Developer Guide](../home.md)
 
 
 
-# System Debugging
+System Debugging
+================
 
 [Back to Unix](./intro.md)
 
 
+Commands
+--------
 
-# Commands
 
 ```bash
 df -ah	file system size
