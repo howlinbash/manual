@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,7 @@ jQuery
 ======
 
 
-Basics
-------
+## Basics
 
 
 ### Document Ready Function
@@ -78,8 +77,7 @@ submit
 ```
 
 
-The Dom
--------
+## The Dom
 
 
 ### Traversing the DOM
@@ -146,8 +144,7 @@ $(document).ready(function(){
 ```
 
 
-Debugging
----------
+## Debugging
 
 
 ```javascript
@@ -164,8 +161,7 @@ $(this) = string = 12
 .stopPropagation
 
 
-Styles
-------
+## Styles
 
 
 #### Dirty Styles
@@ -181,8 +177,7 @@ $(this).css({'background-color': '#252b30',
 ```
 
 
-Animation
----------
+## Animation
 
 
 ```javascript

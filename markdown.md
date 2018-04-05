@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](./home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -21,8 +21,7 @@ Markdown Cheatsheet
 #### Header 4
 
 
-Emphasis
---------
+## Emphasis
 
 ```markdown
 **BOLD** or __BOLD__

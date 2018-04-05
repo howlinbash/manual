@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -8,8 +8,7 @@ OS X
 [Back to Unix](./intro.md)
 
 
-Open Application
-----------------
+## Open Application
 
 
 ```bash
@@ -17,8 +16,7 @@ open -a "iTunes"
 ```
 
 
-Networking
-----------
+## Networking
 
 
 ```bash

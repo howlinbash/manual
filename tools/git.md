@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,7 @@ Git
 ===
 
 
-Basics
-------
+## Basics
 
 
 ### Quick Start
@@ -104,8 +103,7 @@ git checkout [hash] -- path/to/file
 ```
 
 
-Committing
-----------
+## Committing
 
 
 ### Tips
@@ -150,8 +148,7 @@ git checkout -b version2 v2.0 # checkout (to branch-name version2) v.2.0
 ```
 
 
-Branching
----------
+## Branching
 
 
 ```bash 
@@ -221,8 +218,7 @@ git branch -d iss53
 ```
 
 
-Merging
--------
+## Merging
 
 
 ### Rebasing
@@ -332,8 +328,7 @@ git branch -d server          # so they can be deleted
 ```
 
 
-Analysis
---------
+## Analysis
 
 
 ### Log
@@ -388,8 +383,7 @@ git diff --cached             # compares all staged changes to last commit
 ```
 
 
-Working with Remotes
---------------------
+## Working with Remotes
 
 
 ### Create Remote Repo for Untracked Project
@@ -487,8 +481,7 @@ git push origin --delete hotfix
 ```
 
 
-Back Tracking
--------------
+## Back Tracking
 
 
 ### Undoing Things
@@ -503,8 +496,7 @@ git reset HEAD <file>         # unstage a file
 ```
 
 
-House Keeping
--------------
+## House Keeping
 
 
 ### Ignoring Files
@@ -552,8 +544,7 @@ git stash branch              # recover stash from old commit and apply
 ```
 
 
-WorkFlows
----------
+## WorkFlows
 
 
 ### NVIE
@@ -734,8 +725,7 @@ $ git merge --no-ff hotfix-1.2.1
 You may instead wish to merge the hotfix into the release branch instead.
 
 
-New Tricks
-----------
+## New Tricks
 
 
 ```bash

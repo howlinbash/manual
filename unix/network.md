@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -8,8 +8,7 @@ Network
 [Back to Unix](./intro.md)
 
 
-SSH
----
+## SSH
 
 
 ### Generate new key-pair
@@ -62,8 +61,7 @@ Host brace
 ```
 
 
-Rsync and filesharing
----------------------
+## Rsync and filesharing
 
 
 ```bash
@@ -93,8 +91,7 @@ put filename
 ```
 
 
-To Parse
---------
+## To Parse
 
 
 ```bash

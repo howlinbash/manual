@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,7 @@ Javascript
 ==========
 
 
-Basics
-------
+## Basics
 
 
 ### Operators
@@ -584,8 +583,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-JavaScript is Weird
--------------------
+## JavaScript is Weird
 
 
 ### Hoisting
@@ -758,8 +756,7 @@ I want the second 'this' to refer to the first element '#opendiv'
 Caveat: 'this' can no longer equal '#div1' it will now always equal '#opendiv'
 
 
-You Don't Know JS
------------------
+## You Don't Know JS
 
 
 ### Scope

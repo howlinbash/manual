@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,7 @@ Vim
 ===
 
 
-Jotter
-------
+## Jotter
 
 
 ```bash
@@ -57,8 +56,7 @@ resize split       :30winc -
 ```
 
 
-My Macros
----------
+## My Macros
 
 
 ```bash
@@ -79,8 +77,7 @@ i|  A  |0O=i=78.j0f|kld$yyjp
 ```
 
 
-Intro
------
+## Intro
 
 
 ### Basics
@@ -104,8 +101,7 @@ When typing a : command, press CTRL-D to see possible completions.
 ```
 
 
-Essentials
-----------
+## Essentials
 
 
 ### Navigate
@@ -241,8 +237,7 @@ gU                 change sentence to uppercase
 ```
 
 
-Visual
-------
+## Visual
 
 
 ### Basics
@@ -279,8 +274,7 @@ I//[esc]           use // to comment block
 ```
 
 
-Interface
----------
+## Interface
 
 
 ### Windows
@@ -308,8 +302,7 @@ ctrl-w x           swap windows
 ```
 
 
-Advanced
---------
+## Advanced
 
 
 ### Macros
@@ -346,8 +339,7 @@ You can add a macro to a macro -- meta-macros :-)
 ```
 
 
-The Shell
----------
+## The Shell
 
 
 ### Shell Access
@@ -389,8 +381,7 @@ P                  opens in the file in the adjacent window
 ```
 
 
-Configuiration
---------------
+## Configuiration
 
 
 ### Appearance
@@ -418,8 +409,7 @@ gp}                wrap text to tw to paragraph end
 ```
 
 
-Help
-----
+## Help
 
 
 ### Help

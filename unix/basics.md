@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -8,8 +8,7 @@ Unix Basics
 [Back to Unix](./intro.md)
 
 
-Navigation
-----------
+## Navigation
 
 
 ```bash
@@ -25,8 +24,7 @@ cd -               # Go back to last working directory
 ```
 
 
-Modification
-------------
+## Modification
 
 
 ```bash
@@ -42,8 +40,7 @@ mkdir -p           # Create nested directory (like/this)
 ```
 
 
-Help 
------
+## Help 
 
 
 ```bash
