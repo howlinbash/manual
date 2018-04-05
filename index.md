@@ -1,6 +1,7 @@
 
 
 
+
 The Howlin Developer Guide
 ==========================
 
@@ -9,11 +10,10 @@ Hello and welcome to The Howlin Developer Guide.
 
  * [Markdown Cheatsheet](./markdown.md)
  * [Latest Tricks](./latest.md)
- * [Guide Index](./index.md)
+ * [Guide Index](list_index.md)
 
 
-Contents
---------
+## Contents
 
 ### Apps
  * [Autoreload](./apps/autoreload.md)
