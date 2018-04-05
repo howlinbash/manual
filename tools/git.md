@@ -6,6 +6,45 @@ Git
 ===
 
 
+## Contents
+
+
+- [Basics](##Basics)
+  - [Quick Start](###Quick Start)
+  - [Branches](###Branches)
+  - [Analysis](###Analysis)
+  - [Back-tracking](###Back-tracking)
+- [Committing](##Committing)
+  - [Tips](###Tips)
+  - [Removing files](###Removing files)
+  - [git tags](###git tags)
+- [Branching](##Branching)
+  - [Branch Managemnet](###Branch Managemnet)
+  - [A Useful Workflow](###A Useful Workflow)
+- [Merging](##Merging)
+  - [Rebasing](###Rebasing)
+    - [A branch off another branch](####A branch off another branch)
+- [Analysis](##Analysis)
+  - [Log](###Log)
+  - [Short Status](###Short Status)
+  - [Staging](###Staging)
+- [Working with Remotes](##Working with Remotes)
+  - [Add Remote to Old Project](###Add Remote to Old Project)
+  - [Remotes](###Remotes)
+- [Back Tracking](##Back Tracking)
+  - [Undoing Things](###Undoing Things)
+- [House Keeping](##House Keeping)
+  - [Ignoring Files](###Ignoring Files)
+  - [Git Clean](###Git Clean)
+  - [Git Stash](###Git Stash)
+- [WorkFlows](##WorkFlows)
+  - [NVIE](###NVIE)
+    - [Feature branches ](####Feature branches )
+    - [Release branches](####Release branches)
+    - [Hotfix branches](####Hotfix branches)
+- [New Tricks](##New Tricks)
+
+
 ## Basics
 
 
@@ -151,9 +190,9 @@ git checkout -b version2 v2.0 # checkout (to branch-name version2) v.2.0
 ## Branching
 
 
-```bash 
-## Branch Managemnet
+### Branch Managemnet
 
+```bash 
 git branch                    # list current branches
 git branch -v                 # include summary of last commit
 git branch --merged           # already merged (ie if no *, its ok to delete)
@@ -260,7 +299,7 @@ git merge experiment          # fast foward master to c4
 The end result is the same commit that merge would create (c5 == c4)
 but the history would look linear with rebase. No trace of 'experment' branch.
 
-#### A topic branch off another topic branch
+#### A branch off another branch
 You branched a topic branch (server) to add some server-side functionality to
 your project, and made a commit.
 
@@ -386,7 +425,7 @@ git diff --cached             # compares all staged changes to last commit
 ## Working with Remotes
 
 
-### Create Remote Repo for Untracked Project
+### Add Remote to Old Project
 
 Create new repo on Gitlab and grab ssh url
 

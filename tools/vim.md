@@ -6,6 +6,48 @@ Vim
 ===
 
 
+## Contents
+
+
+- [Jotter](##Jotter)
+  - [Patterns](###Patterns)
+  - [Tips](###Tips)
+  - [To Add](###To Add)
+- [My Macros](##My Macros)
+- [Intro](##Intro)
+  - [Basics](###Basics)
+  - [Tips](###Tips)
+- [Essentials](##Essentials)
+  - [Navigate](###Navigate)
+  - [Insert](###Insert)
+  - [Undo](###Undo)
+  - [Delete](###Delete)
+  - [Substitute](###Substitute)
+  - [Search](###Search)
+  - [Copy-Paste](###Copy-Paste)
+  - [Style](###Style)
+- [Visual](##Visual)
+  - [vi & va - inside & around](###vi & va - inside & around)
+  - [Block Editing](###Block Editing)
+- [Interface](##Interface)
+  - [Windows](###Windows)
+  - [Buffers](###Buffers)
+- [Advanced](##Advanced)
+  - [Macros](###Macros)
+  - [Registers](###Registers)
+  - [Tips](###Tips)
+- [The Shell](##The Shell)
+  - [Shell Access](###Shell Access)
+  - [File System Explorer](###File System Explorer)
+  - [Searching](###Searching)
+- [Configuiration](##Configuiration)
+  - [Appearance](###Appearance)
+  - [.vimrc Options](###.vimrc Options)
+- [Help](##Help)
+  - [Help](###Help)
+  - [Prepends](###Prepends)
+
+
 ## Jotter
 
 
@@ -240,8 +282,6 @@ gU                 change sentence to uppercase
 ## Visual
 
 
-### Basics
-
 ```bash
 v                  select
 vw                 select word
@@ -249,7 +289,7 @@ v$                 select line
 ```
 
 
-### vi & va (inside & around)
+### vi & va - inside & around
 
 ```bash
 Suppose the cursor is on the first 'o' of

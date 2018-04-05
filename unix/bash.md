@@ -8,6 +8,16 @@ Bash
 [Back to Unix](./intro.md)
 
 
+## Contents
+
+
+- [Tips](##Tips)
+- [Setup](##Setup)
+- [History](##History)
+- [alias](##alias)
+- [Tricks](##Tricks)
+
+
 ## Tips
 
 

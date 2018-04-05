@@ -6,6 +6,31 @@ jQuery
 ======
 
 
+## Contents
+
+
+- [Basics](##Basics)
+  - [Document Ready Function](###Document Ready Function)
+  - [Selectors](###Selectors)
+  - [Methods](###Methods)
+  - [Events](###Events)
+    - [Mouse Events](####Mouse Events)
+    - [Keyboard Events](####Keyboard Events)
+    - [Form Events](####Form Events)
+- [The Dom](##The Dom)
+  - [Traversing the DOM](###Traversing the DOM)
+    - [HTML](####HTML)
+    - [jQuery](####jQuery)
+  - [Manipulating The DOM](###Manipulating The DOM)
+- [Debugging](##Debugging)
+  - [Type Casting](####Type Casting)
+  - [Bugs](####Bugs)
+- [Styles](##Styles)
+  - [Dirty Styles](####Dirty Styles)
+  - [Object Styles](####Object Styles)
+- [Animation](##Animation)
+
+
 ## Basics
 
 
@@ -151,7 +176,7 @@ $(document).ready(function(){
 alert($('element').length);
 ```
 
-#### Type Casting 
+#### Type Casting
 <span>12</span> 
 $(this) = string = 12
 +$(this) = int = 12
