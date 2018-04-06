@@ -30,4 +30,4 @@ Hello and welcome to The Howlin Developer Guide.
 - [jQuery](./frameworks/jquery.md)
 - [Node.js](./frameworks/node.md)
 ### Languages
-- [Javascript](./languages/javascript.md)
+- [Javascript](./languages/javascript/index.md)
