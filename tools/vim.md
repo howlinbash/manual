@@ -39,8 +39,6 @@ Vim
   - [Appearance](###Appearance)
   - [.vimrc Options](###.vimrc Options)
 - [Help](##Help)
-  - [Help](###Help)
-  - [Prepends](###Prepends)
 
 
 ## Intro
@@ -376,15 +374,11 @@ gp}                wrap text to tw to paragraph end
 ## Help
 
 
-### Help
-
 ```bash
 :help w            help with w command
 ```
 
-
-### Prepends
-
+Prepend these commands for special help pages
 ```bash
 (nothing)          Normal mode command                     :help x
 v_                 Visual mode command                     :help v_u
