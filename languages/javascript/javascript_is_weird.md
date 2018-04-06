@@ -5,6 +5,8 @@
 JavaScript is Weird
 ==========
 
+[Back to JavaScript](./index.md)
+
 
 ## Contents
 

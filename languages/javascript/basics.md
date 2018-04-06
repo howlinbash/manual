@@ -5,6 +5,8 @@
 Javascript Basics
 =================
 
+[Back to JavaScript](./index.md)
+
 
 ## Contents
 
