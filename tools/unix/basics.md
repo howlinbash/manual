@@ -8,6 +8,16 @@ Unix Basics
 [Back to Unix](./index.md)
 
 
+## Contents
+
+
+- [Navigation](##Navigation)
+- [Modification](##Modification)
+- [Help](##Help)
+- [ls](##ls)
+- [Cat, Pipe and Redirection](##Cat, Pipe and Redirection)
+
+
 ## Navigation
 
 
@@ -40,7 +50,7 @@ mkdir -p           # Create nested directory (like/this)
 ```
 
 
-## Help 
+## Help
 
 
 ```bash
@@ -55,8 +65,7 @@ file               # Determine file type
 ```
 
 
-ls
---
+## ls
 
 
 ```bash
@@ -68,4 +77,20 @@ ls -l              # List info on files
 ls -lh             # Above but make file size human readable
 ls -r              # Reverse default sort order of list command
 ls -t              # List in date order
+```
+
+
+## Cat, Pipe and Redirection
+
+
+cat > newdoc.txt
+ - then type what you want in the document carriage returns are fine. 
+ - Ctrl-D to exit
+
+```bash
+
+# Cat a bunch of files together
+cat ./* >> newfile.txt
+
+| less
 ```

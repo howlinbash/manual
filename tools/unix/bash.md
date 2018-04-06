@@ -15,7 +15,7 @@ Bash
 - [Setup](##Setup)
 - [History](##History)
 - [alias](##alias)
-- [Tricks](##Tricks)
+- [Cool Tricks](##Cool Tricks)
 
 
 ## Tips
@@ -62,7 +62,49 @@ echo "alias ll='ls -l'" >> .bash_aliases
 ```
 
 
-## Tricks
+## Cool Tricks
+
+
+```bash
+# Chain commands with the semi-colon.
+cd /usr/bin;ls;cd;
+
+# Command substitution
+ls -l $(which cp)
+
+# Bang-Bang: Use last typed command. Great if you forget sudo.
+vim /etc/hosts # Error! You need to be root user.
+sudo !!
+
+# Bang-Dollar: Use last argument.
+ls /some/long/directory
+cd !$
+
+# Caret Substitution
+vim /etc/Somefile.conf # Oops, that file doesn't exist!
+^f^F # (vim /etc/SomeFile.conf)
+
+# Make a bunch of file group with a changing suffix.
+touch doc_{1..5}.txt
+
+# this will print
+doc_1.txt
+doc_2.txt
+doc_3.txt
+doc_4.txt
+doc_5.txt
+
+# build a dir for every month of the year...
+mkdir {2009..2011}-0{1..9} {2009..2011}-{10..12}
+
+# Replace first arg with second arg {arg1,arg2}
+cp filename{,-old}
+cp filename{-old,}
+cp filename{-v1,-v2}
+
+```
+
+
 
 
 ```bash
