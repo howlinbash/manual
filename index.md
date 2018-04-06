@@ -18,10 +18,11 @@ Hello and welcome to The Howlin Developer Guide.
 - [Algorithms](./theory/algorithms.md)
 ### Languages
 - [Javascript](./languages/javascript/index.md)
-### Frameworks
+### Frameworks & Libraries
 - [Express](./frameworks/express.md)
 - [jQuery](./frameworks/jquery.md)
 - [Node.js](./frameworks/node.md)
+- [SQLAlchemy](./frameworks/sqlalchemy.md)
 ### Tools
 - [Git](./tools/git.md)
 - [Vim](./tools/vim.md)
