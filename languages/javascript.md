@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,45 @@ Javascript
 ==========
 
 
-Basics
-------
+## Contents
+
+
+- [Basics](##Basics)
+  - [Operators](###Operators)
+  - [Data Types](###Data Types)
+    - [Strings](####Strings)
+    - [Objects](####Objects)
+  - [Variables](###Variables)
+    - [Function Scopes](####Function Scopes)
+  - [Functions](###Functions)
+  - [Conditionals](###Conditionals)
+    - [If Statement](####If Statement)
+    - [Switch Statement](####Switch Statement)
+    - [Choose Your own Adventure](####Choose Your own Adventure)
+  - [Loops](###Loops)
+    - [For Loop](####For Loop)
+    - [While Loop ](####While Loop )
+    - [The Do While Loop](####The Do While Loop)
+  - [Arrays](###Arrays)
+    - [Further Arrays](####Further Arrays)
+  - [Objects](###Objects)
+    - [Accessing Properties](####Accessing Properties)
+    - [Creating Objects](####Creating Objects)
+    - [Methods](####Methods)
+    - [This](####This)
+    - [Constructors](####Constructors)
+    - [Building a Cash Register](####Building a Cash Register)
+- [JavaScript is Weird](##JavaScript is Weird)
+  - [Hoisting](###Hoisting)
+  - [Context](###Context)
+    - [Changing Context](####Changing Context)
+    - [Scoping Problem Workarounds](####Scoping Problem Workarounds)
+- [You Dont Know JS](##You Dont Know JS)
+  - [Scope](###Scope)
+    - [Engines variable look-up: LHS & RHS](####Engines variable look-up: LHS & RHS)
+
+
+## Basics
 
 
 ### Operators
@@ -414,7 +451,7 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
     };
 ```
 
-#### 'Do' / 'While' Loop
+#### The Do While Loop
 To make sure a loop runs at least once before conditional checked.
 
 **Example Script**
@@ -584,8 +621,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-JavaScript is Weird
--------------------
+## JavaScript is Weird
 
 
 ### Hoisting
@@ -758,8 +794,7 @@ I want the second 'this' to refer to the first element '#opendiv'
 Caveat: 'this' can no longer equal '#div1' it will now always equal '#opendiv'
 
 
-You Don't Know JS
------------------
+## You Dont Know JS
 
 
 ### Scope
@@ -825,7 +860,7 @@ We can break the engine into 3 parts
 10 │  }                                 10 │  }
 ```
 
-#### Engine's variable look-up (LHS & RHS)
+#### Engines variable look-up: LHS & RHS
 LHS asks for the container, RHS references the container.
 
 **Line 1**

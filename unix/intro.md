@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -14,8 +14,22 @@ Unix
  * [System Debugging](./debug.md)
 
 
-To Do
------
+## Contents
+
+
+- [To Do](##To Do)
+- [Utilities](##Utilities)
+  - [Cal](###Cal)
+- [Cool Tricks](##Cool Tricks)
+- [Cat, Pipe and Redirection](##Cat, Pipe and Redirection)
+- [Users & Groups](##Users & Groups)
+  - [Permissions](###Permissions)
+- [Filesystem](##Filesystem)
+  - [OS X Variations](###OS X Variations)
+  - [To Add](###To Add)
+
+
+## To Do
 
 
 * Grab CS50 Notes
@@ -23,8 +37,7 @@ To Do
 * finish utilities
 
 
-Utilities
----------
+## Utilities
 
 
 ### Cal
@@ -46,8 +59,7 @@ xargs
 ```
 
 
-Cool Tricks
------------
+## Cool Tricks
 
 
 ```bash
@@ -90,8 +102,7 @@ cp filename{-v1,-v2}
 ```
 
 
-Cat, Pipe and Redirection
--------------------------
+## Cat, Pipe and Redirection
 
 
 cat > newdoc.txt
@@ -107,12 +118,10 @@ cat ./* >> newfile.txt
 ```
 
 
-Users & Groups
---------------
+## Users & Groups
 
 
-Permissions
------------
+### Permissions
 
 
 ```bash
@@ -127,8 +136,7 @@ chmod 600 <filename>
 ```
 
 
-Filesystem
-----------
+## Filesystem
 
 
 For more info on unmentioned dirs check out:  

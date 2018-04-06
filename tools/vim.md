@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,49 @@ Vim
 ===
 
 
-Jotter
-------
+## Contents
+
+
+- [Jotter](##Jotter)
+  - [Patterns](###Patterns)
+  - [Tips](###Tips)
+  - [To Add](###To Add)
+- [My Macros](##My Macros)
+- [Intro](##Intro)
+  - [Basics](###Basics)
+  - [Tips](###Tips)
+- [Essentials](##Essentials)
+  - [Navigate](###Navigate)
+  - [Insert](###Insert)
+  - [Undo](###Undo)
+  - [Delete](###Delete)
+  - [Substitute](###Substitute)
+  - [Search](###Search)
+  - [Copy-Paste](###Copy-Paste)
+  - [Style](###Style)
+- [Visual](##Visual)
+  - [vi & va - inside & around](###vi & va - inside & around)
+  - [Block Editing](###Block Editing)
+- [Interface](##Interface)
+  - [Windows](###Windows)
+  - [Buffers](###Buffers)
+- [Advanced](##Advanced)
+  - [Macros](###Macros)
+  - [Registers](###Registers)
+  - [Tips](###Tips)
+- [The Shell](##The Shell)
+  - [Shell Access](###Shell Access)
+  - [File System Explorer](###File System Explorer)
+  - [Searching](###Searching)
+- [Configuiration](##Configuiration)
+  - [Appearance](###Appearance)
+  - [.vimrc Options](###.vimrc Options)
+- [Help](##Help)
+  - [Help](###Help)
+  - [Prepends](###Prepends)
+
+
+## Jotter
 
 
 ```bash
@@ -57,8 +98,7 @@ resize split       :30winc -
 ```
 
 
-My Macros
----------
+## My Macros
 
 
 ```bash
@@ -79,8 +119,7 @@ i|  A  |0O=i=78.j0f|kld$yyjp
 ```
 
 
-Intro
------
+## Intro
 
 
 ### Basics
@@ -104,8 +143,7 @@ When typing a : command, press CTRL-D to see possible completions.
 ```
 
 
-Essentials
-----------
+## Essentials
 
 
 ### Navigate
@@ -241,11 +279,8 @@ gU                 change sentence to uppercase
 ```
 
 
-Visual
-------
+## Visual
 
-
-### Basics
 
 ```bash
 v                  select
@@ -254,7 +289,7 @@ v$                 select line
 ```
 
 
-### vi & va (inside & around)
+### vi & va - inside & around
 
 ```bash
 Suppose the cursor is on the first 'o' of
@@ -279,8 +314,7 @@ I//[esc]           use // to comment block
 ```
 
 
-Interface
----------
+## Interface
 
 
 ### Windows
@@ -308,8 +342,7 @@ ctrl-w x           swap windows
 ```
 
 
-Advanced
---------
+## Advanced
 
 
 ### Macros
@@ -346,8 +379,7 @@ You can add a macro to a macro -- meta-macros :-)
 ```
 
 
-The Shell
----------
+## The Shell
 
 
 ### Shell Access
@@ -389,8 +421,7 @@ P                  opens in the file in the adjacent window
 ```
 
 
-Configuiration
---------------
+## Configuiration
 
 
 ### Appearance
@@ -418,8 +449,7 @@ gp}                wrap text to tw to paragraph end
 ```
 
 
-Help
-----
+## Help
 
 
 ### Help

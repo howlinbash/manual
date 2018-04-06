@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,46 @@ Git
 ===
 
 
-Basics
-------
+## Contents
+
+
+- [Basics](##Basics)
+  - [Quick Start](###Quick Start)
+  - [Branches](###Branches)
+  - [Analysis](###Analysis)
+  - [Back-tracking](###Back-tracking)
+- [Committing](##Committing)
+  - [Tips](###Tips)
+  - [Removing files](###Removing files)
+  - [git tags](###git tags)
+- [Branching](##Branching)
+  - [Branch Managemnet](###Branch Managemnet)
+  - [A Useful Workflow](###A Useful Workflow)
+- [Merging](##Merging)
+  - [Rebasing](###Rebasing)
+    - [A branch off another branch](####A branch off another branch)
+- [Analysis](##Analysis)
+  - [Log](###Log)
+  - [Short Status](###Short Status)
+  - [Staging](###Staging)
+- [Working with Remotes](##Working with Remotes)
+  - [Add Remote to Old Project](###Add Remote to Old Project)
+  - [Remotes](###Remotes)
+- [Back Tracking](##Back Tracking)
+  - [Undoing Things](###Undoing Things)
+- [House Keeping](##House Keeping)
+  - [Ignoring Files](###Ignoring Files)
+  - [Git Clean](###Git Clean)
+  - [Git Stash](###Git Stash)
+- [WorkFlows](##WorkFlows)
+  - [NVIE](###NVIE)
+    - [Feature branches ](####Feature branches )
+    - [Release branches](####Release branches)
+    - [Hotfix branches](####Hotfix branches)
+- [New Tricks](##New Tricks)
+
+
+## Basics
 
 
 ### Quick Start
@@ -104,8 +142,7 @@ git checkout [hash] -- path/to/file
 ```
 
 
-Committing
-----------
+## Committing
 
 
 ### Tips
@@ -150,13 +187,12 @@ git checkout -b version2 v2.0 # checkout (to branch-name version2) v.2.0
 ```
 
 
-Branching
----------
+## Branching
 
+
+### Branch Managemnet
 
 ```bash 
-## Branch Managemnet
-
 git branch                    # list current branches
 git branch -v                 # include summary of last commit
 git branch --merged           # already merged (ie if no *, its ok to delete)
@@ -221,8 +257,7 @@ git branch -d iss53
 ```
 
 
-Merging
--------
+## Merging
 
 
 ### Rebasing
@@ -264,7 +299,7 @@ git merge experiment          # fast foward master to c4
 The end result is the same commit that merge would create (c5 == c4)
 but the history would look linear with rebase. No trace of 'experment' branch.
 
-#### A topic branch off another topic branch
+#### A branch off another branch
 You branched a topic branch (server) to add some server-side functionality to
 your project, and made a commit.
 
@@ -332,8 +367,7 @@ git branch -d server          # so they can be deleted
 ```
 
 
-Analysis
---------
+## Analysis
 
 
 ### Log
@@ -388,11 +422,10 @@ git diff --cached             # compares all staged changes to last commit
 ```
 
 
-Working with Remotes
---------------------
+## Working with Remotes
 
 
-### Create Remote Repo for Untracked Project
+### Add Remote to Old Project
 
 Create new repo on Gitlab and grab ssh url
 
@@ -487,8 +520,7 @@ git push origin --delete hotfix
 ```
 
 
-Back Tracking
--------------
+## Back Tracking
 
 
 ### Undoing Things
@@ -503,8 +535,7 @@ git reset HEAD <file>         # unstage a file
 ```
 
 
-House Keeping
--------------
+## House Keeping
 
 
 ### Ignoring Files
@@ -552,8 +583,7 @@ git stash branch              # recover stash from old commit and apply
 ```
 
 
-WorkFlows
----------
+## WorkFlows
 
 
 ### NVIE
@@ -734,8 +764,7 @@ $ git merge --no-ff hotfix-1.2.1
 You may instead wish to merge the hotfix into the release branch instead.
 
 
-New Tricks
-----------
+## New Tricks
 
 
 ```bash

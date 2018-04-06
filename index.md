@@ -1,26 +1,40 @@
-[The Howlin Developer Guide](./home.md)
 
 
 
-Index
-=====
+
+The Howlin Developer Guide
+==========================
 
 
+Hello and welcome to The Howlin Developer Guide.
+
+ * [Markdown Cheatsheet](./markdown.md)
+ * [Latest Tricks](./latest.md)
+ * [Guide Index](list_index.md)
+
+
+## Contents
+
+### Apps
  * [Autoreload](./apps/autoreload.md)
- * [Bash](./bash.md)
  * [Bower](./apps/bower.md)
- * [Express](./frameworks/express.md)
- * [Git](./tools/git.md)
  * [Grunt](./apps/grunt.md)
- * [Javascript](./languages/javascript.md)
- * [jQuery](./frameworks/jquery.md)
- * [Network (Unix)](./unix/network.md)
- * [Node.js](./frameworks/node.md)
- * [OS X (Unix)](./unix/osx.md)
- * [Search (Unix)](./unix/search.md)
- * [Unix](./unix/intro.md)
- * [Unix Basics](./unix/basics.md)
- * [Unix System Debugging](./unix/debug.md)
  * [Vagrant](./apps/vagrant.md)
- * [Vim](./tools/vim.md)
  * [Yeoman](./apps/yeoman.md)
+### Tools
+ * [Git](./tools/git.md)
+ * [Vim](./tools/vim.md)
+### Frameworks
+ * [Express](./frameworks/express.md)
+ * [jQuery](./frameworks/jquery.md)
+ * [Node.js](./frameworks/node.md)
+### Languages
+ * [Javascript](./languages/javascript.md)
+### Unix
+ * [Introduction](./unix/intro.md)
+ * [Basics](./unix/basics.md)
+ * [Bash](./unix/bash.md)
+ * [Network](./unix/network.md)
+ * [OS X](./unix/osx.md)
+ * [Search](./unix/search.md)
+ * [System Debugging](./unix/debug.md)

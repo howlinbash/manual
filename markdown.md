@@ -1,9 +1,24 @@
-[The Howlin Developer Guide](./home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
 Markdown Cheatsheet
 ===================
+
+
+## Contents
+
+
+- [Headings](###Headings)
+- [Emphasis](###Emphasis)
+- [Lists](###Lists)
+- [Links](###Links)
+- [Images](###Images)
+- [Code and Syntax Highlighting](###Code and Syntax Highlighting)
+- [Tables](###Tables)
+- [Blockquotes](###Blockquotes)
+- [Inline HTML](###Inline HTML)
+- [Horizontal Rule](###Horizontal Rule)
 
 
 ### Headings
@@ -21,8 +36,7 @@ Markdown Cheatsheet
 #### Header 4
 
 
-Emphasis
---------
+### Emphasis
 
 ```markdown
 **BOLD** or __BOLD__

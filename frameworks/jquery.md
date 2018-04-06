@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -6,8 +6,32 @@ jQuery
 ======
 
 
-Basics
-------
+## Contents
+
+
+- [Basics](##Basics)
+  - [Document Ready Function](###Document Ready Function)
+  - [Selectors](###Selectors)
+  - [Methods](###Methods)
+  - [Events](###Events)
+    - [Mouse Events](####Mouse Events)
+    - [Keyboard Events](####Keyboard Events)
+    - [Form Events](####Form Events)
+- [The Dom](##The Dom)
+  - [Traversing the DOM](###Traversing the DOM)
+    - [HTML](####HTML)
+    - [jQuery](####jQuery)
+  - [Manipulating The DOM](###Manipulating The DOM)
+- [Debugging](##Debugging)
+  - [Type Casting](####Type Casting)
+  - [Bugs](####Bugs)
+- [Styles](##Styles)
+  - [Dirty Styles](####Dirty Styles)
+  - [Object Styles](####Object Styles)
+- [Animation](##Animation)
+
+
+## Basics
 
 
 ### Document Ready Function
@@ -78,8 +102,7 @@ submit
 ```
 
 
-The Dom
--------
+## The Dom
 
 
 ### Traversing the DOM
@@ -146,15 +169,14 @@ $(document).ready(function(){
 ```
 
 
-Debugging
----------
+## Debugging
 
 
 ```javascript
 alert($('element').length);
 ```
 
-#### Type Casting 
+#### Type Casting
 <span>12</span> 
 $(this) = string = 12
 +$(this) = int = 12
@@ -164,8 +186,7 @@ $(this) = string = 12
 .stopPropagation
 
 
-Styles
-------
+## Styles
 
 
 #### Dirty Styles
@@ -181,8 +202,7 @@ $(this).css({'background-color': '#252b30',
 ```
 
 
-Animation
----------
+## Animation
 
 
 ```javascript

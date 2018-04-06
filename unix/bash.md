@@ -1,4 +1,4 @@
-[The Howlin Developer Guide](../home.md)
+[The Howlin Developer Guide](/index.md)
 
 
 
@@ -8,15 +8,23 @@ Bash
 [Back to Unix](./intro.md)
 
 
-Tips
-----
+## Contents
+
+
+- [Tips](##Tips)
+- [Setup](##Setup)
+- [History](##History)
+- [alias](##alias)
+- [Tricks](##Tricks)
+
+
+## Tips
 
 
  * If you press 'Ctrl-s' by accident, unfreeze the terminal with 'Ctrl-Q'
 
 
-Setup
------
+## Setup
 
 
 ```bash
@@ -34,8 +42,7 @@ vim ~/.inputrc
 ```
 
 
-History
--------
+## History
 
 
 ```bash
@@ -44,8 +51,7 @@ history 2133
 ```
 
 
-alias
------
+## alias
 
 
 ```bash
@@ -56,8 +62,7 @@ echo "alias ll='ls -l'" >> .bash_aliases
 ```
 
 
-Tricks
-------
+## Tricks
 
 
 ```bash
