@@ -33,5 +33,7 @@ Hello and welcome to The Howlin Developer Guide.
 - [Autoreload](./apps/autoreload.md)
 - [Bower](./apps/bower.md)
 - [Grunt](./apps/grunt.md)
+- [Mutt](./apps/mutt.md)
 - [Vagrant](./apps/vagrant.md)
+- [WeeChat](./apps/weechat.md)
 - [Yeoman](./apps/yeoman.md)
