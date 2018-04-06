@@ -6,12 +6,12 @@ Unix
 ====
 
 
- * [Unix Basics](./basics.md)
- * [Bash](./bash.md)
- * [Network](./network.md)
- * [OS X](./osx.md)
- * [Search](./search.md)
- * [System Debugging](./debug.md)
+- [Unix Basics](./basics.md)
+- [Bash](./bash.md)
+- [Network](./network.md)
+- [OS X](./osx.md)
+- [Search](./search.md)
+- [System Debugging](./debug.md)
 
 
 ## Contents

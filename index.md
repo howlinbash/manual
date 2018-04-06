@@ -24,17 +24,10 @@ Hello and welcome to The Howlin Developer Guide.
 ### Tools
  * [Git](./tools/git.md)
  * [Vim](./tools/vim.md)
+ * [Unix](./tools/unix/index.md)
 ### Frameworks
  * [Express](./frameworks/express.md)
  * [jQuery](./frameworks/jquery.md)
  * [Node.js](./frameworks/node.md)
 ### Languages
  * [Javascript](./languages/javascript.md)
-### Unix
- * [Introduction](./unix/intro.md)
- * [Basics](./unix/basics.md)
- * [Bash](./unix/bash.md)
- * [Network](./unix/network.md)
- * [OS X](./unix/osx.md)
- * [Search](./unix/search.md)
- * [System Debugging](./unix/debug.md)
