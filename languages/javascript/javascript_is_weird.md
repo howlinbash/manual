@@ -17,12 +17,12 @@ JavaScript is Weird
 
 ## Hoisting
 
+
  - Functions are hoisted to the top and read
  - Variables are hoisted to the top, registered but not read
  - If you assign a function to a variable it will be registered but not read.
 
 This
-
 ```javascript
     function foo() {
       bar();
@@ -31,7 +31,6 @@ This
 ```
 
 Runs like this.
-
 ```javascript
     function foo() {
       var x;
@@ -42,7 +41,6 @@ Runs like this.
 
 So here, the name 'foo' is hoisted, but the body is left behind.  
 It will only be assigned during execution.
-
 ```javascript
     function test() {
       foo();                       // TypeError "foo is not a function"
@@ -60,11 +58,11 @@ It will only be assigned during execution.
 
 ## Context
 
+
 scope === variable access  
 context === this
 
 In the root scope, the context is this.
-
 ```javascript
     console.log(this);             // Window {...}
     console.log(this === window);  // true
@@ -79,7 +77,6 @@ In the root scope, the context is this.
 ```
 
 If we change the scope, the context still remains (the window object)
-
 ```javascript
     function foo() {
       console.log(this);
@@ -89,7 +86,6 @@ If we change the scope, the context still remains (the window object)
 ```
 
 A function runs with the context of the object that called it.
-
 ```javascript
     var obj = {
       foo: function () {
@@ -102,14 +98,15 @@ A function runs with the context of the object that called it.
 
 now obj is the context.
 
+
 ### Changing Context
+
 3 methods change the context:
  - call
  - apply
  - bind
 
 **call**
-
 ```javascript
     var obj = {
       foo: function () {
@@ -121,7 +118,6 @@ now obj is the context.
 ```
 
 We can also pass arguments to the function.
-
 ```javascript
     var obj = {
       foo: function (one, two, three) {
@@ -148,9 +144,10 @@ Bind, returns a bound function
 
 so myBoundFoo() always executes foo with the context 'window' instead of obj.
 
-### Scoping Problem Workarounds
-I want the second 'this' to refer to the first element '#opendiv'
 
+### Scoping Problem Workarounds
+
+I want the second 'this' to refer to the first element '#opendiv'
 ```javascript
     $('#opendiv').on('click', function() {
       this;                                      // this: #opendiv
@@ -161,7 +158,6 @@ I want the second 'this' to refer to the first element '#opendiv'
 ```
 
 **The Scope Method**
-
 ```javascript
     $('#opendiv').on('click', function() {
       var _self = this;
@@ -172,7 +168,6 @@ I want the second 'this' to refer to the first element '#opendiv'
 ```
 
 **The Bind Method**
-
 ```javascript
     $('#opendiv').on('click', function() {
       // Caveat (this)
@@ -183,5 +178,3 @@ I want the second 'this' to refer to the first element '#opendiv'
 ```
 
 Caveat: 'this' can no longer equal '#div1' it will now always equal '#opendiv'
-
-
