@@ -14,6 +14,8 @@ Hello and welcome to The Howlin Developer Guide.
 
 ## Contents
 
+### Theory
+- [Algorithms](./theory/algorithms.md)
 ### Languages
 - [Javascript](./languages/javascript/index.md)
 ### Frameworks
