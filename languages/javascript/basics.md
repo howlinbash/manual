@@ -22,7 +22,7 @@ Javascript Basics
   - [Choose Your own Adventure](###Choose Your own Adventure)
 - [Loops](##Loops)
   - [For Loop](###For Loop)
-  - [While Loop ](###While Loop )
+  - [While Loop](###While Loop)
   - [The Do While Loop](###The Do While Loop)
 - [Arrays](##Arrays)
   - [Further Arrays](###Further Arrays)
@@ -37,8 +37,8 @@ Javascript Basics
 
 ## Operators
 
-**Logical Operators**
 
+**Logical Operators**
 ```javascript
     // And
     true && true;             // TRUE
@@ -56,8 +56,8 @@ Javascript Basics
     !true;                    // FALSE
     !false;                   // TRUE
 ```
-**Comparison Operators**
 
+**Comparison Operators**
 ```javascript
     >                          // Greater than
     <                          // Less than
@@ -68,7 +68,6 @@ Javascript Basics
 ```
 
 Modulo returns the remainder of a division.
-
 ```javascript
     17 % 5                    // 2
     13 % 7                    // 6
@@ -77,15 +76,17 @@ Modulo returns the remainder of a division.
 
 ## Data Types
 
+
  - string
  - number
  - boolean
  - null and undefined
  - object
 
-### Strings
-A string is zero indexed
 
+### Strings
+
+A string is zero indexed
 ```javascript
     0 1 2 3 4
     | | | | |
@@ -95,7 +96,9 @@ A string is zero indexed
     "hello".substring(0, 2);  // he
 ```
 
+
 ### Objects
+
 ```javascript
     var obj = {
       a: "hello world",
@@ -112,7 +115,6 @@ There are two ways to create an object: using *object literal notation* and
 using the *object constructor*.
 
 Literal notation is just creating an object with curly braces, like this:
-
 ```javascript
     var myObj = {
       type:        'fancy',
@@ -123,13 +125,11 @@ Literal notation is just creating an object with curly braces, like this:
 ```
 
 The constructor syntax looks like this:
-
 ```javascript
     var myObj = new Object();
 ```
 
 Post creation property declaration (the second is shorthand for the first):
-
 ```javascript
     // dot notation
     myObj["name"] = "Charlie";
@@ -139,7 +139,6 @@ Post creation property declaration (the second is shorthand for the first):
 ```
 
 **Example Script**
-
 ```javascript
     var friends = {};
 
@@ -189,10 +188,11 @@ Post creation property declaration (the second is shorthand for the first):
     myAge = "Thirty-one";
 ```
 
+
 ### Function Scopes
+
 Variables defined *outside* a function are accessible anywhere once they have
 been declared. They're called *global variables* and their scope is global.
-
 ```javascript
     var globalVar = "hello";
 
@@ -204,7 +204,6 @@ been declared. They're called *global variables* and their scope is global.
 The variable *globalVar* can be accessed anywhere, even inside the function
 *foo*. Variables defined *inside* a function are *local variables*. They cannot
 be accessed outside of that function.
-
 ```javascript
     var bar = function bar() {
       var localVar = "howdy";
@@ -219,8 +218,8 @@ localVar outside the function gives an error.
 
 ## Functions
 
-A function takes in inputs, does something with them, and produces an output.
 
+A function takes in inputs, does something with them, and produces an output.
 ```javascript
    var sayHello = function sayHello(name) {
      console.log('Hello ' + name);
@@ -228,7 +227,6 @@ A function takes in inputs, does something with them, and produces an output.
 ```
 
 You can run this code by "calling" the function, like this:
-
 ```javascript
     sayHello("Emily");		    // Hello Emily
 ```
@@ -236,7 +234,9 @@ You can run this code by "calling" the function, like this:
 
 ## Conditionals
 
+
 ### If Statement
+
 ```javascript
     var userChoice = prompt("Do you choose rock, paper or scissors?");
     var computerChoice = Math.random();
@@ -278,7 +278,9 @@ You can run this code by "calling" the function, like this:
     compare(userChoice, computerChoice);
 ```
 
+
 ### Switch Statement
+
 ```javascript
     switch (/*Some expression*/) {
       case 'option1':
@@ -295,7 +297,9 @@ You can run this code by "calling" the function, like this:
     };
 ```
 
+
 ### Choose Your own Adventure
+
 ```javascript
     var troll = prompt("You're walking through the forest, minding your own business, and you run into a troll! Do you FIGHT him, PAY him, or RUN?").toUpperCase();
     
@@ -344,9 +348,10 @@ You can run this code by "calling" the function, like this:
 
 ## Loops
 
-### For Loop
-NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 
+### For Loop
+
+NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```javascript
     // Syntax
     for (var i = 1; i < 11; i = i + 1) {
@@ -366,7 +371,6 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 **Loop Through an Array**
-
 ```javascript
     var cities = ["Melbourne", "Amman", "Helsinki", "NYC"];
 
@@ -376,7 +380,6 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 **Example Script**
-
 ```javascript
     var text = "The Reds sign Trevor on a 3 year deal worth £20 million. Trevor has agreed a three-year deal with their rivals for a rumoured £20 million.";
     var name = "Trevor";
@@ -397,9 +400,10 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
     };
 ```
 
-### While Loop 
-**Example Script**
 
+### While Loop
+
+**Example Script**
 ```javascript
     var num = 0;
     
@@ -414,7 +418,6 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 **Another Example Script**
-
 ```javascript
     var slaying         = true;
     var youHit          = Math.floor(Math.random() * 2);
@@ -439,11 +442,12 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
     };
 ```
 
+
 ### The Do While Loop
+
 To make sure a loop runs at least once before conditional checked.
 
 **Example Script**
-
 ```javascript
     loopCondition = false;
     
@@ -457,13 +461,13 @@ To make sure a loop runs at least once before conditional checked.
 
 ## Arrays
 
+
 An object that holds values (of any type) in numerically indexed positions.  
 Any time you see data surrounded by [ ], it is an array.
 
 a. store *lists* of data  
 b. can store *different data types* at the same time  
 c. are *ordered* so the position of each piece of data is fixed  
-
 ```javascript
     var names = ["Mao","Gandhi","Mandela"];
     var sizes = [4, 6, 3, 2, 1, 9];
@@ -479,7 +483,9 @@ c. are *ordered* so the position of each piece of data is fixed
     }
 ```
 
+
 ### Further Arrays
+
 ```javascript
     // heterogenous arrays (mixed type)
     var myArray = [12, true, "likethis"];
@@ -494,7 +500,9 @@ c. are *ordered* so the position of each piece of data is fixed
 
 ## Objects
 
+
 ### Accessing Properties
+
 ```javascript
     var bob = {
       name: "Bob Smith",
@@ -513,7 +521,9 @@ c. are *ordered* so the position of each piece of data is fixed
     var age2 = susan["age"];
 ```
 
+
 ### Creating Objects
+
 ```javascript
     // Literal notation
     var snoopy = {
@@ -527,7 +537,9 @@ c. are *ordered* so the position of each piece of data is fixed
       buddy.age = 5;
 ```
 
+
 ### Methods
+
 ```javascript
     bob.setAge = function(newAge){
       bob.age = newAge;
@@ -536,7 +548,9 @@ c. are *ordered* so the position of each piece of data is fixed
     bob.setAge(20);
 ```
 
+
 ### This
+
 ```javascript
     var setAge = function (newAge) {
       this.age = newAge;
@@ -549,7 +563,9 @@ c. are *ordered* so the position of each piece of data is fixed
     bob.setAge(50);
 ```
 
+
 ### Constructors
+
 ```javascript
     function Person(name,age) {
       this.name = name;
@@ -560,7 +576,9 @@ c. are *ordered* so the position of each piece of data is fixed
     var susan = new Person("Susan Jordan", 25);
 ```
 
+
 ### Building a Cash Register
+
 ```javascript
     function StaffMember(name, discountPercent) {
       this.name            = name;
@@ -607,5 +625,3 @@ c. are *ordered* so the position of each piece of data is fixed
     
     console.log('Your bill is '+cashRegister.total.toFixed(2));
 ```
-
-
