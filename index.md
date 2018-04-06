@@ -8,8 +8,8 @@ The Howlin Developer Guide
 
 Hello and welcome to The Howlin Developer Guide.
 
-- [Markdown Cheatsheet](./markdown.md)
 - [Latest Tricks](./latest.md)
+- [Markdown Cheatsheet](./markdown.md)
 
 
 ## Contents
