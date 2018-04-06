@@ -9,11 +9,6 @@ Vim
 ## Contents
 
 
-- [Jotter](##Jotter)
-  - [Patterns](###Patterns)
-  - [Tips](###Tips)
-  - [To Add](###To Add)
-- [My Macros](##My Macros)
 - [Intro](##Intro)
   - [Basics](###Basics)
   - [Tips](###Tips)
@@ -44,79 +39,6 @@ Vim
   - [Appearance](###Appearance)
   - [.vimrc Options](###.vimrc Options)
 - [Help](##Help)
-  - [Help](###Help)
-  - [Prepends](###Prepends)
-
-
-## Jotter
-
-
-```bash
-~                  toggle case
-W                  WORD
-E                  END
-g_                 To the last non blank character
-gm                 move across line to middle of screen
-ge (gE)            backward to the end of word
-t                  move to before char (like f)
-dap                delete around paragraph
-dk                 deletes 2 lines up
-dj                 deletes 2 lines down
-dvj                deletes from the cursor until the character below the cursor
-d<C-V>j            deletes the character under and below the cursor.
-)                  [count] sentences forwards
-(                  [count] sentences backwards
-:r FILENAME        will paste file contents below curser
-:r! ls             will paste command output below curser
-```
-
-
-### Patterns
-
-```bash
-cwBAR/FOO<ent>.n.n change word, find next, repeat change word
-```
-
-
-### Tips
-
-```bash
-leader bindings on vimrc file
-```
-
-
-### To Add
-
-```bash
-Custom Colours     set ft=socket-bug
-tmux fix           set term=screen-256color
-window manipulation
-focus split        ctrl-w _
-equalize splits    ctrl-w =
-resize split       :30winc -
-                   :30winc +
-```
-
-
-## My Macros
-
-
-```bash
-"nyy               "Yank any of the below macros to n
-
-# tab to col 20
-hvgeldi 19.020|vwhd0
-# make a numbered list
-Yp
-# Remove == Title tags
-0dw$bd$0k
-# Add || Box Title tag
-i|  A  |0O=i=78.j0f|kld$yyjp
-# Add == Title Tag
-0Oji== A ==o
-# Add === TITLE Tag
-0OjVgUi===A===0ok
-```
 
 
 ## Intro
@@ -452,15 +374,11 @@ gp}                wrap text to tw to paragraph end
 ## Help
 
 
-### Help
-
 ```bash
 :help w            help with w command
 ```
 
-
-### Prepends
-
+Prepend these commands for special help pages
 ```bash
 (nothing)          Normal mode command                     :help x
 v_                 Visual mode command                     :help v_u
