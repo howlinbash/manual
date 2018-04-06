@@ -46,9 +46,15 @@ vim ~/.inputrc
 
 
 ```bash
-# print the 2133rd command from the history log
-history 2133 
+!0:p # error
+!-1:p                         # last command
+!-2:p                         # penultimate command
+!-3:p                         # 3rd last command
 ```
+
+errors don't get added to history stack.
+
+If bash_history gets out of sync reindex it with `history -w`
 
 
 ## alias
