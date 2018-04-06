@@ -25,6 +25,8 @@ Hello and welcome to The Howlin Developer Guide.
 - [SQLAlchemy](./frameworks/sqlalchemy.md)
 ### Tools
 - [Git](./tools/git.md)
+- [Ranger](./tools/ranger.md)
+- [Sway](./tools/sway.md)
 - [Vim](./tools/vim.md)
 - [Unix](./tools/unix/index.md)
 ### Apps
