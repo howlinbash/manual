@@ -5,6 +5,8 @@
 Express.js
 ==========
 
+[More JavaScript](/languages/javascript/index.md)
+
 
 ### Quick Start
 

@@ -5,6 +5,8 @@
 jQuery
 ======
 
+[More JavaScript](/languages/javascript/index.md)
+
 
 ## Contents
 
