@@ -1,83 +1,51 @@
+[The Howlin Developer Guide](/index.md)
 
 
 
-[The Howlin Developer Guide](../home.md)
+Vim
+===
 
 
-
-# Vim
-
+## Contents
 
 
-## Jotter
-
-```bash
-~                  toggle case
-W                  WORD
-E                  END
-g_                 To the last non blank character
-gm                 move across line to middle of screen
-ge (gE)            backward to the end of word
-t                  move to before char (like f)
-dap                delete around paragraph
-dk                 deletes 2 lines up
-dj                 deletes 2 lines down
-dvj                deletes from the cursor until the character below the cursor
-d<C-V>j            deletes the character under and below the cursor.
-)                  [count] sentences forwards
-(                  [count] sentences backwards
-:r FILENAME        will paste file contents below curser
-:r! ls             will paste command output below curser
-```
-
-### Patterns
-
-```bash
-cwBAR/FOO<ent>.n.n change word, find next, repeat change word
-```
-
-### Tips
-```bash
-leader bindings on vimrc file
-```
-
-### To Add
-```bash
-Custom Colours     set ft=socket-bug
-tmux fix           set term=screen-256color
-window manipulation
-focus split        ctrl-w _
-equalize splits    ctrl-w =
-resize split       :30winc -
-                   :30winc +
-```
-
-
-
-## My Macros
-
-```bash
-"nyy               "Yank any of the below macros to n
-
-# tab to col 20
-hvgeldi 19.020|vwhd0
-# make a numbered list
-Yp
-# Remove == Title tags
-0dw$bd$0k
-# Add || Box Title tag
-i|  A  |0O=i=78.j0f|kld$yyjp
-# Add == Title Tag
-0Oji== A ==o
-# Add === TITLE Tag
-0OjVgUi===A===0ok
-```
-
+- [Intro](##Intro)
+  - [Basics](###Basics)
+  - [Tips](###Tips)
+- [Essentials](##Essentials)
+  - [Navigate](###Navigate)
+  - [Insert](###Insert)
+  - [Undo](###Undo)
+  - [Delete](###Delete)
+  - [Substitute](###Substitute)
+  - [Search](###Search)
+  - [Copy-Paste](###Copy-Paste)
+  - [Style](###Style)
+- [Visual](##Visual)
+  - [vi & va - inside & around](###vi & va - inside & around)
+  - [Block Editing](###Block Editing)
+- [Interface](##Interface)
+  - [Windows](###Windows)
+  - [Buffers](###Buffers)
+- [Advanced](##Advanced)
+  - [Macros](###Macros)
+  - [Registers](###Registers)
+  - [Tips](###Tips)
+- [The Shell](##The Shell)
+  - [Shell Access](###Shell Access)
+  - [File System Explorer](###File System Explorer)
+  - [Searching](###Searching)
+- [Configuiration](##Configuiration)
+  - [Appearance](###Appearance)
+  - [.vimrc Options](###.vimrc Options)
+- [Help](##Help)
 
 
 ## Intro
 
+
 ### Basics
+
 ```bash
 :q                 Quit
 :wq                Save & Quit
@@ -85,7 +53,9 @@ i|  A  |0O=i=78.j0f|kld$yyjp
 CTRL W-W           switch window
 ```
 
+
 ### Tips
+
 ```bash
 When typing a : command, press CTRL-D to see possible completions.
                    Press <TAB> to use one completion.
@@ -95,10 +65,11 @@ When typing a : command, press CTRL-D to see possible completions.
 ```
 
 
-
 ## Essentials
 
+
 ### Navigate
+
 ```bash
 hjkl               scroll
 w                  start of word
@@ -133,7 +104,9 @@ ct-d               page down
 g_                 go to last character on line
 ```
 
+
 ### Insert
+
 ```bash
 esc                leave insert
 i                  insert mode
@@ -146,14 +119,18 @@ r                  replace character
 R                  Replace text
 ```
 
+
 ### Undo
+
 ```bash
 u                  undo
 U                  undo edits on whole line
 ctrl-r             Redo
 ```
 
+
 ### Delete
+
 ```bash
 x                  delete
 dw                 delete word
@@ -170,7 +147,9 @@ ce                 change till end of word
 de                 delete till end of word
 ```
 
+
 ### Substitute
+
 ```bash
 :s/old/new/        substitute old with new
 :s/old/new/g       substitute old with new for whole line
@@ -186,7 +165,9 @@ de                 delete till end of word
 :%s/^M/\r/g        replace ^M with a 'vim' carriage return.
 ```
 
+
 ### Search
+
 ```bash
 /                  search forward for phrase
 n                  next result
@@ -199,7 +180,9 @@ N                  previous result
 :noh               undo above
 ```
 
+
 ### Copy-Paste
+
 ```bash
 y                  copy (yank)
 yy                 yank line
@@ -209,24 +192,27 @@ P                  paste after cursor
 v<motion>:w<file>  writes selection to disc
 ```
 
+
 ### Style
+
 ```bash
 gu                 change sentence to lowercase
 gU                 change sentence to uppercase
 ```
 
 
-
 ## Visual
 
-### Basics
+
 ```bash
 v                  select
 vw                 select word
 v$                 select line
 ```
 
-### vi & va (inside & around)
+
+### vi & va - inside & around
+
 ```bash
 Suppose the cursor is on the first 'o' of
 (map (+) ("foo")).
@@ -239,7 +225,9 @@ v2a)               will select (map (+) ("foo"))
 vat                html tags - select from one tag to last
 ```
 
+
 ### Block Editing
+
 ```bash
 ^                  move to first character
 <C-v>              start block selection
@@ -248,10 +236,11 @@ I//[esc]           use // to comment block
 ```
 
 
-
 ## Interface
 
+
 ### Windows
+
 ```bash
 :help              windows-intro
 :vsplitright       open new window on the right
@@ -263,7 +252,9 @@ ctrl-w x           swap windows
 :30winc <          narrow window by 30
 ```
 
+
 ### Buffers
+
 ```bash
 :buffers           list all buffers currently open
 :b1                edit buffer 1
@@ -273,10 +264,11 @@ ctrl-w x           swap windows
 ```
 
 
-
 ## Advanced
 
+
 ### Macros
+
 ```bash
 q                  start macro
 f                  macro variable (can be any letter)
@@ -288,7 +280,9 @@ V}:normal @x       repeat macro to end of paragraph
 VG:normal @x       repeat macro to document base
 ```
 
+
 ### Registers
+
 ```bash
 :help registers
 "fyy               yank line to register 'f'
@@ -298,17 +292,20 @@ p                  paste the above yanked line
 "jp                paste the J register
 ```
 
+
 ### Tips
+
 ```bash
 You can edit macros by treating them as registers.
 You can add a macro to a macro -- meta-macros :-)
 ```
 
 
-
 ## The Shell
 
+
 ### Shell Access
+
 ```bash
 :sh                access the shell
 :!                 execute an external command
@@ -316,7 +313,9 @@ You can add a macro to a macro -- meta-macros :-)
 :r! ls             will paste command output below curser
 ```
 
+
 ### File System Explorer
+
 ```bash
 :Sexplore          Open FS explorer
 :Sexplore!         Open narrow IDE style browser
@@ -333,7 +332,9 @@ v                  opens the file in a vertical split
 P                  opens in the file in the adjacent window
 ```
 
+
 ### Searching
+
 ```bash
 */filepat          files in current directory which satisfy filepat
 **/filepat         files in current directory or below which satisfy...
@@ -342,10 +343,11 @@ P                  opens in the file in the adjacent window
 ```
 
 
-
 ## Configuiration
 
+
 ### Appearance
+
 ```bash
 :color slate       change theme to slate
 :set tw=80         set width of terminal screen
@@ -354,7 +356,9 @@ gqG                wrap text to tw to document base
 gp}                wrap text to tw to paragraph end
 ```
 
+
 ### .vimrc Options
+
 ```bash
 :set
  - colorcolumn=80  add a guide line for width
@@ -367,15 +371,14 @@ gp}                wrap text to tw to paragraph end
 ```
 
 
-
 ## Help
 
-### Help
+
 ```bash
 :help w            help with w command
 ```
 
-### Prepends
+Prepend these commands for special help pages
 ```bash
 (nothing)          Normal mode command                     :help x
 v_                 Visual mode command                     :help v_u

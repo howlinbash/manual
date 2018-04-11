@@ -1,17 +1,25 @@
+[The Howlin Developer Guide](/index.md)
 
 
 
-[The Howlin Developer Guide](../home.md)
+Unix Basics
+===========
+
+[Back to Unix](./index.md)
 
 
+## Contents
 
-# Unix Basics
 
-[Back to Unix](./intro.md)
-
+- [Navigation](##Navigation)
+- [Modification](##Modification)
+- [Help](##Help)
+- [ls](##ls)
+- [Cat, Pipe and Redirection](##Cat, Pipe and Redirection)
 
 
 ## Navigation
+
 
 ```bash
 pwd                # Print working directory (where am I?)
@@ -26,8 +34,8 @@ cd -               # Go back to last working directory
 ```
 
 
-
 ## Modification
+
 
 ```bash
 rm                 # Remove file
@@ -42,8 +50,8 @@ mkdir -p           # Create nested directory (like/this)
 ```
 
 
+## Help
 
-## Help 
 
 ```bash
 type               # Write description of command type
@@ -57,8 +65,8 @@ file               # Determine file type
 ```
 
 
-
 ## ls
+
 
 ```bash
 ls -1              # List dir contents in one column
@@ -69,4 +77,20 @@ ls -l              # List info on files
 ls -lh             # Above but make file size human readable
 ls -r              # Reverse default sort order of list command
 ls -t              # List in date order
+```
+
+
+## Cat, Pipe and Redirection
+
+
+cat > newdoc.txt
+ - then type what you want in the document carriage returns are fine. 
+ - Ctrl-D to exit
+
+```bash
+
+# Cat a bunch of files together
+cat ./* >> newfile.txt
+
+| less
 ```

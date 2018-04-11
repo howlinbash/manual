@@ -1,25 +1,23 @@
+[The Howlin Developer Guide](/index.md)
 
 
 
-[The Howlin Developer Guide](../home.md)
+OS X
+====
 
-
-
-# OS X
-
-[Back to Unix](./intro.md)
-
+[Back to Unix](./index.md)
 
 
 ## Open Application
+
 
 ```bash
 open -a "iTunes"
 ```
 
 
-
 ## Networking
+
 
 ```bash
 # Get ip address

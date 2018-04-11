@@ -1,25 +1,46 @@
-
-
-[The Howlin Developer Guide](../home.md)
-
+[The Howlin Developer Guide](/index.md)
 
 
 
+Javascript Basics
+=================
 
-# Javascript
-
-
-
-
-## Basics
+[Back to JavaScript](./index.md)
 
 
+## Contents
 
-### Operators
+
+- [Operators](##Operators)
+- [Data Types](##Data Types)
+  - [Strings](###Strings)
+  - [Objects](###Objects)
+- [Variables](##Variables)
+  - [Function Scopes](###Function Scopes)
+- [Functions](##Functions)
+- [Conditionals](##Conditionals)
+  - [If Statement](###If Statement)
+  - [Switch Statement](###Switch Statement)
+  - [Choose Your own Adventure](###Choose Your own Adventure)
+- [Loops](##Loops)
+  - [For Loop](###For Loop)
+  - [While Loop](###While Loop)
+  - [The Do While Loop](###The Do While Loop)
+- [Arrays](##Arrays)
+  - [Further Arrays](###Further Arrays)
+- [Objects](##Objects)
+  - [Accessing Properties](###Accessing Properties)
+  - [Creating Objects](###Creating Objects)
+  - [Methods](###Methods)
+  - [This](###This)
+  - [Constructors](###Constructors)
+  - [Building a Cash Register](###Building a Cash Register)
+
+
+## Operators
 
 
 **Logical Operators**
-
 ```javascript
     // And
     true && true;             // TRUE
@@ -37,8 +58,8 @@
     !true;                    // FALSE
     !false;                   // TRUE
 ```
-**Comparison Operators**
 
+**Comparison Operators**
 ```javascript
     >                          // Greater than
     <                          // Less than
@@ -49,15 +70,13 @@
 ```
 
 Modulo returns the remainder of a division.
-
 ```javascript
     17 % 5                    // 2
     13 % 7                    // 6
 ```
 
 
-
-### Data Types
+## Data Types
 
 
  - string
@@ -67,10 +86,9 @@ Modulo returns the remainder of a division.
  - object
 
 
-#### Strings
+### Strings
 
 A string is zero indexed
-
 ```javascript
     0 1 2 3 4
     | | | | |
@@ -81,7 +99,7 @@ A string is zero indexed
 ```
 
 
-#### Objects
+### Objects
 
 ```javascript
     var obj = {
@@ -99,7 +117,6 @@ There are two ways to create an object: using *object literal notation* and
 using the *object constructor*.
 
 Literal notation is just creating an object with curly braces, like this:
-
 ```javascript
     var myObj = {
       type:        'fancy',
@@ -110,13 +127,11 @@ Literal notation is just creating an object with curly braces, like this:
 ```
 
 The constructor syntax looks like this:
-
 ```javascript
     var myObj = new Object();
 ```
 
 Post creation property declaration (the second is shorthand for the first):
-
 ```javascript
     // dot notation
     myObj["name"] = "Charlie";
@@ -126,7 +141,6 @@ Post creation property declaration (the second is shorthand for the first):
 ```
 
 **Example Script**
-
 ```javascript
     var friends = {};
 
@@ -165,8 +179,7 @@ Post creation property declaration (the second is shorthand for the first):
 ```
 
 
-
-### Variables
+## Variables
 
 
 ```javascript
@@ -178,11 +191,10 @@ Post creation property declaration (the second is shorthand for the first):
 ```
 
 
-#### Function Scopes
+### Function Scopes
 
 Variables defined *outside* a function are accessible anywhere once they have
 been declared. They're called *global variables* and their scope is global.
-
 ```javascript
     var globalVar = "hello";
 
@@ -194,7 +206,6 @@ been declared. They're called *global variables* and their scope is global.
 The variable *globalVar* can be accessed anywhere, even inside the function
 *foo*. Variables defined *inside* a function are *local variables*. They cannot
 be accessed outside of that function.
-
 ```javascript
     var bar = function bar() {
       var localVar = "howdy";
@@ -207,12 +218,10 @@ The variable *localVar* only exists inside the function *bar*. Trying to print
 localVar outside the function gives an error.
 
 
-
-### Functions
+## Functions
 
 
 A function takes in inputs, does something with them, and produces an output.
-
 ```javascript
    var sayHello = function sayHello(name) {
      console.log('Hello ' + name);
@@ -220,17 +229,15 @@ A function takes in inputs, does something with them, and produces an output.
 ```
 
 You can run this code by "calling" the function, like this:
-
 ```javascript
     sayHello("Emily");		    // Hello Emily
 ```
 
 
+## Conditionals
 
-### Conditionals
 
-
-#### If Statement
+### If Statement
 
 ```javascript
     var userChoice = prompt("Do you choose rock, paper or scissors?");
@@ -274,7 +281,7 @@ You can run this code by "calling" the function, like this:
 ```
 
 
-#### Switch Statement
+### Switch Statement
 
 ```javascript
     switch (/*Some expression*/) {
@@ -293,7 +300,7 @@ You can run this code by "calling" the function, like this:
 ```
 
 
-#### Choose Your own Adventure
+### Choose Your own Adventure
 
 ```javascript
     var troll = prompt("You're walking through the forest, minding your own business, and you run into a troll! Do you FIGHT him, PAY him, or RUN?").toUpperCase();
@@ -341,14 +348,12 @@ You can run this code by "calling" the function, like this:
 ```
 
 
+## Loops
 
-### Loops
 
-
-#### For Loop
+### For Loop
 
 NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
-
 ```javascript
     // Syntax
     for (var i = 1; i < 11; i = i + 1) {
@@ -368,7 +373,6 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 **Loop Through an Array**
-
 ```javascript
     var cities = ["Melbourne", "Amman", "Helsinki", "NYC"];
 
@@ -378,7 +382,6 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 **Example Script**
-
 ```javascript
     var text = "The Reds sign Trevor on a 3 year deal worth £20 million. Trevor has agreed a three-year deal with their rivals for a rumoured £20 million.";
     var name = "Trevor";
@@ -400,10 +403,9 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 
-#### While Loop 
+### While Loop
 
 **Example Script**
-
 ```javascript
     var num = 0;
     
@@ -418,7 +420,6 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 **Another Example Script**
-
 ```javascript
     var slaying         = true;
     var youHit          = Math.floor(Math.random() * 2);
@@ -444,12 +445,11 @@ NOTE: if the condition is met (e.g. i < 11;) the block is run *then* i++ runs.
 ```
 
 
-#### 'Do' / 'While' Loop
+### The Do While Loop
 
 To make sure a loop runs at least once before conditional checked.
 
 **Example Script**
-
 ```javascript
     loopCondition = false;
     
@@ -461,8 +461,7 @@ To make sure a loop runs at least once before conditional checked.
 ```
 
 
-
-### Arrays
+## Arrays
 
 
 An object that holds values (of any type) in numerically indexed positions.  
@@ -471,7 +470,6 @@ Any time you see data surrounded by [ ], it is an array.
 a. store *lists* of data  
 b. can store *different data types* at the same time  
 c. are *ordered* so the position of each piece of data is fixed  
-
 ```javascript
     var names = ["Mao","Gandhi","Mandela"];
     var sizes = [4, 6, 3, 2, 1, 9];
@@ -488,7 +486,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-#### Further Arrays
+### Further Arrays
 
 ```javascript
     // heterogenous arrays (mixed type)
@@ -502,11 +500,10 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
+## Objects
 
-### Objects
 
-
-#### Accessing Properties
+### Accessing Properties
 
 ```javascript
     var bob = {
@@ -527,7 +524,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-#### Creating Objects
+### Creating Objects
 
 ```javascript
     // Literal notation
@@ -543,7 +540,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-#### Methods
+### Methods
 
 ```javascript
     bob.setAge = function(newAge){
@@ -554,7 +551,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-#### This
+### This
 
 ```javascript
     var setAge = function (newAge) {
@@ -569,7 +566,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-#### Constructors
+### Constructors
 
 ```javascript
     function Person(name,age) {
@@ -582,7 +579,7 @@ c. are *ordered* so the position of each piece of data is fixed
 ```
 
 
-#### Building a Cash Register
+### Building a Cash Register
 
 ```javascript
     function StaffMember(name, discountPercent) {
@@ -629,275 +626,4 @@ c. are *ordered* so the position of each piece of data is fixed
     cashRegister.applyStaffDiscount(me);
     
     console.log('Your bill is '+cashRegister.total.toFixed(2));
-```
-
-
-
-
-## JavaScript is Weird
-
-
-
-### Hoisting
-
-
- - Functions are hoisted to the top and read
- - Variables are hoisted to the top, registered but not read
- - If you assign a function to a variable it will be registered but not read.
-
-This
-
-```javascript
-    function foo() {
-      bar();
-      var x = 1;
-    }
-```
-
-Runs like this.
-
-```javascript
-    function foo() {
-      var x;
-      bar();
-      x = 1;
-    }
-```
-
-So here, the name 'foo' is hoisted, but the body is left behind.  
-It will only be assigned during execution.
-
-```javascript
-    function test() {
-      foo();                       // TypeError "foo is not a function"
-      bar();                       // "this will run!"
-      var foo = function() {       // funct expr assigned to local var 'foo'
-        alert("this won't run!");
-      }
-      function bar() {             // funct declaration, given the name 'bar'
-        alert("this will run!");
-      }
-    }
-    test();
-```
-
-
-
-### Context
-
-
-scope === variable access  
-context === this
-
-In the root scope, the context is this.
-
-```javascript
-    console.log(this);             // Window {...}
-    console.log(this === window);  // true
-    
-    // If
-    var a = 1;
-    
-    // Then
-    console.log(this.a);      // 1
-    console.log(window.a);    // 1
-    console.log(a);           // 1
-```
-
-If we change the scope, the context still remains (the window object)
-
-```javascript
-    function foo() {
-      console.log(this);
-    }
-
-    foo()
-```
-
-A function runs with the context of the object that called it.
-
-```javascript
-    var obj = {
-      foo: function () {
-        console.log(this === obj);
-      }
-    }
-
-    obj.foo();                // true
-```
-
-now obj is the context.
-
-
-#### Changing Context
-
-3 methods change the context:
- - call
- - apply
- - bind
-
-**call**
-
-```javascript
-    var obj = {
-      foo: function () {
-        console.log(this === window);
-      }
-    }
-
-    obj.foo.call(window);     // true
-```
-
-We can also pass arguments to the function.
-
-```javascript
-    var obj = {
-      foo: function (one, two, three) {
-        console.log(this === window);
-      }
-    }
-    
-    obj.foo.call(window, 1,2,3);
-```
-
-**apply**
-
-apply is the same as call except the second argument is an array.
-
-    obj.foo.apply(window, [1,2,3]);
-
-**bind**
-
-both call and apply call the foo function bind, however, does not.
-
-Bind, returns a bound function
-
-    var myBoundFoo = obj.foo.bind(window);
-
-so myBoundFoo() always executes foo with the context 'window' instead of obj.
-
-
-#### Scoping Problem Workarounds
-
-I want the second 'this' to refer to the first element '#opendiv'
-
-```javascript
-    $('#opendiv').on('click', function() {
-      this;                                      // this: #opendiv
-      $('#div1').slideToggle(300, function() {
-        $(this).toggleClass("active");           // this: #div1
-      });
-    });
-```
-
-**The Scope Method**
-
-```javascript
-    $('#opendiv').on('click', function() {
-      var _self = this;
-      $('#div1').slideToggle(300, function() {
-        $(_self).toggleClass("active");
-      });
-    });
-```
-
-**The Bind Method**
-
-```javascript
-    $('#opendiv').on('click', function() {
-      // Caveat (this)
-      $('#div1').slideToggle(300, function() {
-        $(this).toggleClass("active");
-      }.bind(this));
-    });
-```
-
-Caveat: 'this' can no longer equal '#div1' it will now always equal '#opendiv'
-
-
-
-
-## You Don't Know JS
-
-
-
-### Scope
-
-
-Compilation:
-Compile all the functions - don't execute them;
-Make boxes for all the variables - don't assign to them;
-Make code so engine can execute everything
-
-Execution:
-Look up variables and functions
-execute the code the compiler created
-
-```javascript
-    // This will be broken up into 2 statements.
-    var a = 2;
-
-    // Declaration Operation: 
-    var a;  
-
-    // Initialisation Operation: 
-    a = 2;  
-```
-
-We can break the engine into 3 parts
- - **the engine** - start to finish compilation and execution
- - **the compiler** - parsing & code generation
- - **the scope** - collects and mantains variable look up list
-
-**Summary**
- - Compiler declares a variable
-   - and produces code for Engine to run to assign variable in next step
- - Engine looks up the variable in Scope and assigns to it
-
-```javascript
-
-// This script...
-
- 1 │  var foo = "bar";
- 2 │ 
- 3 │  function bar() {
- 4 │    var foo = "baz";
- 5 │  }
- 6 │  
- 7 │  function baz(foo) {
- 8 │    foo = "bam";
- 9 │    bam = "yay";
-10 │  }
-
-// ...becomes
-
-   // Compilation                          // Execution
-
- 1 │  var foo                            1 │      foo = "bar";
- 2 │                                     2 │ 
- 3 │  function bar() {                   3 │                 {
- 4 │    var foo                          4 │        foo = "baz";
- 5 │  }                                  5 │  }
- 6 │                                     6 │  
- 7 │  function baz(foo) {                7 │                    {
- 8 │                                     8 │    foo = "bam";
- 9 │                                     9 │    bam = "yay";
-10 │  }                                 10 │  }
-```
-
-
-#### Engine's variable look-up (LHS & RHS)
-
-LHS asks for the container, RHS references the container.
-
-**Line 1**
-```javascript
-foo     LHS Reference    Target
- =      The Assignment
-"bar";  RHS Reference    Source
-
-// LHS         give me the box
-// RHS         what's in the box
-// Assignment  Put this in the box
-
 ```

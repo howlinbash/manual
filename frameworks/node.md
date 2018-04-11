@@ -1,18 +1,14 @@
-
-
-[The Howlin Developer Guide](../home.md)
-
+[The Howlin Developer Guide](/index.md)
 
 
 
+Node.js
+=======
 
-# Node.js
-
-
+[More JavaScript](/languages/javascript/index.md)
 
 
 ### Quick Start
-
 
 ```bash
 #install

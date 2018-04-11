@@ -1,18 +1,12 @@
-
-
-[The Howlin Developer Guide](../home.md)
-
+[The Howlin Developer Guide](/index.md)
 
 
 
-
-# AutoReload
-
-
+AutoReload
+==========
 
 
 ### Quick Start
-
 
 ```bash
 # Install

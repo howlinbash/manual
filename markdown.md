@@ -1,17 +1,27 @@
-
-
-[The Howlin Developer Guide](./home.md)
-
+[The Howlin Developer Guide](/index.md)
 
 
 
+Markdown Cheatsheet
+===================
 
-# Markdown Cheatsheet
 
+## Contents
+
+
+- [Headings](###Headings)
+- [Emphasis](###Emphasis)
+- [Lists](###Lists)
+- [Links](###Links)
+- [Images](###Images)
+- [Code and Syntax Highlighting](###Code and Syntax Highlighting)
+- [Tables](###Tables)
+- [Blockquotes](###Blockquotes)
+- [Inline HTML](###Inline HTML)
+- [Horizontal Rule](###Horizontal Rule)
 
 
 ### Headings
-
 
 ```markdown
 # Header 1
@@ -26,8 +36,7 @@
 #### Header 4
 
 
-
-## Emphasis
+### Emphasis
 
 ```markdown
 **BOLD** or __BOLD__
@@ -42,9 +51,7 @@ Combined emphasis with **asterisks and _underscores_**.
 ~~Scratch this.~~
 
 
-
 ### Lists
-
 
 ```markdown
 1. First ordered list item
@@ -100,9 +107,7 @@ Combined emphasis with **asterisks and _underscores_**.
 - [x] not started
 
 
-
 ### Links
-
 
 ```markdown
 [I'm an inline-style link](https://www.google.com)
@@ -149,9 +154,7 @@ The reference links remain hidden.
 [link text itself]: http://www.reddit.com
 
 
-
 ### Images
-
 
 Here's Mr Bash (hover to see the title text):
 
@@ -173,9 +176,7 @@ Reference-style:
 [logo]: ./howlin-wolf-square-tiny.jpg "Howlin Bash Text"
 
 
-
 ### Code and Syntax Highlighting
-
 
 ```markdown
 Inline `code` has `back-ticks around` it.
@@ -221,9 +222,7 @@ But let's throw in a <b>tag</b>.
 ```
 
 
-
 ### Tables
-
 
 ```markdown
 Colons can be used to align columns.
@@ -260,12 +259,10 @@ Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
-
 
 
 ### Blockquotes
 
-
 ```markdown
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
@@ -283,9 +280,7 @@ Quote break.
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
 
 
-
 ### Inline HTML
-
 
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
@@ -308,9 +303,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 </dl>
 
 
-
 ### Horizontal Rule
-
 
 ```markdown
 Three or more...
@@ -341,6 +334,3 @@ Asterisks
 ___
 
 or underscores
-
-
-
