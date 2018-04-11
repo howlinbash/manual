@@ -11,6 +11,7 @@ You Dont Know JS - Scope
 
 ## Contents
 
+
 - [Introduction](##Introduction)
 - [LHS & RHS](##LHS & RHS)
 - [The Engine](##The Engine)

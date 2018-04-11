@@ -32,3 +32,6 @@ You Dont Know JS
     - [Hard Binding](./ydkjs_scope###Hard Binding)
     - [The New Keyword](./ydkjs_scope###The New Keyword)
     - [Precedence](./ydkjs_scope###Precedence)
+- [Closure](./ydkjs_closure.md)
+  - [Definition](./ydkjs_closure##Definition)
+  - [The Module Pattern](./ydkjs_closure##The Module Pattern)
