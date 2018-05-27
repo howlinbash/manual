@@ -16,7 +16,6 @@ Javascript Methods
 - [Number](##Number)
 - [Object](##Object)
 - [String](##String)
-- [Unsorted](##Unsorted)
 
 
 ## Array
