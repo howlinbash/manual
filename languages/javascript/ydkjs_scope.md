@@ -569,7 +569,7 @@ When there is an object property reference at the call site, the IBR applies.
  6 │  var o2 = { bar: "var2". foo: foo };
  7 │  var o3 = { bar: "bar3", foo: foo };
  8 │  
-10 │  o2.foo(); // "bar2" o2.foo is referencing an obj prop.
+10 │  o2.foo(); // "var2" o2.foo is referencing an obj prop.
 11 │  o3.foo(); // "bar3"
 ```
 
@@ -614,6 +614,8 @@ It is impossible to create a crossover between the lexical environment and the `
 10 │  var bar = "bar2";
 11 │  foo();                // default binding
 ```
+
+The user wants foo() to return "bar1" but it will always return "bar2".
 
 
 ### The Explicit Binding Rule
