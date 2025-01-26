@@ -1,4 +1,3 @@
-
 TypeScript
 ==========
 
@@ -142,3 +141,16 @@ ts.toolbelt
 
 ### Todo
 noUncheckedIndexedAccess switch in settings;
+
+### Enum considered Harmful
+
+```typescript
+export const Action = {
+  Create: 'create',
+  Read: 'read',
+  Update: 'update',
+  Delete: 'delete',
+  Manage: 'manage',
+} as const
+export type Action = typeof Action[keyof typeof Action]
+```
